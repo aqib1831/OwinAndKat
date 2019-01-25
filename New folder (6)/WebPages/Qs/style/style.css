@@ -1,0 +1,141 @@
+body {
+	margin:0px;
+}
+table {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+.bg_shkgPink {
+	background-color: #F08721;
+}
+.div_border {
+	border: 4px solid #333333;
+}
+.div_bgWhite {
+	background-color: #FFFFFF;
+	border: 1px solid #333333;
+}
+.div_onlineLinks {
+	background-color: #F08721;
+	border: 3px solid #333333;
+}
+.divSub_onlineLinks {
+	background-color: #FCE7D3;
+	border: 1px solid #5A4530;
+}
+.hLinkWhite a:link, .hLinkWhite a:active, .hLinkWhite a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.hLinkWhite a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.bg_purple {
+	background-color: #EA3E26;
+}
+.bg_ltIndigo {
+	background-color: #EE6551;
+}
+.hdng_white {
+	font-size: 20px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.subHdng_white {
+	font-size: 15px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.horLine_ltIndigo {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #F18474;
+}
+.horLine_ltOrange {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CAB9A9;
+}
+.hdng_ltIndigo {
+	font-size: 20px;
+	color: #F7B2A8;
+}
+.txtBld_white {
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.txt_whiteContents {
+	font-size: 12px;
+	color: #FFFFFF;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+.txt_white {
+	font-size: 12px;
+	color: #FFFFFF;
+}
+.txt_whiteSml {
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:normal;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:windowtext;}
+h1
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:247.45pt;
+	margin-left:0in;
+	text-align:center;
+	line-height:normal;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	font-weight:bold;}
+h2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:15.7pt;
+	margin-left:0in;
+	line-height:normal;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	color:black;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:12.4pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:black;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+.style2 {font-size: 9px}

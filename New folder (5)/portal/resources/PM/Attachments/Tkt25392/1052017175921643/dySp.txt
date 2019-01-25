@@ -1,0 +1,235 @@
+USE [Portal]
+GO
+/****** Object:  StoredProcedure [dbo].[DynamicQuery]    Script Date: 8/25/2017 9:26:04 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+--[dbo].[DynamicQuery] 'pmtf.ClientID','24','2/2/1993','1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23',0,'1'
+-- =============================================
+create PROCEDURE [dbo].[DynamicQuery] --
+    @ReportName VARCHAR(100) ,
+    @CreadtedBy VARCHAR(100) ,
+    @CreateDate VARCHAR(100) ,
+    @Columns VARCHAR(MAX) ,
+    @MyBit BIT = 0 ,
+    @ClientID VARCHAR(MAX) = NULL ,
+    @TypeID VARCHAR(MAX) = NULL ,
+    @CategoryID VARCHAR(MAX) = NULL ,
+    @SubCategoryID VARCHAR(MAX) = NULL ,
+    @PriorityID VARCHAR(MAX) = NULL ,
+    @StatusID VARCHAR(MAX) = NULL ,
+   -- @TeamID VARCHAR(MAX) = NULL ,
+    @ReleaseID VARCHAR(MAX) = NULL ,
+  --  @CompletedSurvay VARCHAR(MAX) = NULL ,
+    @ProductOwnerID VARCHAR(MAX) = NULL ,
+    @ProjectManagerID VARCHAR(MAX) = NULL ,
+    @DesignLeadID VARCHAR(MAX) = NULL ,
+    @DevelopmentLeadID VARCHAR(MAX) = NULL ,
+    @QALeadID VARCHAR(MAX) = NULL ,
+   -- @ReportedByID VARCHAR(MAX) = NULL ,
+    @AssignToID VARCHAR(MAX) = NULL ,
+    @CreationDateInt VARCHAR(MAX) = NULL ,
+    @CreationDateStart DATETIME = NULL ,
+    @CreationDateEnd DATETIME = NULL ,
+    @LastestActivityDateInt VARCHAR(MAX) = NULL ,
+    @LastestActivityDateStart DATETIME = NULL ,
+    @LastestActivityDateEnd DATETIME = NULL ,
+    @SOWSignDateInt VARCHAR(MAX) = NULL ,
+    @SOWSignDateStart DATETIME = NULL ,
+    @SOWSignDateEnd DATETIME = NULL ,
+    @DueDateInt VARCHAR(MAX) = NULL ,
+    @DueDateStart DATETIME = NULL ,
+    @DueDateEnd DATETIME = NULL ,
+    @ReportFilters [PM_ReportFilter] READONLY
+AS
+    BEGIN
+        DECLARE @SQL NVARCHAR(MAX)
+
+        IF ( @CreationDateInt IS NOT NULL )
+            BEGIN
+                SELECT  @CreationDateStart = StartDate ,
+                        @CreationDateEnd = EndDate
+                FROM    [dbo].[fDateRangeLastIntDays](@CreationDateInt)
+            END
+
+        IF ( @LastestActivityDateInt IS NOT NULL )
+            BEGIN
+                SELECT  @LastestActivityDateStart = StartDate ,
+                        @LastestActivityDateEnd = EndDate
+                FROM    [dbo].[fDateRangeLastIntDays](@CreationDateInt)
+            END
+
+        IF ( @DueDateInt IS NOT NULL )
+            BEGIN
+                SELECT  @DueDateStart = StartDate ,
+                        @DueDateEnd = EndDate
+                FROM    [dbo].[fDateRangeLastIntDays](@CreationDateInt)
+            END
+
+        DECLARE @CommaSepratedColumnsName VARCHAR(MAX);
+        SELECT  @CommaSepratedColumnsName = STUFF(( SELECT  ','
+                                                            + rc.ColumnValue
+                                                    FROM    dbo.Reports_Coloumn rc
+                                                            INNER JOIN ( SELECT
+                                                              *
+                                                              FROM
+                                                              dbo.fStringListToTable(@Columns)
+                                                              ) c ON c.String = rc.ID
+                                                  FOR
+                                                    XML PATH('')
+                                                  ), 1, 1, '');
+
+			
+
+
+        SET @SQL = 'SELECT ' + @CommaSepratedColumnsName
+            + ' FROM    dbo.PM_Ticket_Features pmtf
+			            LEFT JOIN dbo.Clients cl ON cl.ID = pmtf.ClientID
+						LEFT JOIN dbo.Groups g ON g.ID = pmtf.UserID
+						LEFT JOIN dbo.PM_TaskTypes ptp ON pmtf.TypeID = ptp.ID
+						LEFT JOIN dbo.Users usr ON usr.ID = pmtf.UserID
+						LEFT JOIN dbo.PM_Categories cat ON cat.ID = pmtf.CategoryID
+						LEFT JOIN dbo.PM_SubCategories subcat ON cat.ID = subcat.PMCategoryID
+						LEFT JOIN dbo.PM_Ticket_Features_Status sts ON pmtf.[Status] = sts.Id
+						LEFT JOIN dbo.PM_Ticket_Features_Priority pmtp ON pmtp.Id = pmtf.[Priority]
+             WHERE   ISNULL(pmtf.DateEntered, GETDATE()) BETWEEN COALESCE(@CreationDateStart,
+                                                             ISNULL(pmtf.DateEntered,
+                                                              GETDATE())) AND     COALESCE(@CreationDateEnd,
+                                                             ISNULL(pmtf.DateEntered,
+                                                              GETDATE()))
+			AND ISNULL(pmtf.LastUpdatedON, GETDATE()) BETWEEN COALESCE(@LastestActivityDateStart,
+                                                              ISNULL(pmtf.LastUpdatedON,
+                                                              GETDATE()))AND     COALESCE(@LastestActivityDateEnd,
+                                                              ISNULL(pmtf.LastUpdatedON,
+                                                              GETDATE()))
+			AND ISNULL(pmtf.SowSignedDate, GETDATE()) BETWEEN COALESCE(@SOWSignDateStart,
+                                                              ISNULL(pmtf.SowSignedDate,
+                                                              GETDATE()))AND     COALESCE(@SOWSignDateEnd,
+                                                              ISNULL(pmtf.SowSignedDate,
+                                                              GETDATE()))
+			AND ISNULL(pmtf.DueDate, GETDATE()) BETWEEN COALESCE(@DueDateStart,
+                                                             ISNULL(pmtf.DueDate,
+                                                              GETDATE()))AND     COALESCE(@DueDateEnd,
+                                                             ISNULL(pmtf.DueDate,
+                                                              GETDATE()))'
+            + CASE WHEN @ClientID IS NULL THEN ''
+                   ELSE 'AND  CONVERT(VARCHAR(15),pmtf.ClientID) IN (SELECT String FROM [dbo].[fStringListToTable](@ClientID)) '
+              END + CASE WHEN @TypeID IS NULL THEN ''
+                         ELSE 'AND  CONVERT(VARCHAR(15),pmtf.TypeID) IN (SELECT String FROM [dbo].[fStringListToTable](@TypeID)) '
+                    END + CASE WHEN @CategoryID IS NULL THEN ''
+                               ELSE 'AND  CONVERT(VARCHAR(15),pmtf.CategoryID) IN (SELECT String FROM [dbo].[fStringListToTable](@CategoryID)) '
+                          END + CASE WHEN @SubCategoryID IS NULL THEN ''
+                                     ELSE 'AND  CONVERT(VARCHAR(15),pmtf.SubCategoryID) IN (SELECT String FROM [dbo].[fStringListToTable](@SubCategoryID)) '
+                                END + CASE WHEN @PriorityID IS NULL THEN ''
+                                           ELSE 'AND  CONVERT(VARCHAR(15),pmtf.Priority) IN (SELECT String FROM [dbo].[fStringListToTable](@PriorityID)) '
+                                      END
+            + CASE WHEN @StatusID IS NULL THEN ''
+                   ELSE 'AND  CONVERT(VARCHAR(15),pmtf.Status) IN (SELECT String FROM [dbo].[fStringListToTable](@StatusID)) '
+              END + CASE WHEN @ReleaseID IS NULL THEN ''
+                         ELSE 'AND  CONVERT(VARCHAR(15),pmtf.ReleaseID) IN (SELECT String FROM [dbo].[fStringListToTable](@ReleaseID)) '
+                    END + CASE WHEN @ProductOwnerID IS NULL THEN ''
+                               ELSE 'AND  CONVERT(VARCHAR(15),pmtf.ProductOwnerID) IN (SELECT String FROM [dbo].[fStringListToTable](@ProductOwnerID)) '
+                          END + CASE WHEN @ProjectManagerID IS NULL THEN ''
+                                     ELSE 'AND  CONVERT(VARCHAR(15),pmtf.ProjectManagerID) IN (SELECT String FROM [dbo].[fStringListToTable](@ProjectManagerID)) '
+                                END + CASE WHEN @DesignLeadID IS NULL THEN ''
+                                           ELSE 'AND  CONVERT(VARCHAR(15),pmtf.DesignLeadID) IN (SELECT String FROM [dbo].[fStringListToTable](@DesignLeadID)) '
+                                      END
+            + CASE WHEN @DevelopmentLeadID IS NULL THEN ''
+                   ELSE 'AND  CONVERT(VARCHAR(15),pmtf.DevelopmentLeadID) IN (SELECT String FROM [dbo].[fStringListToTable](@DevelopmentLeadID)) '
+              END + CASE WHEN @QALeadID IS NULL THEN ''
+                         ELSE 'AND  CONVERT(VARCHAR(15),pmtf.QALeadID) IN (SELECT String FROM [dbo].[fStringListToTable](@QALeadID)) '
+                    END
+            
+                                
+							
+							
+        PRINT @SQL
+
+        IF @MyBit = 0
+            BEGIN
+                EXECUTE sys.sp_executesql @SQL,
+                    N'@ClientID Varchar(MAX),@TypeID Varchar(MAX),@CategoryID varchar(MAX),
+					@SubCategoryID varchar(MAX),@PriorityID varchar(MAX),@StatusID varchar(MAX),
+					@ReleasesID varchar(MAX),@AssignToID varchar(MAX),@ProductOwnerID varchar(MAX),
+					@ProjectManagerID varchar(MAX),@DesignLeadID varchar(MAX),
+					@DevelopmentLeadID varchar(MAX),@QALeadID varchar(MAX),@CreationDateStart varchar(MAX),
+					@CreationDateEnd varchar(MAX),@LastestActivityDateStart varchar(MAX),
+					@LastestActivityDateEnd varchar(MAX),@SOWSignDateStart varchar(MAX),
+					@SOWSignDateEnd varchar(MAX),@DueDateStart varchar(MAX),@DueDateEnd varchar(MAX)',
+                    @ClientID, @TypeID, @CategoryID, @SubCategoryID,
+                    @PriorityID, @StatusID, @ReleaseID, @AssignToID,
+                    @ProductOwnerID, @ProjectManagerID, @DesignLeadID,
+                    @DevelopmentLeadID, @QALeadID, @CreationDateStart,
+                    @CreationDateEnd, @LastestActivityDateStart,
+                    @LastestActivityDateEnd, @SOWSignDateStart,
+                    @SOWSignDateEnd, @DueDateStart, @DueDateEnd;
+            END 
+        ELSE
+            BEGIN 
+                EXECUTE sys.sp_executesql @SQL,
+                    N'@ClientID Varchar(MAX),@TypeID Varchar(MAX),@CategoryID varchar(MAX),
+					@SubCategoryID varchar(MAX),@PriorityID varchar(MAX),@StatusID varchar(MAX),
+					@ReleasesID varchar(MAX),@AssignToID varchar(MAX),@ProductOwnerID varchar(MAX),
+					@ProjectManagerID varchar(MAX),@DesignLeadID varchar(MAX),
+					@DevelopmentLeadID varchar(MAX),@QALeadID varchar(MAX),@CreationDateStart varchar(MAX),
+					@CreationDateEnd varchar(MAX),@LastestActivityDateStart varchar(MAX),
+					@LastestActivityDateEnd varchar(MAX),@SOWSignDateStart varchar(MAX),
+					@SOWSignDateEnd varchar(MAX),@DueDateStart varchar(MAX),@DueDateEnd varchar(MAX)',
+                    @ClientID, @TypeID, @CategoryID, @SubCategoryID,
+                    @PriorityID, @StatusID, @ReleaseID, @AssignToID,
+                    @ProductOwnerID, @ProjectManagerID, @DesignLeadID,
+                    @DevelopmentLeadID, @QALeadID, @CreationDateStart,
+                    @CreationDateEnd, @LastestActivityDateStart,
+                    @LastestActivityDateEnd, @SOWSignDateStart,
+                    @SOWSignDateEnd, @DueDateStart, @DueDateEnd;
+                DECLARE @ReportID INT 
+                INSERT  INTO [dbo].[Reports_New]
+                VALUES  ( @ReportName, @CreadtedBy, @CreateDate, @SQL )
+                SELECT  @ReportID = SCOPE_IDENTITY()
+
+
+                SELECT  *
+                INTO    #temp
+                FROM    @ReportFilters
+
+                INSERT  INTO dbo.PM_REPORTS_COLUMN
+                        ( ReportID ,
+                          ColumnID
+                        )
+                        SELECT  @ReportID ,
+                                String
+                        FROM    dbo.fStringListToTable(@Columns)
+
+
+
+                INSERT  INTO dbo.PM_Report_Filters
+                        ( ReportID, [Key], Value )
+                        SELECT  *
+                        FROM    #temp
+
+                DROP TABLE #temp
+
+
+            END 
+		  
+    END
+   
+
+                            
+--AND	@CompletedSurvay = COALESCE(@ClientID, pmtf.ClientID)
+--AND	@TeamID = COALESCE(@TeamID, pmtf.ClientID)
+--AND	@ReportedByID VARCHAR(MAX) =NULL,
+--AND	@AssignToID VARCHAR(MAX)=NULL,
+--AND	@CreationDateVARCHAR(MAX) VARCHAR(MAX) = NULL,
+--AND	@CreationDateStart DATETIME = NULL,
+--AND	@CreationDateEnd DATETIME = NULL,
+--AND	@LastestActivityDateVARCHAR(MAX) VARCHAR(MAX) = NULL,
+--AND	@LastestActivityDateStart DATETIME = NULL,
+--AND	@LastestActivityDateEnd DATETIME = NULL,
+--AND	@SOWSignDateVARCHAR(MAX) VARCHAR(MAX) = NULL,
+--AND	@SOWSignDateStart DATETIME = NULL,
+--AND	@SOWSignDateEnd DATETIME = NULL,
+--AND	@DueDateVARCHAR(MAX) VARCHAR(MAX) = NULL,
+--AND	@DueDateStart DATETIME = NULL,
+--AND	@DueDateEnd DATETIME = NULL

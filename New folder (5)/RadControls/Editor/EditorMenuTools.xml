@@ -1,0 +1,148 @@
+<root>
+	<modules>
+		<module name="RadEditorStatistics" dockingZone="Bottom" enabled="true" visible="true" dockable="false" />
+  </modules>
+
+	<tools name="MainToolbar" dockable="true" enabled="true" >
+    <tool name="AjaxSpellCheck" shortcut="F7"/>   
+    <tool name="InsertSymbol" />    
+    <tool name="ImageManager"  shortcut="CTRL+M"/>
+    <tool name="Undo" shortcut="CTRL+Z"/>
+    <tool name="Redo" shortcut="CTRL+Y"/>
+
+    <tool name="Cut" shortcut="CTRL+X"/>
+    <tool name="Copy" shortcut="CTRL+C"/>
+    <tool name="Paste" shortcut="CTRL+V"/>
+ 
+		<tool name="PasteFromWord" />
+		<tool name="PasteFromWordNoFontsNoSizes" />
+    <tool name="Superscript" />
+    <tool name="Subscript" />
+
+    <tool name="ConvertToLower" />
+    <tool name="ConvertToUpper" />
+    <tool name="Print" shortcut="CTRL+P"/>
+    <tool name="FindAndReplace" shortcut="CTRL+F"/>
+		<tool name="SelectAll" shortcut="CTRL+A" />
+  
+		<tool name="InsertParagraph" />
+		<tool name="InsertHorizontalRule" />	
+   
+		<tool name="InsertDate" />
+		<tool name="InsertTime" />	
+		<tool name="ForeColor" />
+		<tool name="BackColor"/>
+  </tools>
+
+  
+  
+  <tools name="DropdownToolbar" dockable="true" >
+   
+  
+		<tool name="FontName"/>		
+		<tool name="RealFontSize"/>		
+    <tool name="Bold" shortcut="CTRL+B"/>
+    <tool name="Italic" shortcut="CTRL+I"/>
+    <tool name="Underline" shortcut="CTRL+U"/>
+    <tool name="StrikeThrough" />
+    <tool name="JustifyLeft" />
+    <tool name="JustifyCenter" />
+    <tool name="JustifyRight" />
+    <tool name="JustifyFull" />
+    <tool name="JustifyNone" />
+    <tool name="Indent" />
+    <tool name="Outdent" />
+ 
+    <tool name="InsertOrderedList" />
+    <tool name="InsertUnorderedList"/>
+    <tool name="LinkManager" />
+    <tool name="InsertAnchor"/>
+    <tool name="InsertEmailLink"/>
+    <tool name="Unlink" />
+  </tools>
+
+
+
+
+
+  
+
+  
+  <contextMenus>
+ 
+
+    <contextMenu forElement="IMG">
+      <tool name="Cut" />
+      <tool name="Copy" />
+      <tool name="Paste" />
+    </contextMenu>
+
+    <contextMenu forElement="P">
+      <tool name="JustifyLeft" />
+      <tool name="JustifyCenter" />
+      <tool name="JustifyRight" />
+      <tool name="JustifyFull" />
+    </contextMenu>
+  </contextMenus>
+
+
+
+  <snippets>
+		<snippet name="Order Confirmation">
+			<![CDATA[
+					<div style="width:300px;border:2px outset #D8D2BD;padding:34px;font-family:Arial, Verdana; font-size:11px;background-color:#F1EFE6;">
+					Dear ____________________,<br />
+					Thank you for inquiring about ____________. Your request will be processed in 48 hours and shipped at the address you have provided. 
+					<br /><br />
+						<b>Please, contact us if you have any problems.</b>
+					</div>
+				]]>
+		</snippet>
+		<snippet name="Email Signature">
+			<![CDATA[
+					<div style="margin-top:30px;width:80%;border-top:1px dotted gray;padding-top:4px;font-family:Arial, Verdana; font-size:11px;">
+					<b>John Wigham</b><br />
+					Senior Web Developer<br />
+						<a href="#">john@mysite.com</a>
+						<br />
+							<br />
+								<i>Disclaimer: The contents of this e-mail are privileged and confidential and intended for the addressees at the specified e-mail addresses only.</i>
+					</div>
+				]]>
+		</snippet>
+		<snippet name="Problem Report Feedback">
+			<![CDATA[
+					<div style="width:300px;border:2px outset #D8D2BD;padding:34px;font-family:Arial, Verdana; font-size:11px;background-color:#F1EFE6;">
+					Hi ____________________,<br />
+					Thank you for reporting this issue. We have verified the problem and it is logged in our system. We will notify you once we have a solution. 
+					<br /><br />
+						<b>Please, contact us if you have any problems.</b>
+					</div>
+				]]>
+		</snippet>
+	</snippets>
+
+	<symbols>
+	</symbols>
+    
+	<fontNames>
+	</fontNames>
+    
+	<fontSizes>
+	</fontSizes>
+
+	<colors>
+	</colors>
+    
+	<classes>
+	</classes>
+
+	<paragraphs>
+	</paragraphs>
+
+	<dialogParameters>
+	</dialogParameters>
+    
+	<languages>
+	</languages>
+</root>

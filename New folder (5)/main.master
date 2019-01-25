@@ -1,0 +1,44 @@
+<%@ Master Language="VB" CodeFile="main.master.vb" Inherits="Portal_main" %>
+<%@ Register Src="topcontrol.ascx" TagName="top" TagPrefix="uctop" %>
+<%@ Register Src="~/controls/footer.ascx" TagName="footer" TagPrefix="ucfooter" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Welcome to Netsolace Portal</title>
+    <link href="App_Themes/Default/Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="margin:0px 0px 0px 0px;height:100%;overflow:hidden;"  > 
+    <form id="form1" runat="server" >     
+        <asp:ScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="300" />
+        <asp:UpdateProgress ID="Progress1" runat="server">
+            <ProgressTemplate>
+                <div class="ProgressIndicatorDIV" >
+                    <br />
+                    <asp:Image ID="Image2" runat="server" ImageUrl="~/images/indicator.gif" ImageAlign="AbsMiddle" /> <span style="color:#4B92C1;font-size:14px;"><b>&nbsp;&nbsp;Loading ...</b></span>
+                    <br /><br />
+                </div>
+            </ProgressTemplate>
+        </asp:UpdateProgress>
+        <table border="0" cellpadding="0" cellspacing="0" style="height:100%;" width="100%">
+            <tr id="TrTop">
+                <td style="height:72px;">
+                    <uctop:top ID="ucTop1" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td style="height:100%;">
+                    <div style="overflow:hidden;height:100%;">
+                        <asp:contentplaceholder id="Content" runat="server">
+                            
+                        </asp:contentplaceholder>
+                    </div>
+                </td>
+            </tr>
+            <tr id="TrFooter">
+                <td style="height:24px;">
+                    <ucfooter:footer ID="ucBottom1" runat="server" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

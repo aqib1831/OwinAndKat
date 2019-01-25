@@ -1,0 +1,128 @@
+/* r.a.d.combobox WhiteMandatory skin */
+
+.ComboBoxDropDown_WhiteMandatory
+{
+	border: 1px solid #c6c7d2;
+	border-top: 1px solid #83868d;
+	background: #fff;
+	text-align:left;
+	padding-left: 2px;
+	filter:progid:DXImageTransform.Microsoft.Shadow(strength=3,color=#646464,direction=135);
+}
+.ComboBoxImage_WhiteMandatory
+{
+	vertical-align: bottom;
+	/*border: solid 1px #adc3de;*/
+	border:solid 1px;
+	border-color:#abadb3 #dbdfe6 #e3e9ef #e2e3ea;
+	border-left: 0px;
+	border-right:solid 3px red;
+	background: #fff;
+	height:15px;
+	padding-right:0px;
+	margin-right:0px;
+	
+}
+
+.ComboBoxImageHover_WhiteMandatory
+{
+	vertical-align: bottom;
+	/*border: solid 1px #adc3de;*/
+	border:solid 1px;
+	border-color:#5794bf #b7d5ea #c7e2f1 #c5daed;
+	border-left: 0px;
+	border-right:solid 3px red;
+	background: #fff;
+	height:15px;
+	padding-right:0px;
+	margin-right:0px;
+}
+
+.ComboBoxInput_WhiteMandatory
+{
+	height: 17px;
+	/*border: solid 1px #adc3de;*/
+	border:solid 1px;
+	border-color:#abadb3 #dbdfe6 #e3e9ef #e2e3ea;
+	border-right: 0px;
+	background: #fff;
+	scrollbar-base-color : #B6D2FC;
+	vertical-align: middle;
+	font: normal 11px Arial, Verdana, Sans-serif;
+	color: #000;
+	margin-right: 0px;
+	padding-left: 1px;
+}
+
+.ComboBoxInputHover_WhiteMandatory
+{
+	height: 17px;
+	/*border: solid 1px #adc3de;*/
+	border:solid 1px;
+	border-color:#5794bf #b7d5ea #c7e2f1 #c5daed;
+	border-right: 0px;
+	background: white;
+	scrollbar-base-color: #B6D2FC;
+	vertical-align: middle;
+	font: normal 11px Arial, Verdana, Sans-serif;
+	color: black;
+	margin-right: 0px;
+	padding-left: 1px;
+	cursor: default;
+}
+
+.ComboBoxItem_WhiteMandatory
+{
+	font: normal 11px Arial, Verdana, Sans-serif;
+	color: #000;	
+	padding: 2px;
+	text-decoration: none;
+	_height: 1%;
+}
+
+.ComboBoxItemHover_WhiteMandatory
+{
+	font: normal 11px Arial, Verdana, Sans-serif;
+	color: white;	
+	padding: 2px;
+	text-decoration: none;
+	background: #306ac5;
+	cursor:pointer;
+	_height: 1%;
+}
+
+.ComboBoxItemDisabled_WhiteMandatory
+{
+	font: normal 11px Arial, Verdana, Sans-serif;
+	color: gray;
+	cursor: no-drop;
+	padding: 2px;
+	text-decoration: none;
+	_height: 1%;
+}
+
+.ComboBoxLoadingMessage_WhiteMandatory
+{
+	font: normal 11px Arial, Verdana, Sans-serif;
+	padding: 2px;
+}
+
+.ComboBoxMoreResultsMessage_WhiteMandatory
+{
+	font: normal 10px Arial, Verdana, Sans-serif;
+	padding-bottom: 4px;
+}
+
+
+.ComboBoxMoreResultsImage_WhiteMandatory
+{
+	padding: 5px;
+	margin: 5px;
+}
+
+.ComboBoxMoreResultsBox_WhiteMandatory
+{
+	border-top: solid 1px #000080;
+	cursor: default;
+	background: #f1f1f1;
+}

@@ -1,0 +1,1 @@
+ Dim sqldt As SqlDataReader = Portal.BLL.Users.GetClientsByUserIDAndSubModuleIDs(CType(HttpContext.Current.Session("AdminID"), Integer), "3")

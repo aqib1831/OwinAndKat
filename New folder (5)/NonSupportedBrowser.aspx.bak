@@ -1,0 +1,13 @@
+<%@ Page Language="VB" %>
+<html>
+<head runat="server">
+    <title>Browser Not Supported</title>
+</head>
+<body bgcolor="#DCEDFD">
+    <form id="form1" runat="server">
+        <div align="center" style="background-color:#DCEDFD">
+            <font size="3"><b>This website is designed to run on Microsoft Internet Explorer 6.0 or above.</b></font>
+        </div>
+    </form>
+</body>
+</html>

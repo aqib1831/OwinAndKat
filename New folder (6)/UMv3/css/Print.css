@@ -1,0 +1,217 @@
+﻿* {margin: 0;}
+html, body, form {height:100%; width:100%; min-width:982px;}
+body, a, span, p, div, h1, h2, h3, h4, input, select
+{
+	margin:0px; padding:0px;	
+}
+.divMasterMain{float:left; height:auto; background-color:#333333; width:100%}
+.Logo {  background-image:url(../images/socket_Logo.jpg);    display:inline-block;
+  background-repeat:no-repeat;  width:235px;  height:30px;  padding-right:5px;  float:left; }
+.hdrright{float:right; width:400px;}
+
+.Header
+{ 
+    padding-left:10px;
+    padding-right:0;
+	background-color:#333333;
+	min-width:982px; 
+	width:100%;
+	height:30px;
+	min-width:982px; width:982px;
+	border-bottom: 3px solid #FBB544;
+	text-align:center;
+}
+.Menu
+{
+    padding-left:45px;
+	float:right;
+	color:#000000;
+	background-image:url(../images/userManualIconsBG.png);
+	background-repeat:no-repeat;	
+	height:29px;
+	width:176px;
+}
+.Menu ul
+{
+	display: inline;
+	margin:0px; padding:0px;	
+}
+.Menu ul li
+{
+	margin:0px; padding:0px;	
+    display: inline;
+	width:42px;
+	height:24px;
+	float:left;
+}
+
+.Menu-icon-Back
+{
+  margin-top:6px;
+  background-image:url(../images/userManualIconsSprite.png);
+  background-position:1px 0px;
+  background-repeat:no-repeat;
+  width:24px;
+  height:21px;
+  cursor:pointer;
+}
+.Menu-icon-Next
+{
+  margin-top:6px;
+  background-image:url(../images/userManualIconsSprite.png);
+  background-position:-23px 0px;
+  background-repeat:no-repeat;
+  width:22px;
+  height:21px;
+  cursor:pointer;
+}
+.Menu-icon-Home
+{
+  margin-top:6px;
+  background-image:url(../images/userManualIconsSprite.png);
+  background-position:-45px 0px;
+  background-repeat:no-repeat;
+  width:26px;
+  height:21px;
+  cursor:pointer;
+}
+.Menu-icon-Print
+{
+  margin-top:6px;
+  background-image:url(../images/userManualIconsSprite.png);
+  background-position:-72px 0px;
+  background-repeat:no-repeat;
+  width:26px;
+  height:21px;
+  cursor:pointer;
+}
+.divSubMasterPageouter
+{
+   min-width:982px; width:100%; height:auto; margin-top:2px; margin-bottom:10px; float:left;
+}
+.divSubMasterPageinner{width:982px;}
+.pagetop{background-image:url('../images/Corners_top.gif'); background-repeat:no-repeat;  display:inline-block; width:985px;  height:10px;   float:left;}
+.dvcontentpages{width:982px; background-color:White; float:left; height:auto; min-height:520px;}
+.pagebottom{ width:982px; height:10px; float:left; background-image  :url('../images/Corners_bottom.gif'); display:inline-block; background-repeat:no-repeat; }
+.divTitle
+{
+    margin-left:15px;
+    margin-top:6px;
+	height:30px;
+	float:left;
+	width:550px;
+	font-family:Arial;
+	font-size: 24px;
+	font-weight:bold;
+	text-align:left;
+	vertical-align:middle;
+}
+.pageHeader
+{
+	width:982px;
+	height:45px;
+	
+}
+.PageHeaderLine{border-top:solid 4px #FBB544;width:968px;height:4px; margin-top:5px; margin-left:14px;}
+.PageContent{width:960px; float:left; height:auto; min-height:450px; text-align:left; margin-left:10px;}
+/* ---------------------------Search Area Start -----------------------------*/
+.lefthedr{ float:right; padding-right:15px; display:none;}
+ .divSearchBox
+{
+    margin-top:6px;
+	height:30px;
+	float:right;
+	width:390px;
+}
+ .post-search
+ {
+ 	height:22px;
+	width:235px; 
+	border:1px solid #bbb;
+	float:left;
+	margin:0px; padding:0px;
+	font-family:Arial, Verdana, Sans-Serif, Helvetica;	
+ }
+ .post-search span.spntxtSearch
+ {
+	
+ 	float:left; height:17px; padding: 2px 0px 0px 5px; color:Gray;
+ }
+ .post-search input#txtSearchPost
+ {
+ 	height:17px; border: 1px solid #fff; text-align:left; min-width:140px; width:170px;
+ }
+ 
+ .post-search input#txtPostSearch
+ {
+ 	height:17px; border: 1px solid #fff; text-align:left; min-width:130px; width:160px;
+ }
+ .post-search span.spnSearch
+ {
+	float:left; padding: 6px 0px 0px 2px;
+ }
+ .post-search div.imgSearch
+ {
+	background-image:url('../images/icn_search.png');
+	background-repeat:no-repeat;
+	border:0px;
+	background-color:white;
+	width:12px;
+	height:12px;
+ }
+ 
+
+ .post-search div.arrowSearch
+ {
+	width: 40px; height: 21px; border-left:1px solid #DFE2E5; vertical-align: top; float: right; margin-right:0px; margin-top: 0px; text-align:center; background-color:#F2F7FC; padding-top:1px;
+ }
+  .post-search div.arrowSearch span.moveBack
+ {
+	width: 20px; height: 21px; padding-right:5px; cursor:pointer; color:#415E91; font-weight:bold;  border-right:1px solid #DFE2E5;
+ }
+   .post-search div.arrowSearch span.moveNext
+ {
+	width: 20px;  height: 21px; cursor:pointer; padding-left:5px; color:#415E91; font-weight:bold;
+ }
+ .post-search div.clearSearch
+ {
+	width: auto; height: 15px; font-size:smaller; display: inline-block; vertical-align: top; float: right; color:#B2B2B2; margin-right: 2px; margin-top: 3px;  display:none; text-align:right;
+ }
+ /*  Search Button */
+ .btnSearch
+ {
+     margin-left:-4px;
+     float:left;
+     }
+ 
+.btnSearch span
+{
+	margin-left:1px;
+    background-image:url('../images/iNAC_sprite.png');    
+	background-position:1px -269px;
+	width:64px; height:24px;
+	color:White;
+	float:left;
+	margin-top:0px;
+	cursor:pointer;
+}
+/* Manual List Table   */
+.OpenTopic{font-family:Arial; font-size:16px; padding-left:10px;  color: #537A9B; display:none;}
+.OpenTopicMouseOverClass{font-family:Arial; font-size:16px; padding-left:10px;  color: #537A9B; display:none; text-decoration: underline; cursor:pointer;}
+.tblModuleList{ width:100%; height:auto;}
+.trModuleList{  width:100%; height:32px; border-bottom: #D0D0D0 thin solid; }
+.ModuleRow{width:auto; display: inline-block; padding-top:8px; }
+.tblTopicList{ width:100%; height:auto; display:none;}
+.tblTopicDetail{ width:100%; height:auto; display:none; padding-left:10px;}
+.trList{  width:100%; height:32px; border-bottom: #D0D0D0 thin solid; }
+.divRow{width:auto;display: inline-block; padding-top:8px; }
+.Title{font-family:Arial, Verdana, Sans-Serif, Helvetica;	 font-size:14px; padding-left:6px; color: #537A9B; }
+.MouseOverClass {font-family:Arial, Verdana, Sans-Serif, Helvetica;	font-size:14px; padding-left:6px; color: #0080cc;  text-decoration: underline; cursor:pointer; }
+.highlight {
+      background: yellow;
+      text-decoration: underline;
+    }
+.selectedhighlight {
+      background: orange;
+      text-decoration: underline;
+    }

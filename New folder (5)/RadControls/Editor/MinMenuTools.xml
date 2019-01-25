@@ -1,0 +1,35 @@
+<root>
+  <modules>
+    <module name="RadEditorStatistics" dockingZone="Bottom" enabled="true" visible="true" dockable="false" />
+  </modules>
+
+  <tools name="MainToolbar" dockable="false" enabled="true" >
+    <tool name="AjaxSpellCheck" shortcut="F7"/>
+    <tool name="ForeColor" />
+    <tool name="BackColor"/>
+    <tool separator="true"/>
+    <tool name="FontName"/>
+    <tool name="RealFontSize"/>
+  </tools>
+
+  <tools enabled="true" dockable="false">
+    <tool name="Bold" shortcut="CTRL+B"/>
+    <tool name="Italic" shortcut="CTRL+I"/>
+    <tool name="Underline" shortcut="CTRL+U"/>
+    <tool name="StrikeThrough" />
+  </tools>
+
+  <tools enabled="true" dockable="false">
+    <tool name="JustifyLeft" />
+    <tool name="JustifyCenter" />
+    <tool name="JustifyRight" />
+    <tool name="JustifyFull" />
+    <tool name="JustifyNone" />
+  </tools>
+
+  <tools enabled="true" dockable="false">
+    <tool name="InsertOrderedList" />
+    <tool name="InsertUnorderedList"/>
+  </tools>
+  
+</root>

@@ -1,0 +1,76 @@
+﻿BODY
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Arial
+}
+.ReportName
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14pt;
+    FONT-FAMILY: Arial
+}
+.CompanyName
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    FONT-FAMILY: Arial
+}
+.Date
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial
+}
+.TableHeading
+{
+    BORDER-TOP: #000000 1px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Arial
+}
+
+
+.TableRow
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial
+}
+.ReportingPeriod
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt
+}
+.DetailTitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial
+}
+.DetailText
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial
+}
+.DetailSubject
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    FONT-FAMILY: Arial
+}
+
+.SubTotalHeading
+{
+    BORDER-TOP: #000000 1px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial
+}
+
+.TotalRow
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    BORDER-BOTTOM: #000000 5px double;
+    FONT-FAMILY: Arial;
+}

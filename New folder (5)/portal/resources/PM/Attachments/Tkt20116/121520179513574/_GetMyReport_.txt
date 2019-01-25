@@ -1,0 +1,43 @@
+USE [Portal_QA]
+GO
+/****** Object:  StoredProcedure [dbo].[GetMyReport]    Script Date: 9/20/2017 5:45:16 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+ALTER PROCEDURE [dbo].[GetMyReport] 
+	@UserID AS INT
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for procedure here
+	SELECT  ID ,
+        ReportName ,
+		CreatedDate,
+        CreatedBy ,
+        Query
+FROM    dbo.Reports_New
+WHERE   CreatedBy = @UserID
+UNION
+SELECT  ReportID ,
+        ( SELECT    ReportName
+          FROM      dbo.Reports_New
+          WHERE     ID = ReportID
+        ) ,
+		CreatedOn,
+        UserID ,
+        ReportQuery
+FROM    dbo.PM_Report_Share
+WHERE   UserID = @UserID     
+AND ReportQuery IS NOT NULL
+
+
+
+END
+

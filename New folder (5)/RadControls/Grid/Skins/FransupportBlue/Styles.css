@@ -1,0 +1,241 @@
+/* Telerik RadGrid FransupportBlue skin */
+
+.RadGrid_FransupportBlue
+{
+	border:0px solid #eaf2fd;
+}
+
+.RadGrid_FransupportBlue,
+.RadGrid_FransupportBlue table,
+.GridFilterMenu_FransupportBlue table
+{
+	font: normal 8pt Arial;
+}
+
+.MasterTable_FransupportBlue
+{
+    border-collapse: separate !important;
+	border-left: 0px solid red;
+	border-right: 0px solid red;
+	background: white;
+	/*-moz-user-select: none;*/ /*disables text selecting in Firefox to combat unpleasant visual appearance*/
+}
+
+.MasterTable_FransupportBlue th
+{
+	padding:2px 2px 2px;
+	 
+}
+.MasterTable_FransupportBlue td
+{
+	padding:3px 4px 0px 4px;
+}
+
+.GridRow_FransupportBlue .ResizeItem,
+.GridAltRow_FransupportBlue .ResizeItem
+{
+	border-bottom: 1px solid #c0d2e4;
+	border-right: 1px solid #c0d2e4;
+	background: #e4ecf7;
+}
+
+.GridHeader_FransupportBlue,
+.ResizeHeader_FransupportBlue
+{
+  color : black;
+   height:10px;
+   text-align:left;
+   background-color:#BADCFC;
+   position: relative;
+   border-top:1px solid #ACBDD5; 
+   top:expression(eval(this.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.scrollTop));
+}
+.GridHeader_FransupportBlue,
+.ResizeHeader_FransupportBlue th /*newly added*/
+{
+   color:#52789C;
+   font-size:11px;
+   font-weight:bold;
+   padding-left:0.5em;
+   background-image: url('../../images/bg_toolbar.jpg');
+   background-repeat:no-repeat;
+   cursor:default;
+ }
+
+.GridHeader_FransupportBlue a
+{
+	color: #52789C;
+	cursor:pointer ;
+}
+
+.GridRow_FransupportBlue td,
+.GridAltRow_FransupportBlue td
+{
+	border-bottom:1px solid #C9EAFC;
+    padding-left:4px;
+    font-size:8pt;
+	cursor:pointer;
+	border-right: solid 0px #f1efe9;
+	
+}
+
+.SelectedRow_FransupportBlue,
+.GridEditRow_FransupportBlue
+{
+	background: #ffffe1;
+	height: 22px;
+}
+.SelectedRow_FransupportBlue td,
+.GridEditRow_FransupportBlue td
+{
+	border-right: solid 1px #ffffe1;
+	border-bottom: solid 1px #f1efe9;
+}
+
+.GridEditRow_FransupportBlue input
+{
+	font-size: 8pt;
+}
+
+.ActiveRow_FransupportBlue
+{
+	background: #f3f7f9;
+	height: 22px;
+}
+.ActiveRow_FransupportBlue td
+{
+	padding:0 0px;
+	background-color:Green;  
+}
+
+.GridPager_FransupportBlue td
+{
+	color: #242500;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left: 4px;
+	border-bottom: 1px solid #b3c5e1;
+	border-top: solid 1px #f1efe9;
+	
+}
+
+.GridPager_FransupportBlue a
+{
+	color: #242500;
+}
+
+.GroupPanel_FransupportBlue
+{
+	background: #ecf5ff url('Img/GroupPanel.gif') repeat-x;
+	height: 24px;
+	border-collapse: collapse;
+	border: solid 1px #d0e6f3;
+	width: 100%;
+	margin-bottom: 3px;
+}
+
+.GroupPanel_FransupportBlue td
+{
+	padding-left: 2px;
+	
+}
+
+.GroupPanel_FransupportBlue Table Table
+{
+	border-collapse: collapse;
+	border: 0;
+}
+
+.GroupPanelItems_FransupportBlue
+{
+	color: #7797c7;
+	border: solid 1px #c3d9f9;
+	background: #f1f8ff;
+}
+
+.GroupHeader_FransupportBlue
+{
+	background: #f1efe9;
+}
+
+.GroupHeader_FransupportBlue td div div
+{
+	top:-0.5em;
+}
+
+.GroupHeader_FransupportBlue td div div div
+{
+	top:0;
+}
+
+.GridCommandRow_FransupportBlue a
+{
+	color:#244272;
+}
+
+.TopReorderIndicator_FransupportBlue
+{
+	background: url('MoveDown.gif') no-repeat;
+}
+
+.BottomReorderIndicator_FransupportBlue
+{
+	background: url('MoveUp.gif') no-repeat;
+}
+
+.GridFilterMenu_FransupportBlue
+{
+    cursor:default;
+}
+
+.GridFilterMenu_FransupportBlue .GridFilterMenuSelectColumn_FransupportBlue,
+.GridFilterMenu_FransupportBlue .GridFilterMenuTextColumn_FransupportBlue
+{
+	padding:3px 4px;
+}
+
+.GridFilterMenu_FransupportBlue .GridFilterMenuSelectColumn_FransupportBlue
+{
+    background:#edf6ff;
+    text-align:center;
+}
+
+.GridFilterMenu_FransupportBlue .GridFilterMenuTextColumn_FransupportBlue
+{
+    background:#fff;
+    color:#333;
+}
+
+.GridFilterMenu_FransupportBlue .GridFilterMenuHover_FransupportBlue
+{
+    background:#3081cc;
+    color:#fff;
+}
+
+/*AJAX Loading*/
+
+.GridLoadingTemplate_FransupportBlue
+{
+	background:#fff !important;
+	font:normal 24px/54px arial,sans-serif;
+	color:#146bae;
+}
+
+/* rtl support */
+
+.RadGridRTL_FransupportBlue td
+{
+    text-align:right;
+}
+
+.RadGridRTL_FransupportBlue .GridHeader_FransupportBlue,
+.RadGridRTL_FransupportBlue .ResizeHeader_FransupportBlue
+{
+	padding-left:4px;
+	padding-right:5px;
+}
+
+.RadGridRTL_FransupportBlue .GridPager_FransupportBlue span
+{
+    float:none !important;
+}

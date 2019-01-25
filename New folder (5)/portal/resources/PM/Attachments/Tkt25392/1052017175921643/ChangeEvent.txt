@@ -1,0 +1,83 @@
+    debugger;
+            var id = container.id;
+            var RoleID = container.data;
+            var UserID = container.value;
+            var txt = $("#ResourcesGrid_ctl07_txtResourceSearchBox").val()
+            var Option = $("#" + id + " :selected").text()
+            var hiddenRole = document.getElementById('<%= hdnRoleId.ClientID %>');
+            if(hiddenRole){
+                hiddenRole.value = RoleID;
+            }
+            //alert("Role Id: " + RoleID + "Hidden Role Id: " + hiddenRole.value);
+            //$("input[id=hndRoleId]").val(RoleID)
+            //$("#hndRoleId").val(RoleID)
+            //alert($('#hndRoleId').val())
+            var hiddenOption = document.getElementById('<%= hndOption.ClientID %>');
+            if(hiddenOption){
+                hiddenOption.value = Option;
+            }
+            //$("input[id=hdnOption]").val(Option)
+            //$("#hdnOption").val(Option)
+            //alert($('#hdnOption').val())
+            if(RoleID=="1"){
+                var html = "<span style='font-size:13px;' id= span" + UserID + " >" + Option + "<img id =" + UserID + " data =" + RoleID + " src='../images/icn_cross.png' style='padding-left:8px;width:13px;'  class='imgcross' onclick='RemoveOwner(this)' /></span> <br>"
+                $("#" + container.id).parent().children("span").append(html);
+            }
+            else{
+               
+                $("#" + container.id).parent().children("span").val("");
+                //$("#" + container.id).parent().children("span").text= Option + "<img id =" + UserID + " data =" + RoleID + " src='../images/icn_cross.png' style='padding-left:8px;width:13px;'  class='imgcross' onclick='RemoveOwner(this)' />" ;
+            }
+            if (RoleID != undefined) {
+                //if (RoleID !=1){
+                //    $('#'+id).css("disabled","disabled");
+                //}
+                if (listOfAddedItem == null) {
+                    listOfAddedItem = RoleID + "," + UserID;
+                    $("#listOfAddedItem").val(listOfAddedItem);
+                
+                }
+                else {
+                    listOfAddedItem = listOfAddedItem + "|" + RoleID + "," + UserID;
+                    $("#listOfAddedItem").val(listOfAddedItem);
+                }
+                <%
+        Dim x = New System.Collections.Generic.KeyValuePair(Of String, String)(hdnRoleId.Value, hndOption.Value)
+        If (ListOfResourcesKeyValues Is Nothing) Then
+            ListOfResourcesKeyValues = CType(ViewState("ListOfResourcesKeyValues"), System.Collections.Generic.List(Of System.Collections.Generic.KeyValuePair(Of String, String)))
+        End If
+        ListOfResourcesKeyValues.Add(x)
+        ViewState("ListOfResourcesKeyValues") = ListOfResourcesKeyValues
+                %>
+
+            return true;
+            }
+
+       var fhdn = document.getElementById('<%= (CType(ResourcesGrid.FooterRow.FindControl("hdnResourceSearchBox"), HiddenField)).ClientID %>').id;
+            var val = $("#" + fhdn).val();
+            if (val != 0) {
+                if (listOfAddedItem == null) {
+                    listOfAddedItem = val + "," + UserID;
+                    $("#listOfAddedItem").val(listOfAddedItem);
+                }
+                else {
+                    listOfAddedItem = listOfAddedItem + "|" + val + "," + UserID;
+                    $("#listOfAddedItem").val(listOfAddedItem);
+                }
+            }
+            else {
+           var ftextbox = document.getElementById('<%= (CType(ResourcesGrid.FooterRow.FindControl("txtResourceSearchBox"), TextBox)).ClientID %>').id 
+                var txtResourceSearchBox = $("#" + ftextbox).val();
+                if (AddedResource==null)
+                {
+                    AddedResource = UserID;
+                }
+                else
+                {
+                    AddedResource = AddedResource + "," +UserID;
+                }
+             
+                $("#AddedResource").val(AddedResource);
+            }
+       
+            return true;

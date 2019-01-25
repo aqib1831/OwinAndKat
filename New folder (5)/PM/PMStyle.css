@@ -1,0 +1,128 @@
+﻿#divDisable
+        {
+            display: none;
+            z-index: 09;
+            width: 0;
+            height: 0;
+            position: absolute;
+            filter: progid:DXImageTransform.Microsoft.alpha(opacity=50);
+            opacity: 0.5;
+        }
+        #progress
+        {
+            display: none;
+            border: 0px solid black;
+            position: absolute;
+            left: 25%;
+            top: 30%;
+            z-index: 100;
+        }
+        .WhtLine
+        {
+            border-bottom: solid 1px white;
+            height: 1px;
+        }
+        .WhtLine img
+        {
+            height: 1px;
+            width: 1px;
+            src: url('../../images/spacer.gif');
+        }
+        .tblNewNote
+        {
+            border: solid 2px #6B9AD2;
+        }
+        .bgLightBlue
+        {
+            background: #A1CCEE;
+        }
+        .bgSteelBlue
+        {
+            background: #E4F2F5;
+        }
+        .bdrB2pxDarkBlue
+        {
+            border-bottom: solid 2px #6B9AD2;
+        }
+        .bdrT2pxDarkBlue
+        {
+            border-top: solid 2px #6B9AD2;
+        }
+        .Required
+        {
+            font-family: Arial, Verdana, Sans-Serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: Red;
+        }
+        .btnAttachFile
+        {
+            padding: 1px 5px 1px 5px;
+            border: solid 1px #6D97C7;
+            background: #D2E7F8;
+            color: #517188;
+        }
+        .hdng_Small
+        {
+            font-family: Arial, Verdana, Sans-Serif;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .hdng_Radio
+        {
+            font-family: Arial, Verdana, Sans-Serif;
+            font-size: 12px;
+            padding: 0px;
+            margin: 0px;
+        }
+        .ddlNormal
+        {
+            font-family: Arial, Verdana, Sans-Serif;
+            font-size: 12px;
+        }
+        
+    .tblDueDate
+	{
+		border:solid 1px #7097D2;
+	}
+	.bgHdrDueDate
+	{
+		background:#A1CCEE;
+		padding:2px 0 2px 0; 
+	}
+	.bgContentDueDate
+	{
+		background:#D9EAFA;
+	}
+	.bdrB1pxDueDate
+	{
+		border:solid 1px #7097D2;
+	}	
+	.lblNormal
+	{
+		font-family:Arial, Verdana, Sans-Serif; font-size:12px; 
+	}
+	.hdng_Radio
+	{
+		font-family:Arial, Verdana, Sans-Serif; font-size:12px;
+		padding:0px; margin:0px; 
+	}	
+	.padT5B5
+	{
+	 	padding:5px 0px 5px 0px;
+	}
+	.grayNote
+	{
+		font-family:Arial, Verdana, Sans-Serif; font-size:11px;
+		color:#5C6672;
+	}
+	.txtDueDateReason
+	{
+		border:solid 1px #689CCB;
+		color:#000; font-family:Arial, Verdana, Sans-Serif; font-size:11px;
+	}
+	.bdrbWhite td
+	{
+		border-bottom:solid 1px white;
+	}
+	
