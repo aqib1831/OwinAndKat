@@ -1,0 +1,75 @@
+
+.body { font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+
+#contents-wrapper { background:#E0F2DA url(../images/career/admin-con-sec-bg.jpg) left top repeat-x; padding:20px 30px; border:2px solid #7993B6;}
+.contents { width:100%;margin:0 auto;}
+
+h3 { margin:0px 0px 10px 0px; padding:0px; font-size: 16px; font-weight: bold; }
+
+p { padding: 0; margin:0px; display: block; }
+
+ul {  margin:5px 0; padding:0px; list-style: none; }
+ul li { margin: 10px 0px 5px -5px; padding: 0 0 0 20px; background: url(../images/career/arrow.png) left 7px no-repeat; }
+ul li ul li { margin: 10px 0px 5px 0; padding: 0 0 0 20px; background: url(../images/career/arrow.png) left 7px no-repeat;   }
+
+.mainItem { width: 650px; padding:5px;line-height:16px;height:28px; }
+.subItem { width: 630px; padding:5px;line-height:16px;height:28px; }
+
+textarea { width: 700px; padding:5px; height:100px; overflow:auto; line-height: 18px; }
+fieldset { border: 0px solid #ccc; margin:0 0 25px 0; padding:0; }
+legend { margin:0px; padding:0px 10px; display:inline-block; }
+
+.textBox { border: 1px solid #7993B6; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #333 }
+
+.controls { margin: 10px 0 0 15px; display:block; }
+a, img { border: 0; outline:0 }
+
+.location { display:inline-block; width: 250px; }
+p input.checkBox, p label.label { vertical-align: middle;font-family: Arial, Helvetica, sans-serif; font-size: 14px;  }
+
+p.submit-btn-container { text-align:center; width:100%; }
+
+.required { color: #BF0000; }
+
+#jobTitle{
+	 width: 700px;
+	 color: #777;
+	 font-size: 18px;
+	 font-weight: normal;
+    height:30px;  
+    line-height:25px;  
+}
+.IdeaTitle
+{
+	font-family:Sans-Serif, Arial, Verdana, Helvetica;	
+	margin-top:6px;
+	margin-left:5px;
+	font-size:14px;
+	font-weight:bold;
+	color:#000000;	
+	float:left;	
+}
+.bSave{cursor:pointer;width:80px;height:25px;}
+.bCancel{cursor:pointer;width:80px;height:25px;}
+.ValidationErrors {
+	color:#F00;
+	font-size: 12px !important;
+	position: relative;
+	display:block;
+	margin: 5px 0 0 0;
+	
+}
+.ProgressIndicatorDIV
+{
+	filter:Alpha(Opacity=90);
+	-moz-opacity:0.9;
+	bottom:30px;
+	right:25px;
+	width:15%;
+	border:3px solid #4C86AC;
+	border-left:0;
+	border-right:0; 
+	background-color:#DEEFFE;
+	position:absolute;
+	text-align:center;
+}

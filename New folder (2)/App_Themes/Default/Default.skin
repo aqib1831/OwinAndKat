@@ -1,0 +1,374 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+
+
+--%>
+
+<asp:Image runat="server" SkinID="ErrorMessageImage" ImageUrl="~/images/icn_err.gif" />
+<asp:DropDownList SkinID="SmallTextCombo" runat="server" Font-Size="11px" Font-Names="Arial" />
+<asp:TextBox runat="server" SkinID="GreenSmallTextbox" CssClass="SmallGreenTextBox" />
+<asp:TextBox runat="server" SkinID="GreenMultilineTextbox" style=" border:1px solid #50AF43; font:8pt Arial; padding-top: 1px; padding-left: 3px;	vertical-align:text-bottom; " />
+<asp:RegularExpressionValidator runat="server" Font-Bold="false" Font-Size="10px" />  
+<asp:RequiredFieldValidator runat="server" Font-Bold="false" Font-Size="10px" SkinID="RequiredFieldValidation" />
+<asp:CompareValidator runat="server" Font-Bold="false" Font-Size="10px" SkinID="CompareValidation" />
+<asp:CompareValidator runat="server" Font-Bold="false" Font-Size="10px" />
+<asp:CustomValidator runat="server" Font-Bold="false" SkinID="NewContact" Font-Size="10px" />
+<asp:CustomValidator runat="server" Font-Bold="false"  Font-Size="10px" />
+<asp:RequiredFieldValidator  runat="server" Font-Bold="true"  Font-Size="10px"  />
+<asp:RadioButtonList  SkinID="SmallTextRadioButton"  Font-Size="10px" Font-Names="Arial"  runat="server"  RepeatDirection="Horizontal" />
+<asp:GridView 
+    runat="server" 
+    BorderWidth="0"
+    Width="100%"
+    AllowPaging="true" 
+    PageSize="100"
+    AllowSorting="true" 
+    BackColor="white" 
+    CssClass="GView" 
+    SkinId="GridViewNormal"  >
+    <FooterStyle CssClass="SimpleExSmall" />
+    <HeaderStyle CssClass="FloatingHeader" />
+    <RowStyle CssClass="GridRowClickable" />
+    <PagerStyle CssClass="FloatingPager" />
+    <PagerSettings Mode="Numeric" PageButtonCount="15" Position="Bottom" />
+    <EmptyDataTemplate>         
+       <div id="divInfo" style="position: absolute; width:200px; height:50px; left:32%; top:38%;" class="MessageDiv"> 
+             <table width="100%" border="0" cellpadding="0" cellspacing="0" style="height:50px">                                                   
+                <tr>
+                    <td style="width:5%;" >&nbsp;</td>
+                    <td align="right" valign="middle" style="width:25%;">
+                        <div style="text-align:right;">
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/images/ico_alert.gif" />&nbsp;&nbsp; 
+                        </div>
+                    </td>
+                    <td nowrap="nowrap" align="left" valign="middle" id="divMessage" style="width:75%;">&nbsp;No Record Found !</td>
+                </tr>
+             </table>
+        </div>  
+  </EmptyDataTemplate>
+</asp:GridView>
+
+ <asp:GridView 
+    runat="server" 
+    BorderWidth="0"
+    Width="100%"
+    AllowPaging="true"    
+    AllowSorting="true" 
+    BackColor="white" 
+    CssClass="GView" 
+    SkinId="GridViewWithOutPaging" >
+    <FooterStyle CssClass="SimpleExSmall" />
+    <HeaderStyle CssClass="FloatingHeader" />
+    <RowStyle CssClass="GridRowClickable" />
+    <PagerStyle CssClass="FloatingPager" />
+    <PagerSettings Mode="Numeric" PageButtonCount="15" Position="Bottom" />
+    <EmptyDataTemplate>         
+       <div id="divInfo" style="position: absolute; width:200px; height:50px; left:32%; top:38%;" class="MessageDiv"> 
+             <table width="100%" border="0" cellpadding="0" cellspacing="0" style="height:50px">                                                   
+                <tr>
+                    <td style="width:5%;" >&nbsp;</td>
+                    <td align="right" valign="middle" style="width:25%;">
+                        <div style="text-align:right;">
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/images/ico_alert.gif" />&nbsp;&nbsp; 
+                        </div>
+                    </td>
+                    <td nowrap="nowrap" align="left" valign="middle" id="divMessage" style="width:75%;">&nbsp;No Record Found !</td>
+                </tr>
+             </table>
+        </div>  
+  </EmptyDataTemplate>
+</asp:GridView>
+
+<asp:GridView 
+    runat="server" 
+    BorderWidth="0"
+    Width="100%"
+    AllowPaging="true" 
+    PageSize="10000"
+    AllowSorting="true" 
+    BackColor="white" 
+    CssClass="rptGView"
+    SkinId="gvReports" >
+    <FooterStyle CssClass="rptSimpleExSmall" />
+    <HeaderStyle CssClass="rptFloatingHeader" />
+    <RowStyle CssClass="rptGridRowClickable" />
+    <PagerStyle CssClass="rptFloatingPager" />
+    <PagerSettings Mode="Numeric" PageButtonCount="15" Position="Bottom" />
+    <EmptyDataTemplate>
+        <div class="EmptyreportgridDIV" style="position: absolute; width:200px; height:18%; left:37%; top:12%;"  >
+            <br />
+            <asp:Image ID="Image2" runat="server" ImageUrl="~/images/icn_info.gif" ImageAlign="AbsMiddle" />                     
+            &nbsp;<span class="NonBold">No Data Found!</span>
+            <br /><br /> 
+        </div>    
+    </EmptyDataTemplate>
+</asp:GridView>
+
+<asp:GridView 
+    runat="server" 
+    BorderWidth="0"
+    Width="100%"
+    AllowPaging="false"    
+    AllowSorting="true" 
+    BackColor="white" 
+    CssClass="GView" 
+    SkinId="GridViewNoPaging" >
+    <FooterStyle CssClass="SimpleExSmall" />
+    <HeaderStyle CssClass="FloatingHeader" />
+    <RowStyle CssClass="GridRowClickable" />
+    <EmptyDataTemplate>         
+       <div id="divInfo" style="position: absolute; width:200px; height:50px; left:32%; top:38%;" class="MessageDiv"> 
+             <table width="100%" border="0" cellpadding="0" cellspacing="0" style="height:50px">                                                   
+                <tr>
+                    <td style="width:5%;" >&nbsp;</td>
+                    <td align="right" valign="middle" style="width:25%;">
+                        <div style="text-align:right;">
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/images/ico_alert.gif" />&nbsp;&nbsp; 
+                        </div>
+                    </td>
+                    <td nowrap="nowrap" align="left" valign="middle" id="divMessage" style="width:75%;">&nbsp;No Record Found !</td>
+                </tr>
+             </table>
+        </div>  
+  </EmptyDataTemplate>
+</asp:GridView>
+<asp:GridView 
+    runat="server" 
+    BorderWidth="0"
+    Width="100%"
+    AllowPaging="true" 
+	PageSize="30"
+    AllowSorting="true" 
+    BackColor="white" 
+    CssClass="gvwSilver" 
+    SkinId="gvwSilver"
+    AlternatingRowStyle-CssClass="altRow" >
+    <FooterStyle CssClass="gvwSilverFooter" />
+    <PagerStyle CssClass="gvwSilverPager" />
+    <HeaderStyle CssClass="gvwSilverHeader" />        
+    <PagerSettings Mode="NextPreviousFirstLast" Position="Bottom" />
+    <EmptyDataTemplate>
+      <table class="NoRecord">
+            <tr>                            
+                <td>
+                    <img align="absmiddle" src="../images/ico_alert.gif" />&nbsp;&nbsp;No Record Found !
+                </td>
+            </tr>
+         </table> 
+  </EmptyDataTemplate>
+</asp:GridView>
+<asp:GridView 
+    runat="server" 
+    BorderWidth="0"
+    Width="100%"
+    AllowPaging="false"     
+    AllowSorting="true" 
+    BackColor="white" 
+    CssClass="gvwSilver" 
+    SkinId="gvwSilverWithNoPaging"
+    AlternatingRowStyle-CssClass="altRow" >
+    <FooterStyle CssClass="gvwSilverFooter" />
+    <PagerStyle CssClass="gvwSilverPager" />
+    <HeaderStyle CssClass="gvwSilverHeader" />
+    <EmptyDataTemplate>
+      <table class="NoRecord">
+            <tr>                            
+                <td>
+                    <img id="imgAlert" align="absmiddle" src="../images/ico_alert.gif" />&nbsp;&nbsp;No Record Found !
+                </td>
+            </tr>
+         </table> 
+  </EmptyDataTemplate>
+</asp:GridView>
+<asp:GridView 
+    runat="server" 
+    BorderWidth="0"
+    Width="100%"
+    AllowPaging="true" 
+    PageSize="50"
+    AllowSorting="true" 
+    BackColor="white" 
+    CssClass="gvwSilverTemp" 
+    SkinId="gvwSilverTemp"
+    AlternatingRowStyle-CssClass="altRow" >
+    <FooterStyle CssClass="gvwSilverFooter" />
+    <PagerStyle CssClass="gvwSilverPager" />
+    <HeaderStyle CssClass="gvwSilverHeader" />        
+    <PagerSettings Mode="NextPreviousFirstLast" Position="Bottom" />
+    <EmptyDataTemplate>
+      <table class="NoRecord">
+            <tr>                            
+                <td>
+                    <img align="absmiddle" src="../images/ico_alert.gif" id="imgAlert" />&nbsp;&nbsp;No Record Found !
+                </td>
+            </tr>
+         </table> 
+  </EmptyDataTemplate>
+</asp:GridView>
+
+<asp:GridView 
+    runat="server" 
+    BorderWidth="0"
+    Width="100%"
+    PageSize="50"
+    AllowPaging="true"    
+    AutoGenerateColumns="False"    
+    AllowSorting="true" 
+    BackColor="white" 
+    CssClass="GView" 
+    SkinId="GridViewWithPaging" >
+    <FooterStyle CssClass="SimpleExSmall" />
+    <HeaderStyle CssClass="FloatingHeader" />
+    <RowStyle CssClass="GridRowClickable" />
+    <PagerStyle CssClass="FloatingPager" />
+    <PagerSettings Mode="Numeric" PageButtonCount="15" Position="Bottom" />
+     <PagerTemplate>
+			<div style="width:100%; border:0px black solid;" >
+				<table width="100%" border="0" cellpadding="0" cellspacing="0"  style="height:20px;">
+					<tr style="text-align:left;">
+							<td style="width:20%; white-space:nowrap;" align="left"  valign="middle" >
+								<span class="DarkBlueTextSmall" style="font-size:10px" >&nbsp; Page <asp:Literal id="litPageNumber" runat="server"/> of <asp:Literal id="litTotalPages"  runat="server"/></span>
+							</td>
+							<td style="width:10px; " align="right" ><img alt="" src="../images/spacer.gif" width="15" height="1" align="absmiddle" /></td>
+							<td style="width:1px; " align="center"><img alt="" src="../images/pixel_darkBlue.jpg" width="1" height="20" align="absmiddle" /></td>
+							<td style="width:10px;" align="right"><img alt="" src="../images/spacer.gif" width="15" height="1" align="absmiddle" /></td>
+							<td align="right" valign="top"><asp:Panel ID="pnlNumber" runat="server" HorizontalAlign="Right"  ></asp:Panel> </td>
+						</tr>										
+				</table>
+			</div>
+		</PagerTemplate>
+    <EmptyDataTemplate>         
+       <div id="divInfo" style="position: absolute; width:200px; height:50px; left:32%; top:38%;" class="MessageDiv"> 
+             <table width="100%" border="0" cellpadding="0" cellspacing="0" style="height:50px">                                                   
+                <tr>
+                    <td style="width:5%;" >&nbsp;</td>
+                    <td align="right" valign="middle" style="width:25%;">
+                        <div style="text-align:right;">
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/images/ico_alert.gif" />&nbsp;&nbsp; 
+                        </div>
+                    </td>
+                    <td nowrap="nowrap" align="left" valign="middle" id="divMessage" style="width:75%;">&nbsp;No Record Found !</td>
+                </tr>
+             </table>
+        </div>  
+  </EmptyDataTemplate>
+</asp:GridView>
+
+
+
+<asp:GridView 
+    runat="server" 
+    BorderWidth="0"
+    Width="100%"
+    AllowPaging="true" 
+    PageSize="20"
+    AllowSorting="true" 
+    BackColor="white" 
+    CssClass="gvwWhite" 
+    SkinId="gvwSilverHelpDesk2"
+    AlternatingRowStyle-CssClass="altRow">
+    <FooterStyle CssClass="gvwSilverFooter" />
+	<HeaderStyle CssClass="gvwSilverHeader" />
+    <PagerStyle CssClass="gvwSilverPager" />    
+    <PagerSettings Mode="NextPreviousFirstLast" Position="Bottom" />
+       <PagerTemplate>
+                                                        <table id="tblPager" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td style="border: 0; width: 82%;">
+                                                                    Showing Activities
+                                                                    <asp:Literal ID="ltrlStartCount" runat="server" Text="0"></asp:Literal>
+                                                                    to
+                                                                    <asp:Literal ID="ltrlEndCount" runat="server" Text="0"></asp:Literal>
+                                                                    of
+                                                                    <asp:Literal ID="ltrlTotalCount" runat="server" Text="0"></asp:Literal></td>
+                                                                <td style="border: 0;" align="right">
+                                                                    Page&nbsp;<asp:Literal ID="ltrlStartPage" runat="server" Text="0"></asp:Literal>
+                                                                    of
+                                                                    <asp:Literal ID="ltrlLastPage" runat="server" Text="0"></asp:Literal>&nbsp;
+                                                                    <asp:LinkButton ID="lnkBtnFirst" runat="server" CommandName="page" CommandArgument="first">
+                                                                        <asp:Image ID="imgFirst" runat="server" ImageUrl="../images/First_blk.jpg" ToolTip="First" /></asp:LinkButton>&nbsp;
+                                                                    <asp:LinkButton ID="lnkBtnPrevious" runat="server" CommandName="page" CommandArgument="prev">
+                                                                        <asp:Image ID="imgPrevious" runat="server" ImageUrl="../images/back_blk.jpg"
+                                                                            ToolTip="Previous" /></asp:LinkButton>&nbsp;
+                                                                    <asp:LinkButton ID="lnkBtnNext" runat="server" CommandName="page" CommandArgument="next">
+                                                                        <asp:Image ID="imgNext" runat="server" ImageUrl="../images/Next_blk.jpg" ToolTip="Next" /></asp:LinkButton>&nbsp;
+                                                                    <asp:LinkButton ID="lnkBtnLast" runat="server" CommandName="page" CommandArgument="last">
+                                                                        <asp:Image ID="imgLast" runat="server" ImageUrl="../images/Last_blk.jpg" ToolTip="Last" /></asp:LinkButton>&nbsp;</td>
+                                                            </tr>
+                                                        </table>
+                                                    </PagerTemplate>
+    <EmptyDataTemplate>
+       <table class="NoRecord">
+            <tr>                            
+                <td>
+                    <img align="absmiddle" src="../images/ico_alert.gif" />&nbsp;&nbsp;No Record Found !
+                </td>
+            </tr>
+         </table> 
+  </EmptyDataTemplate>
+</asp:GridView>
+
+
+<asp:GridView 
+    runat="server" 
+    BorderWidth="0"
+    Width="100%"
+    AllowPaging="true" 
+    PageSize="20"
+    AllowSorting="true" 
+    BackColor="white" 
+    CssClass="gvwWhite" 
+    SkinId="gvwSilverHelpDesk3"
+    AlternatingRowStyle-CssClass="altRow">
+    <FooterStyle CssClass="gvwSilverFooter" />
+	<HeaderStyle CssClass="gvwSilverHeader" />
+    <PagerStyle CssClass="gvwSilverPager1" />    
+    <PagerSettings Mode="NextPreviousFirstLast" Position="Bottom" />
+       <PagerTemplate>
+                                                        <table id="tblPager1" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td style="border: 0; width: 82%;">
+                                                                    Showing Activities
+                                                                    <asp:Literal ID="ltrlStartCount1" runat="server" Text="0"></asp:Literal>
+                                                                    to
+                                                                    <asp:Literal ID="ltrlEndCount1" runat="server" Text="0"></asp:Literal>
+                                                                    of
+                                                                    <asp:Literal ID="ltrlTotalCount1" runat="server" Text="0"></asp:Literal></td>
+                                                                <td style="border: 0;" align="right">
+                                                                    Page&nbsp;<asp:Literal ID="ltrlStartPage1" runat="server" Text="0"></asp:Literal>
+                                                                    of
+                                                                    <asp:Literal ID="ltrlLastPage1" runat="server" Text="0"></asp:Literal>&nbsp;
+                                                                    <asp:LinkButton ID="lnkBtnFirst1" runat="server" CommandName="page" CommandArgument="first">
+                                                                        <asp:Image ID="imgFirst1" runat="server" ImageUrl="../images/First_blk.jpg" ToolTip="First" /></asp:LinkButton>&nbsp;
+                                                                    <asp:LinkButton ID="lnkBtnPrevious1" runat="server" CommandName="page" CommandArgument="prev">
+                                                                        <asp:Image ID="imgPrevious1" runat="server" ImageUrl="../images/back_blk.jpg"
+                                                                            ToolTip="Previous" /></asp:LinkButton>&nbsp;
+                                                                    <asp:LinkButton ID="lnkBtnNext1" runat="server" CommandName="page" CommandArgument="next">
+                                                                        <asp:Image ID="imgNext1" runat="server" ImageUrl="../images/Next_blk.jpg" ToolTip="Next" /></asp:LinkButton>&nbsp;
+                                                                    <asp:LinkButton ID="lnkBtnLast1" runat="server" CommandName="page" CommandArgument="last">
+                                                                        <asp:Image ID="imgLast1" runat="server" ImageUrl="../images/Last_blk.jpg" ToolTip="Last" /></asp:LinkButton>&nbsp;</td>
+                                                            </tr>
+                                                        </table>
+                                                    </PagerTemplate>
+    <EmptyDataTemplate>
+       <table class="NoRecord">
+            <tr>                            
+                <td>
+                    <img align="absmiddle" src="../images/ico_alert.gif" />&nbsp;&nbsp;No Record Found !
+                </td>
+            </tr>
+         </table> 
+  </EmptyDataTemplate>
+</asp:GridView>

@@ -1,0 +1,35 @@
+<%@ Master Language="VB" CodeFile="MyNetsolace.master.vb" Inherits="MyNetsolace_MyNetsolace" %>
+<%@ Register Src="Controls/footerMyNetsolace.ascx" TagName="footerMyNetsolace" TagPrefix="footer" %>
+<%@ Register Src="Controls/topMyNetsolace.ascx" TagName="topMyNetsolace" TagPrefix="header" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>My Netsolace</title>
+    <link href="../App_Themes/Default/Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="margin:0;overflow:hidden;">
+    <form id="form1" runat="server" style="margin:0px;">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="300" />
+    <div>
+        <table border="0" cellpadding="0" cellspacing="0" style="height:100%;" width="100%">
+        <tr>
+            <td valign="top" style="height:72px;">
+                <header:topMyNetsolace ID="topMyNetsolace" runat="server" />
+            </td>
+        </tr>        
+        <tr>
+            <td valign="top" style="height:100%; width:100%;">
+                <asp:contentplaceholder id="contentMyNetsolace" runat="server">
+                </asp:contentplaceholder>
+            </td>
+        </tr>           
+        <tr>
+            <td valign="top" style="height:24px;">                
+                <footer:footerMyNetsolace ID="footerMyNetsolace" runat="server" />
+            </td>
+        </tr>   
+        </table>
+    </div>
+    </form>
+</body>
+</html>

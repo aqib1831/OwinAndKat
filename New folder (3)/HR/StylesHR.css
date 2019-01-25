@@ -1,0 +1,58 @@
+﻿body 
+{
+	margin:0px;
+	overflow:auto;
+	font-family: verdana, Arial, Helvetica, sans-serif;
+}
+table {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+}
+.div_bgOpacity {
+	        background:000000;
+	        filter: Alpha(Opacity=50);
+}
+
+.rptPrintable
+{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size:12px;
+	text-align:left;
+}
+
+.rptPrintable th
+{
+	font-weight:bold; text-align:left;	text-decoration:none;
+	padding:3px 0px 3px 2px; 
+	border-top:solid 1px #000;
+	border-bottom:solid 1px #000;
+}
+
+.rptPrintable td
+{
+	text-decoration:none;	
+	padding:2px 0px 2px 1px; 
+}
+
+.CompanyName
+{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size:14px;	font-weight:bold;
+	padding:3px 0px 3px 0px;
+}
+
+.ReportTitle
+{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size:13px;	font-weight:bold;
+	padding:3px 0px 3px 0px;
+}
+
+.GeneratedOn
+{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size:11px;
+	padding:3px 0px 3px 0px;
+}

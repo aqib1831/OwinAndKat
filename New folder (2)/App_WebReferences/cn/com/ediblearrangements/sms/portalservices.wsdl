@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://smsportalservice.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://smsportalservice.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://smsportalservice.com/">
+      <s:element name="UpdateModifiedSMSLicenses">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="securityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateModifiedSMSLicensesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateModifiedSMSLicensesResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UpdateModifiedSMSLicensesSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateModifiedSMSLicenses" />
+  </wsdl:message>
+  <wsdl:message name="UpdateModifiedSMSLicensesSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateModifiedSMSLicensesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PortalServicesSoap">
+    <wsdl:operation name="UpdateModifiedSMSLicenses">
+      <wsdl:input message="tns:UpdateModifiedSMSLicensesSoapIn" />
+      <wsdl:output message="tns:UpdateModifiedSMSLicensesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PortalServicesSoap" type="tns:PortalServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateModifiedSMSLicenses">
+      <soap:operation soapAction="http://smsportalservice.com/UpdateModifiedSMSLicenses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PortalServicesSoap12" type="tns:PortalServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateModifiedSMSLicenses">
+      <soap12:operation soapAction="http://smsportalservice.com/UpdateModifiedSMSLicenses" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PortalServices">
+    <wsdl:port name="PortalServicesSoap" binding="tns:PortalServicesSoap">
+      <soap:address location="http://qa.sms.ediblearrangements.com.cn/portalservices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PortalServicesSoap12" binding="tns:PortalServicesSoap12">
+      <soap12:address location="http://qa.sms.ediblearrangements.com.cn/portalservices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://qa.fransupport.com/v2/WebServices/Portal/WS_Portal.asmx?wsdl" docRef="https://qa.fransupport.com/v2/WebServices/Portal/WS_Portal.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://qa.fransupport.com/v2/WebServices/Portal/WS_Portal.asmx" xmlns:q1="https://fransupport.com/" binding="q1:WS_PortalSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://qa.fransupport.com/v2/WebServices/Portal/WS_Portal.asmx" xmlns:q2="https://fransupport.com/" binding="q2:WS_PortalSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

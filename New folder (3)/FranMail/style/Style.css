@@ -1,0 +1,139 @@
+﻿.outlookMainFrame
+{
+    background-color: #c4dafa;
+    border: solid 1px #002d96;
+}
+.outLookTopCell
+{
+    background-image: url(../Images/outLookTopCellBg.gif);
+    background-repeat: repeat-x;
+    font: bold 14px Arial, Verdana, Helvetica, Sans-serif;
+    color: #fff;
+    cursor: default;
+    padding: 0 0 0 7px;
+}
+.outLookOpenMessageCell
+{
+    border: solid 1px #002d96;
+    background-color: #fff;
+}
+.messageSeparator
+{
+    width: 196px;
+    height: 1px;
+}
+.messageScroll
+{
+    height: 285px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.msgTxt
+{
+    font-size: 11px;
+}
+
+.PanelItemsStyle
+{
+    color: white;
+    font-size: 16px;
+}
+
+.PanelStyle
+{
+    background-image: url(Img/topBg.gif);
+    background-repeat: repeat-x;
+    height: 25px;
+    width: 100%;
+}
+
+.OutlookHeader
+{
+    font-size: 11px;
+    font-family: Arial;
+    border-bottom: 3px solid #D2CFBE;
+    font-weight: normal;
+    BORDER-right: 2px inset white;
+    padding-left: 5px;
+}
+.OutlookHeader A
+{
+    color: black;
+    text-decoration: none;
+}
+
+.GroupHeaderItem TD
+{
+    border-bottom: 2px solid #7BA4E0;
+    font-size: 12px;
+    cursor: default;
+    background-color: white;
+}
+
+.OutlookItem TD
+{
+    border-bottom: 1px solid #EAE9E1;
+    font-size: 11px;
+    background-color: white;
+}
+
+.Pager
+{
+    border-top: 1px solid #7BA4E0;
+    font-size: 11px;
+}
+
+.Pager A
+{
+    color: black;
+}
+.frameTop {
+    margin: 0;
+    padding: 10px 0 0;
+    background: transparent url(../Images/div_frame_top.gif) no-repeat 0 0;
+    width: 100%;
+    overflow: auto;
+}
+.frameBottom {
+    margin: 0;
+    padding: 0 0 9px;
+    background: transparent url(../Images/div_frame_bottom.gif) no-repeat 0 100%;
+
+}
+.frameInner {
+    margin: 0;
+    padding: 0 13px 0;
+    background: transparent url(../Images/div_frame_inner.gif) repeat-y 0 0;
+}
+p.itemsCount {
+    margin: 0;
+    padding: 12px 0 0 20px;
+    height: 17px;
+    color: #092061;
+    font-size: .9em;
+}
+h3.currentFolder {
+    margin: 0;
+    padding: 0 0 0 30px;
+    height: 28px;
+    color: #000;
+    font-size: .9em;
+    font-weight: normal;
+}
+.outLookTopCell h4 {
+    margin: 0;
+    padding: 4px 0 0;
+    color: #15428b;
+    cursor: default;
+    font-family: Arial,Verdana,Helvetica,Sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: normal;
+    height: 23px;
+}
+.outLookTopCell h4.mailBox {
+    padding: 4px 0 0 22px;
+    background: transparent url(../Images/Inbox.gif) no-repeat 0 2px;
+}

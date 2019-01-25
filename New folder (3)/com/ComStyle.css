@@ -1,0 +1,72 @@
+﻿.divToolTip{
+border:1px solid black;display:none;position:absolute;z-index:50000;color:#676860;font-size:10px; padding:5px; padding-left:5px;background:#F0F0F0;
+filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=4, OffY=4, Color='gray', Positive='true')
+progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#FFFFFF,endColorStr=#BEDAFF)
+progid:DXImageTransform.Microsoft.Wheel(duration=3);}
+.LaodingDiv{
+filter: Alpha(Opacity=90);-moz-opacity:0.9;
+bottom:30px;right:10px;position:absolute;
+width:15%;padding:10px;
+border:3px solid #4C86AC;border-left:0;border-right:0; 
+background-color:#DEEFFE;text-align:center;
+z-index:20;color:#4B92C1;font-size:14px;
+}
+.LaodingDiv img{margin-right:10px;}
+#DivMessageAlert
+{display:none;border:solid 1px #609BD3; position:absolute;z-index:10;}
+.DivMessageAlerttabletd
+{width:100%;font-size:12px;filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#ABD0E8,endColorStr=#FFFFFF);}
+.DivMeAletableTd1
+{border-bottom:solid 1px #609BD3; padding-left:5px;filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#ABD0E8,endColorStr=#FAFCFE);width:80%;}
+.DivMeAletableTd1 span
+{color:black;font-weight:bold;font-size:12px;}
+.DivMeAletableTd2
+{border-bottom:solid 1px #609BD3;filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#FAFCFE,endColorStr=#FFFFFF);width:20%;height:24px;cursor:pointer;}
+.DivMeAletableTdBottom
+{
+	border-bottom:solid 1px #609BD3; height:25px; padding-left:5px;filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#ABD0E8,endColorStr=#FFFFFF);
+}
+.ExpirationTable
+{
+	background-color:Transparent;width:100%;font-size:13px;
+}
+.ExpirationTable tr
+{
+	height:25px;cursor:pointer;
+}
+.ExpirationTable tr td
+{
+	border-bottom:solid 1px #5C6B73;white-space:nowrap;
+}
+.ExpirationTableTr
+{
+	font-size:12px;background-color:white;color:#52789C;font-weight:bold;height:22px;top:expression(eval(this.parentElement.parentElement.parentElement.scrollTop));position:relative;
+}
+.ExpirationTableTr td
+{
+	border-right:solid 1px #6B8AC1;border-bottom:solid 1px #6B8AC1;white-space:nowrap;
+}
+.TableTop
+{
+	width:100%;height:100%;margin:0px;padding:0px;background-color:#E4F1F7;
+}
+.UnderlinedRowTR td
+{
+	height:20px;background-color:#A0CDEE;font-size:12px;font-weight:bold;padding:5px;border-bottom:1px solid #609BD3;white-space:nowrap;
+}
+.TblTopFilter
+{
+	white-space:nowrap;background-color:#BADCFC;
+}
+.TblTopFilter td
+{
+	padding-left:5px;padding-right:5px;
+}
+.TblTopFilter td span
+{
+	font-size: 7pt; color: #7c8798;
+}
+.TblTopFilter td img
+{
+	width:1px;height:30px;text-align:center;
+}

@@ -1,0 +1,618 @@
+﻿.BD
+{
+	overflow: hidden; margin: 0px; padding: 0px;	
+}
+.tblGeneral
+{	
+	height: 100%; width: 100%;	
+}
+#trTitle
+{
+	background-image: url('../images/bg_mainHdr_1.jpg');height: 31px;	
+}
+#trTitle TD
+{
+	height: 31px;	
+}
+#trTitle TD Table
+{
+	height: 31px; width: 100%;
+}
+#tdReportTitleContainer
+{
+	padding-left: 5px; text-align:left;font-weight:bold;
+ 	 
+}
+#trTitle TD Table TR TD Img
+{
+	cursor: pointer;float:right;
+}
+#tdReportResetFilter div
+{
+	height:20px; width:106px; float:right;
+}
+#tdReportResetFilter div2
+{
+	height:20px; width:106px; float:right;
+}
+.tdSilverWhiteGradient
+{
+	width: 100%;
+    height: 25px;
+    background-color: #FDFDFE;
+    margin: 0px;
+    padding-left: 10px;
+    border: solid 1px #B0CEE6;
+    border-top: solid 0px #B0CEE6;
+    border-bottom: solid 0px #B0CEE6;
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#FDFDFE,endColorStr=#E3E3E3);
+}
+        
+#divTimeInterval
+{
+	border: solid 2px #659BC9;
+    height: 160px;
+	width: 450px;
+    font-size: 12px;
+    font-family: Calibri;
+    position: absolute;
+    display: none;
+    left: 100px;
+	top: 200px;
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#F9FCF5,endColorStr=#E8F7E4);
+}
+.tblFooter
+{
+	height: 26px;
+    background-color: #FFFFCD;
+    border: solid 1px #90BEE2; /*font-family: Times New Roman, Arial, Helvetica, Sans-Serif; */
+    font-family: Calibri;
+    font-size: 10pt;
+    padding-left: 5px;
+}
+.tblFooter div
+{
+	float: left;	
+}
+#tdMain
+{	
+	font-family: Calibri;font-size: 10pt;
+}
+#tdMain #dvMain
+{
+	height: 100%;width: 100%;overflow-y:auto;
+}
+.dvName
+{
+	height: 25px;background-color: #FFFFFF;border: solid 1px #95BEDE;padding-left: 5px;padding-top: 4px;font-weight: bold;
+}
+.dvName .spanName
+{
+	color: #000000;float: left;
+}
+.dvName .spanDepartment
+{
+	color: #000000;float: left;
+}
+
+.dvCaptions
+{
+	width: 306px;float: right;
+}
+.dvCaptions #tblCaptions
+{
+	width: 306px; font-family: Calibri;font-size: 10pt;	
+}
+.dvCaptions #tblCaptions #trCaptions #tdCaptionTotalHrs
+{
+	width: 70px; text-align: center;
+}
+.dvCaptions #tblCaptions #trCaptions #tdCaptionTotalHrs #dvCaptionTotalHrs
+{
+	font-weight: bold; font-size: 16px; color: #000000;
+}
+.dvCaptions #tblCaptions #trCaptions #tdCaptionNotes
+{
+	text-align: center;
+}
+.dvCaptions #tblCaptions #trCaptions #tdCaptionNotesLA
+{
+	width: 70px; text-align: center;
+}
+.dvCaptions #tblCaptions #trCaptions #tdCaptionNotesED
+{
+	width: 70px; text-align: center;
+}
+.dvCaptions #tblCaptions #trCaptions #tdCaptionNotesLS
+{
+	width: 70px; text-align: center;
+}
+.dvDate
+{
+	background-color: #F8F8F8;
+    height: 40px;
+    border: solid 1px #95BEDE;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-weight: bold;
+    width: 100px;
+    float: left;
+    border-top: solid 0px #95BEDE;
+    border-right: solid 0px #95BEDE;
+}
+.dvTotals
+{
+	float: left;
+    height: 40px;
+    width: 100px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 16px;
+    background-color: #FCFCE2;
+    border-top: solid 0px #95BEDE;
+	border-right: solid 0px #95BEDE;
+    border-bottom: solid 1px #95BEDE;
+}
+.dvDate .spanDay
+{
+	color: #000000;
+}
+.dvDate .spanDate
+{
+	color: #000000;
+}
+.dvInOutNote
+{
+	color:#000000;
+	background-color: #FFFFFF;
+    height: 40px;
+    width: 40px;
+    float:left;
+}
+.dvInOutNote .dvInOutNoteIN
+{
+	color: #000000;
+	/*border: solid 1px #95BEDE;*/
+    height: 20px;
+    padding-top: 2px;
+    text-align: center;
+    border-left: solid 1px #95BEDE;
+    border-bottom:solid 1px #95BEDE;
+    font-size:12px;
+    font-family:Calibri;
+    font-weight:bold;
+}
+.dvInOutNoteOut
+{
+	color: #000000;
+    /*border: solid 1px #95BEDE;*/
+    height: 20px;
+    padding-top: 2px;
+    text-align: center;
+    border-left: solid 1px #95BEDE;
+    border-bottom:solid 1px #95BEDE;
+    font-family:Calibri;
+	font-size:12px;
+	font-weight:bold;
+}
+        .dvTimeInTimeOut
+        {
+            background-color: #FEFEFE;
+            height: 40px;
+            float: left;
+        }
+        .dvTimeInTimeOut .dvTimeInTimeOut_IN
+        {
+            border: solid 1px #95BEDE;
+            font-weight: bold;
+            padding-top: 4px;
+            text-align: center;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-top: solid 0px #95BEDE;
+            border-right: solid 0px #95BEDE;
+        }
+        .dvTimeInTimeOut .dvTimeInTimeOut_OUT
+        {
+            border: solid 1px #95BEDE;
+            font-weight: bold;
+            padding-top: 4px;
+            text-align: center;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-top: solid 0px #95BEDE;
+            border-right: solid 0px #95BEDE;
+        }
+        .dvMainContainer
+        {
+        }
+        #divBlackOut
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            background-color: #000;
+            filter: alpha(opacity=60);
+            opacity: 0.5;
+            display: none;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .EditTimeRecord
+        {
+            cursor: pointer;
+        }
+        #divNotes
+        {
+            color: #000000;
+            font-family: Calibri;
+            font-size: 12px;
+            border: solid 2px #EDD480;
+            height: 60px;
+            width: 200px;
+            padding: 10px;
+            background-color: #FDEEC7;
+            display: none; 
+            position: absolute; 
+            top: 20%; 
+            left: 40%;
+            z-index: 1001;
+            filter: alpha(opacity=90);
+           
+        }
+
+        .NotesSeperator
+        {
+            height: 3px;
+            background-color: #D3A216;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            display: inline;
+        }
+        .ProgressIndicatorDIV
+        {
+            display: none;
+        }
+        .LeavesInfoContainer
+        {
+            color: #000000;
+            font-family: Calibri;
+            font-size: 12px;
+            
+        }
+        .LeavesInfoContainer TD
+        {
+            text-align: center;
+            border: solid 1px #D9DCEB;
+            height:100%;
+        }
+        .LeavesInfoContainer .tdALAllowed
+        {
+            background-color: #F3F1FE;	
+        }
+        .LeavesInfoContainer .tdALTaken
+        {
+            background-color: #F3F1FE;	
+        }
+        .LeavesInfoContainer .tdALBalance
+        {
+            background-color: #ECE7FB;	
+        }
+        
+        /********************************    Title  Area    ******************************/
+        img
+        {
+            border: 0px;	
+        }
+        .imgNotes
+        {
+            cursor: pointer; border: 0px;
+        }
+        .imgLA
+        {
+            cursor: pointer; border: 0px;	
+        }
+        .imgED
+        {
+            cursor: pointer; border: 0px;	
+        }
+        .imgLS
+        {
+            cursor: pointer; border: 0px;	
+        }
+        /********************************    Title  Area  End  ******************************/
+        
+        
+        /********************************    Filter Row ************************************/
+        #trFilterMain
+        {
+        	
+        }
+        #trFilterMain #tdFilterMain
+        {
+        	height: 50px; 
+        	background-color: #F2F2F2; 
+        	border: solid 1px #B0CEE6; 
+        	width: 100%;
+        }
+        #trFilterRowInner TD
+        {
+        	padding-left: 5px;
+        }
+        #trFilterRowInner #tdSearchEmployee
+        {
+        	width:140px; 
+        }
+        #trFilterRowInner #tdPeriodContainer
+        {
+            width:100px; 
+        }
+        #trFilterRowInner #tdStatusContainer
+        {
+        	width:78px; 
+        }
+        #trFilterRowInner #tdDepartmentContainer
+        {
+        	width: 95px; 
+        }
+        #trFilterRowInner #tdTeamsContainer
+        {
+        	width: 95px; 
+        }
+        #trFilterRowInner #tdTeamsContainer span
+        {
+        	font-size: 7pt; color: #7c8798;
+        }
+        #trFilterRowInner #tdActionsContainer
+        {
+        	vertical-align:bottom; text-align:left; padding-bottom:5px; padding-left:3px;
+        }
+        #trFilterRowInner #tdActionsContainer .div1
+        {
+        	float:left; padding-left:0px; border:0px; 
+        	text-align:left; width:16px; height:16px;
+        }
+        #trFilterRowInner #tdActionsContainer .div2
+        {
+        	margin-right:5px;float:right; cursor:pointer; width:25px;
+        }
+        #trFilterRowInner #tdActionsContainer .div3
+        {
+        	float:right; margin-right:5px;
+        }
+        #trFilterRowInner #tdActionsContainer .div3 .dvAddNewTimeRecord
+        {
+        	cursor:pointer;
+        }
+        
+        /********************************    Filter Row End *********************************/
+        
+        
+        
+        /*********************************   Repeater Main  *********************************/        
+        
+        .dvInnerTotal
+        {
+        	width: 306px;float: right;
+        }
+        .dvInnerTotal .dvInnerTotalTblMain
+        {
+        	width: 306px; font-family: Calibri;font-size: 10pt;
+        }
+        .trRowTotalMain
+        {
+        	
+        }
+        .trRowTotalMain .TDTotalInnerHours
+        {
+        	width: 70px; text-align: center;
+        }
+        .trRowTotalMain .TDTotalInnerHours .dv1
+        {
+            height: 40px; border: solid 1px #95BEDE; border-top: solid 0px #95BEDE;padding-top: 10px; font-weight: bold; font-size: 16px; color: #2C902E;	
+        }
+        
+        
+        .trRowTotalMain .TDInnerNotes
+        {
+        	width: 50px; height: 40px; border: solid 1px #FFFFFF; text-align: center;
+        }
+        .trRowTotalMain .TDInnerLAs
+        {
+        	width: 70px; height: 40px; border: solid 1px #FFFFFF; text-align: center;background-color: #F3F1FE;
+        }
+        .dvTDInnerLAsImageContainer
+        {
+        	display:none;
+        }
+        
+        
+        
+        
+        .trRowTotalMain .TDInnerEDs
+        {
+        	width: 70px; height: 40px; border: solid 1px #FFFFFF; text-align: center;background-color: #F1FAF7;
+        }
+        .trRowTotalMain .TDInnerLSs
+        {
+        	width: 70px; height: 40px; border: solid 1px #FFFFFF; text-align: center;background-color: #EFF9E1;
+        }
+        .dvBreaker2
+        {
+            clear: both;	
+        }
+        .dvBreaker
+        {
+        	clear: both;	
+        }
+        .dvTotalsInOutCellsWithBorder
+        {
+            float: left; 
+            background-color: #FCFCE2;
+            height: 40px; 
+            width: 40px; 
+            /*border: solid 1px #95BEDE; */
+            border-bottom: solid 1px #95BEDE;
+            border-left: solid 1px #95BEDE;
+        }
+        .dvTotalsInOutCellsWithoutTopAndRightBorder
+        {
+            float: left; 
+            background-color: #FCFCE2;
+            height: 40px; 
+            width: 40px; 
+            /*border: solid 1px #95BEDE; */
+            border-bottom: solid 1px #95BEDE;
+            border-left: solid 1px #95BEDE;
+}
+.dvRowTotal
+{
+            width: 306px; float: right;background-color: #FCFCE2;	
+}
+.dvRowTotal .tblRowTotalMain
+{
+        	width: 306px; font-family: Calibri;font-size: 10pt;
+}
+.dvRowTotal .tblRowTotalMain .TRRowTotalMain
+{
+        	
+}
+.dvRowTotal .tblRowTotalMain .TRRowTotalMain .tdTotalHours	
+{
+        	width: 70px; text-align: center;
+}
+        
+.dvRowTotal .tblRowTotalMain .TRRowTotalMain .tdTotalHours	.divTotalHoursContainer
+{
+        	height: 40px; 
+        	border: solid 1px #95BEDE; 
+        	border-top: solid 0px #95BEDE;
+        	padding-top: 10px; 
+        	font-weight: bold; 
+        	font-size: 16px; 
+        	color: #2C902E;
+}
+        
+.dvRowTotal .tblRowTotalMain .TRRowTotalMain .tdTotalLeavesContainerInfo
+{
+	width: 260px; height: 40px;
+}
+        
+.dvRowTotal .tblRowTotalMain .TRRowTotalMain .LeavesInfoContainer
+{
+	/*height: 40px; 
+    border: solid 1px #95BEDE; 
+    border-top: solid 0px #95BEDE;
+    padding-top: 10px; 
+	font-weight: bold; 
+    font-size: 16px; 
+    color: #2C902E;*/
+}
+        
+        
+        
+        /*********************************   Repeater Main  End *********************************/ 
+        
+
+
+
+
+#divTimeInterval #tblTimeInterval #trHeader #tdHeaderContainer
+{
+	height: 40px;
+}
+#divTimeInterval #tblTimeInterval #trBody #tdBodyContainer #tblBodyContainerInner
+{
+	width: 100%;
+}
+#divTimeInterval #tblTimeInterval #trBody #tdBodyContainer #tblBodyContainerInner #trBodyContainerInner #td1
+{
+	
+}
+#divTimeInterval #tblTimeInterval #trBody #tdBodyContainer #tblBodyContainerInner #trBodyContainerInner #td2
+{
+	width: 180px;
+}
+#divTimeInterval #tblTimeInterval #trBody #tdBodyContainer #tblBodyContainerInner #trBodyContainerInner #td2 span
+{
+	font-weight: bold;
+}
+#divTimeInterval #tblTimeInterval #trBody #tdBodyContainer #tblBodyContainerInner #trBodyContainerInner #td3
+{
+	width: 20px;
+}
+#divTimeInterval #tblTimeInterval #trBody #tdBodyContainer #tblBodyContainerInner #trBodyContainerInner #td4
+{
+	width: 180px;
+}
+#divTimeInterval #tblTimeInterval #trBody #tdBodyContainer #tblBodyContainerInner #trBodyContainerInner #td4 span
+{
+	font-weight: bold;
+}
+#divTimeInterval #tblTimeInterval #trBody #tdBodyContainer #tblBodyContainerInner #trBodyContainerInner #td5
+{
+	
+}
+#divTimeInterval #tblTimeInterval #trFooter
+{
+	
+}       
+.DivIFrame
+{
+	display: none; border: solid 1px #000000; position: absolute;  width: 600px; height: 260px; top: 25%; left: 10%; z-index: 1;
+}
+.DivIFrame Table
+{
+	height: 100%; 	
+}
+.DivIFrame Table #trHeading #tdHeading
+{
+	vertical-align: middle; 
+	border-bottom: solid 1px #000000;
+	padding-left: 1em; 
+	background-image: url(../images/bg_CellNormal_black.jpg);
+	background-repeat: repeat-x; 
+	width: 100%;
+}
+.DivIFrame Table #trHeading #tdClose
+{
+	border-bottom: solid 1px #000000; 
+	background-image: url(../images/bg_CellNormal_black.jpg);
+	background-repeat: repeat-x; 
+	width: 100%; 
+	height: 28px; 
+	cursor: pointer;
+}
+.DivIFrame Table #trHeading #tdClose img
+{
+	float: right;	
+}
+
+.DivIFrame Table #trFrameSourceContainer #tdFrameSourceContainer
+{
+	height: 100%; padding: 0px; font-size: 12px; background-color: White;border: 0px;
+}
+.DivIFrame Table #trFrameSourceContainer #tdFrameSourceContainer #dvFrameSourceContainer
+{
+	overflow: auto; height: 232px; width: 600px; border: 0px;	
+}
+.TimeCellTimeCorrection
+{
+	/*filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#FCE3AB,endColorStr=#FD893E);*/
+}
+.TimeCellTimeShortLeave
+{
+	color:#493F27;
+}
+.TimeCellTimeOutDuty
+{
+	color:#ffffff;
+}
+

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="https://fransupport.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="https://fransupport.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://fransupport.com/">
+      <s:element name="Franchisee_InfoUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FranFranchiseID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TaxRate" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="DeliveryCharge" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="DeliveryChargeVAT" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="CCPaymentGateway" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="MerchantNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AuthLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CCLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CCPassword" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="TagPrinting" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="HouseCharge" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="HouseChargeAmount" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="SMSAutoDiscount" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="SMSTax" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Franchisee_InfoUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Franchisee_InfoUpdateResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Franchisee_SupportInfoUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FranFranchiseID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServerPwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ISPType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PrimaryDNS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SecondaryDNS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FirewallRouter" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FirewallRouterAccess" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FirewallRouterLogin" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsStaticIP" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="SMSTerminals" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="SMTPPort" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Franchisee_SupportInfoUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Franchisee_SupportInfoUpdateResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Franchisee_SMSSupportInfoUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FranFranchiseID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="onSupport" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="SupportStartDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="SupportEnddate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="Price" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Franchisee_SMSSupportInfoUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Franchisee_SMSSupportInfoUpdateResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Franchisee_SMS_BackUp_SupportInfoUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FranFranchiseID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="onBackSupport" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="SupportStartDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Franchisee_SMS_BackUp_SupportInfoUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Franchisee_SMS_BackUp_SupportInfoUpdateResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contacts_GetLoginCredentials">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="authCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FranFranchiseID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contacts_GetLoginCredentialsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contacts_GetLoginCredentialsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WS_Portal_Franchises_HasSMSX">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FranchiseID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WS_Portal_Franchises_HasSMSXResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WS_Portal_Franchises_HasSMSXResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Franchisee_InfoUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:Franchisee_InfoUpdate" />
+  </wsdl:message>
+  <wsdl:message name="Franchisee_InfoUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:Franchisee_InfoUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Franchisee_SupportInfoUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:Franchisee_SupportInfoUpdate" />
+  </wsdl:message>
+  <wsdl:message name="Franchisee_SupportInfoUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:Franchisee_SupportInfoUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Franchisee_SMSSupportInfoUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:Franchisee_SMSSupportInfoUpdate" />
+  </wsdl:message>
+  <wsdl:message name="Franchisee_SMSSupportInfoUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:Franchisee_SMSSupportInfoUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Franchisee_SMS_BackUp_SupportInfoUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:Franchisee_SMS_BackUp_SupportInfoUpdate" />
+  </wsdl:message>
+  <wsdl:message name="Franchisee_SMS_BackUp_SupportInfoUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:Franchisee_SMS_BackUp_SupportInfoUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contacts_GetLoginCredentialsSoapIn">
+    <wsdl:part name="parameters" element="tns:Contacts_GetLoginCredentials" />
+  </wsdl:message>
+  <wsdl:message name="Contacts_GetLoginCredentialsSoapOut">
+    <wsdl:part name="parameters" element="tns:Contacts_GetLoginCredentialsResponse" />
+  </wsdl:message>
+  <wsdl:message name="WS_Portal_Franchises_HasSMSXSoapIn">
+    <wsdl:part name="parameters" element="tns:WS_Portal_Franchises_HasSMSX" />
+  </wsdl:message>
+  <wsdl:message name="WS_Portal_Franchises_HasSMSXSoapOut">
+    <wsdl:part name="parameters" element="tns:WS_Portal_Franchises_HasSMSXResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_PortalSoap">
+    <wsdl:operation name="Franchisee_InfoUpdate">
+      <wsdl:input message="tns:Franchisee_InfoUpdateSoapIn" />
+      <wsdl:output message="tns:Franchisee_InfoUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Franchisee_SupportInfoUpdate">
+      <wsdl:input message="tns:Franchisee_SupportInfoUpdateSoapIn" />
+      <wsdl:output message="tns:Franchisee_SupportInfoUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Franchisee_SMSSupportInfoUpdate">
+      <wsdl:input message="tns:Franchisee_SMSSupportInfoUpdateSoapIn" />
+      <wsdl:output message="tns:Franchisee_SMSSupportInfoUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Franchisee_SMS_BackUp_SupportInfoUpdate">
+      <wsdl:input message="tns:Franchisee_SMS_BackUp_SupportInfoUpdateSoapIn" />
+      <wsdl:output message="tns:Franchisee_SMS_BackUp_SupportInfoUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Contacts_GetLoginCredentials">
+      <wsdl:input message="tns:Contacts_GetLoginCredentialsSoapIn" />
+      <wsdl:output message="tns:Contacts_GetLoginCredentialsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WS_Portal_Franchises_HasSMSX">
+      <wsdl:input message="tns:WS_Portal_Franchises_HasSMSXSoapIn" />
+      <wsdl:output message="tns:WS_Portal_Franchises_HasSMSXSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_PortalSoap" type="tns:WS_PortalSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Franchisee_InfoUpdate">
+      <soap:operation soapAction="https://fransupport.com/Franchisee_InfoUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Franchisee_SupportInfoUpdate">
+      <soap:operation soapAction="https://fransupport.com/Franchisee_SupportInfoUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Franchisee_SMSSupportInfoUpdate">
+      <soap:operation soapAction="https://fransupport.com/Franchisee_SMSSupportInfoUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Franchisee_SMS_BackUp_SupportInfoUpdate">
+      <soap:operation soapAction="https://fransupport.com/Franchisee_SMS_BackUp_SupportInfoUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Contacts_GetLoginCredentials">
+      <soap:operation soapAction="https://fransupport.com/Contacts_GetLoginCredentials" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WS_Portal_Franchises_HasSMSX">
+      <soap:operation soapAction="https://fransupport.com/WS_Portal_Franchises_HasSMSX" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_PortalSoap12" type="tns:WS_PortalSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Franchisee_InfoUpdate">
+      <soap12:operation soapAction="https://fransupport.com/Franchisee_InfoUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Franchisee_SupportInfoUpdate">
+      <soap12:operation soapAction="https://fransupport.com/Franchisee_SupportInfoUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Franchisee_SMSSupportInfoUpdate">
+      <soap12:operation soapAction="https://fransupport.com/Franchisee_SMSSupportInfoUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Franchisee_SMS_BackUp_SupportInfoUpdate">
+      <soap12:operation soapAction="https://fransupport.com/Franchisee_SMS_BackUp_SupportInfoUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Contacts_GetLoginCredentials">
+      <soap12:operation soapAction="https://fransupport.com/Contacts_GetLoginCredentials" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WS_Portal_Franchises_HasSMSX">
+      <soap12:operation soapAction="https://fransupport.com/WS_Portal_Franchises_HasSMSX" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_Portal">
+    <wsdl:port name="WS_PortalSoap" binding="tns:WS_PortalSoap">
+      <soap:address location="https://qa.fransupport.com/v2/WebServices/Portal/WS_Portal.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_PortalSoap12" binding="tns:WS_PortalSoap12">
+      <soap12:address location="https://qa.fransupport.com/v2/WebServices/Portal/WS_Portal.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

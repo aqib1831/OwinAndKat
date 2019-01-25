@@ -1,0 +1,3221 @@
+﻿
+.LeftSubmenuclick
+{
+	font-weight:600;
+	 background-color:#E1F3DF;
+    cursor:pointer;
+    height:22px;
+}
+
+BODY
+{
+    FONT-SIZE: 8px;
+    FONT-FAMILY: Arial, Helvetica, Sans-Serif;
+}
+
+INPUT
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: 'Arial', 'Sans-Serif';
+}
+SELECT
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: 'Arial', 'Sans-Serif';
+}
+
+TEXTAREA
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: 'Arial', 'Helvetica', 'Sans-Serif'
+}
+A, A:active, A:visited
+{
+	font-family: 'Arial', 'Helvetica', 'sans-serif';
+	color:#52789C;
+	text-decoration:none;
+}
+A:hover
+{
+    color:#92B4CA;
+}
+Table
+{
+    padding:0;
+    border:0;
+}
+Table TD
+{
+    margin:0;
+}
+
+/*
+.FloatingHeader
+{
+   height:18px;
+   text-align:left;
+   background-color:#BADCFC;
+   position: relative;
+   border-top:1px solid white;
+   top:expression(eval(this.parentElement.parentElement.parentElement.parentElement.parentElement.scrollTop));
+}
+
+.FloatingHeader a
+{
+   font-size:11px;
+   font-weight:bold;
+   padding-left:0.5em;
+   background-image: url('../../images/bg_toolbar.jpg');
+   background-repeat:no-repeat;
+}
+
+.FloatingHeader th
+{
+   color:#52789C;
+   font-size:11px;
+   font-weight:bold;
+   padding-left:0.5em;
+   background-image: url('../../images/bg_toolbar.jpg');
+   background-repeat:no-repeat;
+   cursor:default;
+}
+.NoBG a
+{
+    background-image: none;
+}
+*/
+/*
+.FloatingHeader a:hover
+{ 
+   color:#5477A8;
+}
+
+.FloatingPager
+{ 
+   height:20px;
+   background-color: #BADCFC;
+}
+.FloatingPager a
+{
+	font-size: 10px;
+	font-weight: bold;
+	color: black;
+	text-decoration:none;
+}
+.FloatingPager a:hover
+{
+    text-decoration:underline;
+}
+.FloatingPager span
+{
+	font-size: 12px;
+	font-weight: bold;
+	
+}
+.cpyFloatingPager
+{ 
+   height:20px;
+   background-color: #BADCFC;
+}
+.cpyFloatingPager a
+{
+	font-size: 10px;
+	font-weight: bold;
+	color: black;
+	text-decoration:none;
+}
+.cpyFloatingPager a:hover
+{
+    text-decoration:underline;
+}
+.cpyFloatingPager span
+{
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.GView td
+{
+    border-bottom:1px solid #C9EAFC;
+    padding-left:5px;
+    font-size:11px;
+}
+.GridRowClickable
+{
+    cursor:pointer;
+    font-size:10px;
+    height:22px;
+}
+*/
+/*
+.UnderlinedAnchor
+{
+	font-family: 'Arial', 'Helvetica', 'sans-serif';
+	font-size: 7.75pt;
+	font-weight: bold;
+	color: #000066;
+	text-decoration:underline;
+	cursor:pointer;
+}
+*/
+/*
+.ButtonStyle
+{
+    Height:20;
+}
+*/
+
+.SimpleBold
+{
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+.SimpleBoldHeader
+{
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+    text-align:right;
+    padding-right:1em;
+    border-bottom:1px solid #DDDDDD;
+}
+
+.SimpleBlackBold
+{
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+    COLOR: #000000;
+}
+.SimpleRedBold
+{
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+    COLOR: #FF0000;
+}
+
+.SimpleBlueBold
+{
+    FONT-SIZE: 10pt;
+	  FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		COLOR: #0000FF;
+}
+.SimpleLabel
+{
+    FONT-SIZE: 12px;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+
+.SimpleSmall
+{
+    FONT-SIZE: 10px;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+
+.SimpleSmallBold
+{
+    FONT-SIZE: 10px;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+
+.SimpleExSmall
+{
+    FONT-SIZE: 9px;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+.SimpleExSmallBold
+{
+    FONT-SIZE: 9px;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+.SimpleExSmallBlue
+{
+    FONT-SIZE: 9px;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	COLOR: #0000FF;
+}
+.SimpleExSmallBoldBlue
+{
+    FONT-SIZE: 9px;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+    COLOR: #0000FF;
+}
+
+
+.SimpleRedSmall
+{
+    FONT-SIZE: 8pt;
+		COLOR: #FF0000;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+
+.SimpleBlueSmall
+{
+    FONT-SIZE: 8pt;
+		COLOR: #0000FF;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+
+.SimpleWhiteSmall
+{
+    FONT-SIZE: 8pt;
+		COLOR: #FFFFFF;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+
+.SimpleGraySmall
+{
+    FONT-SIZE: 8pt;
+	COLOR: #CCCCCC;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+
+.ExtraSmall
+{
+    FONT-SIZE: 7pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		
+}
+
+.ExtraRedSmall
+{
+    FONT-SIZE: 7pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		COLOR: #FF0000;
+}
+
+.SimpleBlueNormal
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	COLOR: #000066;
+	FONT-WEIGHT: bold;
+}
+
+.TopBar
+{
+    FONT-SIZE: 10pt;
+	COLOR: #FFFFFF;
+    FONT-FAMILY: 'Arial Narrow', 'Arial', 'Helvetica', 'Sans-Serif';
+}
+.TopBarOver
+{
+	BACKGROUND-COLOR: #7797CA;
+	CURSOR: hand;
+	FONT-SIZE: 10pt;
+	COLOR: #FFFFFF;
+    FONT-FAMILY: 'Arial Narrow', 'Arial', 'Helvetica', 'Sans-Serif';
+
+}
+.TopBarNormal
+{
+	BACKGROUND-COLOR: Transparent;
+	FONT-SIZE: 10pt;
+	COLOR: #FFFFFF;
+    FONT-FAMILY: 'Arial Narrow', 'Arial', 'Helvetica', 'Sans-Serif';
+}
+
+
+
+.LeftNavHeading
+{
+    FONT-SIZE: 10pt;
+	  COLOR: #38537E;
+	  FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+
+.HeadingWhite
+{
+    FONT-SIZE: 10pt;
+		COLOR: #FFFFFF;
+		FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+
+.LinkBlue
+{
+    FONT-SIZE: 7pt;
+  	COLOR: #003399;
+	  FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+.LeftMenuNormal 
+{ 	
+	background: #EDEFF8;
+}
+.LeftMenuNormal TD
+{ 	
+	border-bottom-color:#B9C8DD;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+}
+
+
+.LeftMenuOver 
+{ 
+	background: #DCE0F1; 
+}
+
+.LeftMenuOver TD
+{ 
+	border-bottom-color:#B9C8DD;
+	border-bottom-style:solid;
+	border-bottom-width:1px; 
+}
+
+.HomeNews
+{
+	
+}
+
+.HomeNewsTR
+{
+	background: #EFF7FF;
+}
+
+.HomeNewsTR TD
+{
+    FONT-SIZE: 7pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		border-bottom-color:#FFFFFF;
+		border-bottom-style:solid;
+		border-bottom-width:1px; 
+		
+}
+
+.HomeNewsTRHover
+{
+        background-color: #E6F2FF;
+		cursor: hand;
+}
+
+.HomeNewsTRHover TD
+{
+    FONT-SIZE: 7pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		border-bottom-color:#E6F2FF;
+		border-bottom-style:solid;
+		border-bottom-width:1px; 
+}
+
+.ErrorMessage
+{
+    FONT-WEIGHT: bold;
+    COLOR: red
+}
+
+.MainBody
+{
+background: #F7F7F7;
+overflow: hidden;
+}
+
+.MainBody A
+{
+color: #003399;
+}
+
+.MainBody A:visited
+{
+color: #003399;
+}
+
+.LeftMenuContainer
+{
+background: #D4DDEA;
+border-right-style: solid;
+border-right-color: #ACC0DF;
+border-right-width: thin;
+}
+
+.LeftMenuSectionNameContainer
+{
+background: #C6D2E3;
+font-family: 'Arial', 'Helvetica', 'sans-serif';
+font-weight: bold;
+}
+
+.LeftMenuSectionNameSeperator
+{
+background: #7C9CCD;
+}
+
+.LeftMenuInstruction
+{
+font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+font-size: 8pt;
+font-weight: bold;
+}
+
+.LeftMenuItemNormal
+{
+/*background: ;*/
+cursor: hand;
+}
+
+.LeftMenuItemNormal TD
+{
+font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+font-size: 10pt;
+font-weight: bold;
+color: #000066;
+border-bottom: 1px solid #B9C8DD;
+}
+
+.LeftMenuItemHover
+{
+background: #C6D1E3;
+cursor: hand;
+}
+
+.LeftMenuItemHover TD
+{
+font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+font-size: 10pt;
+font-weight: bold;
+color: #000066;
+border-bottom: 1px solid #B9C8DD;
+}
+
+.LeftMenuSubLevelItemNormal
+{
+/*background:;*/
+cursor: hand;
+}
+
+.LeftMenuSubLevelItemNormal TD
+{
+font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+font-size: 10pt;
+color: #000000;
+border-bottom: 1px solid #B9C8DD;
+}
+
+.LeftMenuSubLevelItemHover
+{
+background: #C6D1E3;
+cursor: hand;
+}
+
+.LeftMenuSubLevelItemHover TD
+{
+font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+font-size: 10pt;
+color: #000000;
+border-bottom: 1px solid #B9C8DD;
+}
+
+.LeftMenuCategoriesHeader
+{
+font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+font-size: 10pt;
+font-weight: bold;
+color: #ffffff;
+background: #808080;
+}
+
+.LeftMenuCategoriesBody
+{
+background: #FFFFFF;
+}
+
+.LeftMenuCategoriesFooter
+{
+background: #C6D2E3;
+}
+
+.LeftMenuCategoriesFooter TD
+{
+font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+font-size: 8pt;
+border-bottom: 1px solid #B9C8DD;
+}
+
+.LeftMenuCategoriesFooterBar
+{
+background: #839EC2;
+}
+
+.LeftMenuCategoriesFooterBar TD
+{
+border-bottom: 1px solid #B9C8DD;
+}
+
+.LeftMenuCategoriesItemNormal
+{
+background: #EDEFF8;
+cursor: hand;
+}
+
+.LeftMenuCategoriesItemNormal TD
+{
+font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+font-size: 7.75pt;
+font-weight: bold;
+color: #000000;
+border-bottom: 1px solid #B9C8DD;
+}
+
+.LeftMenuCategoriesItemHover
+{
+background: #DCE0F1;
+cursor: hand;
+}
+
+.LeftMenuCategoriesItemHover TD
+{
+font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+font-size: 7.75pt;
+font-weight: bold;
+color: #000000;
+border-bottom: 1px solid #B9C8DD;
+}
+
+.LeftMenuCategoriesSubItemNormal
+{
+cursor: hand;
+}
+
+.LeftMenuCategoriesSubItemNormal TD
+{
+font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+font-size: 7.75pt;
+color: #000066;
+border-bottom: 1px solid #CCCCCC;
+}
+
+.LeftMenuCategoriesSubItemHover
+{
+background: #C6D1E3;
+cursor: hand;
+}
+
+.LeftMenuCategoriesSubItemHover TD
+{
+font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+font-size: 7.75pt;
+color: #000066;
+border-bottom: 1px solid #CCCCCC;
+}
+.LeftMenuFooterItem TD
+{
+	font-family: 'Verdana', 'Arial', 'Helvetica, sans-serif';
+	font-size: 7.75pt;
+	border-bottom:1px Solid #839EC2;
+	border-top:1px Solid #839EC2;
+	Background-Color: #C6D2E3;
+}
+
+.PageMainHeading
+{
+	height:30px;
+	background-color:#A0CDEE;
+	font-size:12px;
+	font-weight:bold;
+	padding:5px;
+}
+
+.PageSubHeading
+{
+    FONT-SIZE: 11px;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+
+
+.HeaderMenu
+{
+	Border: 1px solid #ACBDD5;
+}
+.HeaderMenu TD
+{
+	Background-Color: #CCD7E6;
+}
+.MessageMain
+{
+Border: 1px solid #ACBDD5;
+Background-Color: #CCD7E6;
+}
+
+.MessageTitle
+{
+	  FONT-SIZE: 10pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+  	Border-Bottom: 2px solid #EBEFF5
+}
+.Message
+{
+	  FONT-SIZE: 10pt;
+	  FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+  	Background-Color: #EBEFF5;
+		Border-Bottom: 2px solid #CCD7E6
+}
+.MessageBody
+{
+	FONT-SIZE: 8pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+  	Background-Color: #FFFFFF;
+}
+
+.SimpleRowHover
+{
+	background: #DCE0F1;
+	cursor: hand;
+}
+
+.SimpleRowNormal
+{
+	
+}
+
+.RecordTableHeadingRow
+{
+		Background-Color: #BADCFC;
+		Border-Bottom: #E0E0E0;
+		FONT-SIZE: 8pt;
+	    FONT-WEIGHT: bold;
+   		FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+.RecordTableWhiteHeadingRow
+{
+		Background-Color: #465E9C;
+		Border: 1px solid #465E9C;
+		FONT-SIZE: 8pt;
+	  FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		color: #FFFFFF; 
+}
+
+.RecordTableRowNormal
+{
+		FONT-SIZE: 8pt;
+	  FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		Background-Color: #FFFFFF;
+		BORDER-BOTTOM: silver 1px solid
+}
+.RecordTableRowNormalBlue
+{
+		FONT-SIZE: 10pt;
+	  	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		Background-Color: #DDE4EE;
+		BORDER-BOTTOM: silver 1px solid
+}
+.RecordTableRowHeighlightedBlue
+{
+		FONT-SIZE: 10pt;
+	  	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		Background-Color: #F4FAFF;
+		cursor: hand;
+		BORDER-BOTTOM: silver 1px solid
+}
+
+.RecordTableRowHeighlighted
+{
+		FONT-SIZE: 8pt;
+	  FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		Background-Color: #F4FAFF;
+		cursor: hand;
+		BORDER-BOTTOM: silver 1px solid
+}
+
+.RecordTableSimpleRowHeighlighted
+{
+		FONT-SIZE: 8pt;
+	  FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		Background-Color: #F4FAFF;
+		BORDER-BOTTOM: silver 1px solid
+}
+.GridRow
+{
+    BORDER-BOTTOM: silver 1px solid
+}
+.RecordTableGridRow
+{
+		FONT-SIZE: 8pt;
+	 	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		BORDER-BOTTOM: silver 1px solid
+}
+
+.RecordTableGridRowBold
+{
+		FONT-SIZE: 8pt;
+	  FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		FONT-WEIGHT: bold;
+		BORDER-BOTTOM: silver 1px solid
+}
+.RecordTableGridCell
+{
+	 Background-Color: #F4FAFF;
+	 FONT-SIZE: 8pt;
+	 FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	 BORDER-BOTTOM: silver 1px solid;
+	 FONT-WEIGHT: bold;
+}
+.EBAGridCellBgColor
+{
+	FONT-WEIGHT: bold;
+	COLOR: #437494;
+}
+.EBAGridCellAlign
+{
+	TEXT-ALIGN : left;
+}
+
+.ViewPageMain
+{
+		Border: 1px solid #ACBDD5;
+		Background-Color: #ACBDD5;
+}
+.ViewPageTitle
+{
+    FONT-SIZE: 10pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+    Border-Bottom: 1px solid #EBEFF5
+}
+
+.ViewPageValue
+{
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+    Border-Bottom: 1px solid #CCD7E6
+}
+
+
+.HomeSectionTR
+{
+	background: #EFF7FF;
+}
+
+.FormTable
+{
+	Border: 1px solid #609BD3;
+}
+
+.FormTable TR
+{
+	Border: 1px solid #DAF5D6;
+	background: #DAF5D6;
+	vertical-align: Top; 
+}
+
+.FormTable TD
+{
+	FONT-SIZE: 10pt;
+  FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+
+
+.FormSectionHeading
+{
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 12pt;
+	Border-Bottom: 1px solid #609BD3;
+}
+
+.MessageDiv
+{
+    text-align:center;
+	border: 1px solid #6095B5;
+	border-bottom-width:3px;
+	border-top-width:3px;
+	BACKGROUND-COLOR: #F0F5F9;
+}
+
+.MessageDivHeading
+{
+	BACKGROUND-COLOR: #6095B5;
+	FONT-SIZE: 8pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	FONT-WEIGHT: bold;
+	COLOR: #FFFFFF;
+}
+
+.RequiredField
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		COLOR:#FF0000;
+}
+
+.RequiredFieldMessage
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		COLOR:#666666;
+}
+
+.GrayMessage
+{
+    FONT-SIZE: 7pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		COLOR:#C9C9C9;
+}
+
+.ErrorMessageDiv
+{
+    border: 1px solid #6095B5;
+    background-color: #F0F5F9;
+    left: 25%;
+    top: 25%;
+    width: 50%;
+}
+
+.ErrorMessageWindowTitle
+{
+    background: #A0CDEE;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    font-weight: bold;
+    color: #000000;
+}
+
+.ErrorMessageInstruction
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    color: #000000;
+}
+
+.ErrorMessageItems
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+}
+
+.ErrorMessageClose
+{
+	
+}
+
+.DivRowNormal
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+    Background-Color: #EDEFF8;
+    BORDER-BOTTOM: silver 1px solid
+}
+
+.DivRowHeighlighted
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+    Background-Color: #F4FAFF;
+    cursor: hand;
+    BORDER-BOTTOM: silver 1px solid
+}
+
+.FranchiseGridCell
+{
+	 Background-Color: #C6D2E3;
+	 FONT-SIZE: 10pt;
+	 FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	 BORDER-BOTTOM: 1px solid #98AECD;
+	 Cursor: hand;
+}
+
+.StoreMenuNormalRed
+{
+	cursor: Default;
+	border-bottom-color:#B9C8DD; 
+	border-bottom-style:solid; 
+	border-bottom-width:1px; 
+}
+
+
+.StoreMenuHoverRed
+{
+	cursor: hand;
+}
+
+.StoreMenuHoverRed TD
+{
+	border-bottom-color:#CC0000; 
+	border-bottom-style:solid; 
+	border-bottom-width:2px; 
+	border-top-color:#CC0000; 
+	border-top-style:solid; 
+	border-top-width:2px;
+}
+
+.StoreStageNumberRed
+{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 18pt;
+	FONT-WEIGHT: bold;
+	COLOR: #FFFFFF;
+	BACKGROUND-COLOR: #CC0000;
+	
+}
+
+.StoreStageTitleRed
+{
+	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	FONT-SIZE: 10pt;
+	COLOR: #000000;
+	BACKGROUND-COLOR: #FFC1C1;
+}
+
+.StoreMenuNormalOrange
+{
+	cursor: Default;
+	border-bottom-color:#B9C8DD; 
+	border-bottom-style:solid; 
+	border-bottom-width:1px; 
+}
+
+.StoreMenuHoverOrange
+{
+	cursor: hand;
+}
+
+.StoreMenuHoverOrange TD
+{
+	border-bottom-color:#FF6600; 
+	border-bottom-style:solid; 
+	border-bottom-width:2px; 
+	border-top-color:#FF6600; 
+	border-top-style:solid; 
+	border-top-width:2px;
+	
+}
+
+
+.StoreStageNumberOrange
+{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 18pt;
+	FONT-WEIGHT: bold;
+	COLOR: #FFFFFF;
+	BACKGROUND-COLOR: #FF6600;
+}
+
+.StoreStageTitleOrange
+{
+	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	FONT-SIZE: 10pt;
+	COLOR: #000000;
+	BACKGROUND-COLOR: #FFE0CC;
+}
+
+.StoreMenuNormalViolet
+{
+	cursor: Default;
+	border-bottom-color:#B9C8DD; 
+	border-bottom-style:solid; 
+	border-bottom-width:1px; 
+}
+
+.StoreMenuHoverViolet
+{
+	cursor: hand;
+}
+
+.StoreMenuHoverViolet TD
+{
+	border-bottom-color:#9966CC; 
+	border-bottom-style:solid; 
+	border-bottom-width:2px; 
+	border-top-color:#9966CC; 
+	border-top-style:solid; 
+	border-top-width:2px;
+}
+
+.StoreStageNumberViolet
+{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 18pt;
+	FONT-WEIGHT: bold;
+	COLOR: #FFFFFF;
+	BACKGROUND-COLOR: #9966CC;
+	
+}
+
+.StoreStageTitleViolet
+{
+	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	FONT-SIZE: 10pt;
+	COLOR: #000000;
+	BACKGROUND-COLOR: #EADFF4;
+}
+
+
+.StoreMenuNormalYellow
+{
+	cursor: Default;
+	border-bottom-color:#B9C8DD; 
+	border-bottom-style:solid; 
+	border-bottom-width:1px; 
+}
+
+.StoreMenuHoverYellow
+{
+	cursor: hand;
+}
+
+.StoreMenuHoverYellow TD
+{
+	border-bottom-color:#FFCC00; 
+	border-bottom-style:solid; 
+	border-bottom-width:2px; 
+	border-top-color:#FFCC00; 
+	border-top-style:solid; 
+	border-top-width:2px;
+}
+
+.StoreStageNumberYellow
+{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 18pt;
+	FONT-WEIGHT: bold;
+	COLOR: #FFFFFF;
+	BACKGROUND-COLOR: #FFCC00;
+	
+}
+
+.StoreStageTitleYellow
+{
+	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	FONT-SIZE: 10pt;
+	COLOR: #000000;
+	BACKGROUND-COLOR: #FFEB9B;
+}
+
+
+.StoreMenuNormalGreen
+{
+	cursor: Default;
+	border-bottom-color:#B9C8DD; 
+	border-bottom-style:solid; 
+	border-bottom-width:1px; 
+}
+
+.StoreMenuHoverGreen
+{
+	cursor: hand;
+}
+
+.StoreMenuHoverGreen TD
+{
+	border-bottom-color:#669900; 
+	border-bottom-style:solid; 
+	border-bottom-width:2px; 
+	border-top-color:#669900; 
+	border-top-style:solid; 
+	border-top-width:2px;
+}
+
+.StoreStageNumberGreen
+{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 18pt;
+	FONT-WEIGHT: bold;
+	COLOR: #FFFFFF;
+	BACKGROUND-COLOR: #669900;
+	
+}
+
+.StoreStageTitleGreen
+{
+	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	FONT-SIZE: 10pt;
+	COLOR: #000000;
+	BACKGROUND-COLOR: #E6FFB0;
+}
+
+
+.StoreMenuNormalBlue
+{
+	cursor: Default;
+	border-bottom-color:#B9C8DD; 
+	border-bottom-style:solid; 
+	border-bottom-width:1px; 
+}
+
+.StoreMenuHoverBlue
+{
+	cursor: hand;
+}
+
+.StoreMenuHoverBlue TD
+{
+	border-bottom-color:#0000CC; 
+	border-bottom-style:solid; 
+	border-bottom-width:2px; 
+	border-top-color:#0000CC; 
+	border-top-style:solid; 
+	border-top-width:2px;
+	
+}
+
+.StoreStageNumberBlue
+{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 18pt;
+	FONT-WEIGHT: bold;
+	COLOR: #FFFFFF;
+	BACKGROUND-COLOR: #0000CC;
+
+	
+}
+
+.StoreStageTitleBlue
+{
+	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	FONT-SIZE: 10pt;
+	COLOR: #000000;
+	BACKGROUND-COLOR: #CEECFF;
+}
+
+
+.StoreMenuNormalPink
+{
+	cursor: Default;
+	border-bottom-color:#B9C8DD; 
+	border-bottom-style:solid; 
+	border-bottom-width:1px; 
+}
+
+.StoreMenuHoverPink
+{
+	cursor: hand;
+}
+
+.StoreMenuHoverPink TD
+{
+	border-bottom-color:#FF0099; 
+	border-bottom-style:solid; 
+	border-bottom-width:2px; 
+	border-top-color:#FF0099; 
+	border-top-style:solid; 
+	border-top-width:2px;
+}
+
+.StoreStageNumberPink
+{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 18pt;
+	FONT-WEIGHT: bold;
+	COLOR: #FFFFFF;
+	BACKGROUND-COLOR: #FF0099;
+	
+}
+
+.StoreStageTitlePink
+{
+	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	FONT-SIZE: 10pt;
+	COLOR: #000000;
+	BACKGROUND-COLOR: #FFCCFF;
+}
+
+
+.StoreMenuNormalBrown
+{
+	cursor: Default;
+	border-bottom-color:#B9C8DD; 
+	border-bottom-style:solid; 
+	border-bottom-width:1px; 
+}
+
+
+.StoreMenuHoverBrown
+{
+	cursor: hand;
+}
+
+.StoreMenuHoverBrown TD
+{
+	border-bottom-color:#996600; 
+	border-bottom-style:solid; 
+	border-bottom-width:2px; 
+	border-top-color:#996600; 
+	border-top-style:solid; 
+	border-top-width:2px;
+}
+
+.StoreStageNumberBrown
+{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 18pt;
+	FONT-WEIGHT: bold;
+	COLOR: #FFFFFF;
+	BACKGROUND-COLOR: #996600;
+	
+}
+
+.StoreStageTitleBrown
+{
+	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	FONT-SIZE: 10pt;
+	COLOR: #000000;
+	BACKGROUND-COLOR: #FFE9BB;
+}
+
+
+.StoreMenuNormalSkyBlue
+{
+	cursor: Default;
+	border-bottom-color:#B9C8DD; 
+	border-bottom-style:solid; 
+	border-bottom-width:1px; 
+}
+
+
+.StoreMenuHoverSkyBlue
+{
+	cursor: hand;
+}
+
+.StoreMenuHoverSkyBlue TD
+{
+	border-bottom-color:#00CCFF; 
+	border-bottom-style:solid; 
+	border-bottom-width:2px; 
+	border-top-color:#00CCFF; 
+	border-top-style:solid; 
+	border-top-width:2px;
+}
+
+.StoreStageNumberSkyBlue
+{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 18pt;
+	FONT-WEIGHT: bold;
+	COLOR: #FFFFFF;
+	BACKGROUND-COLOR: #00CCFF;
+	
+}
+
+.StoreStageTitleSkyBlue
+{
+	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	FONT-SIZE: 10pt;
+	COLOR: #000000;
+	BACKGROUND-COLOR: #A8EEFF;
+}
+
+
+.StoreMenuNormalDarkGreen
+{
+	cursor: Default;
+	border-bottom-color:#B9C8DD; 
+	border-bottom-style:solid; 
+	border-bottom-width:1px; 
+}
+
+.StoreMenuHoverDarkGreen
+{
+	cursor: hand;
+}
+
+.StoreMenuHoverDarkGreen TD
+{
+	border-bottom-color:#006666; 
+	border-bottom-style:solid; 
+	border-bottom-width:2px; 
+	border-top-color:#006666; 
+	border-top-style:solid; 
+	border-top-width:2px;
+}
+
+.StoreStageNumberDarkGreen
+{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 18pt;
+	FONT-WEIGHT: bold;
+	COLOR: #FFFFFF;
+	BACKGROUND-COLOR: #006666;
+	
+}
+.StoreStageTitleDarkGreen
+{
+	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	FONT-SIZE: 10pt;
+	COLOR: #000000;
+	BACKGROUND-COLOR: #B9F9E4;
+}
+
+.StoreMenuGray
+{
+	cursor: Default;
+	
+}
+
+.StoreMenuGray TD
+{
+	border-bottom-color:#B9C8DD; 
+	border-bottom-style:solid; 
+	border-bottom-width:1px; 
+}
+
+.StoreStageNumberGray
+{
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 18pt;
+	FONT-WEIGHT: bold;
+	COLOR: #CCCCCC;
+	BACKGROUND-COLOR: #666666;
+	
+}
+
+.StoreStageTitleGray
+{
+	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	FONT-SIZE: 10pt;
+	COLOR: #CCCCCC;
+	BACKGROUND-COLOR: #E4E4E4;
+}
+.ScrollBars
+{
+    SCROLLBAR-FACE-COLOR: #e4ecf6;
+    SCROLLBAR-BASE-COLOR: #e4ecf6
+}
+.MonthViewDetail
+{
+    BORDER-RIGHT: #BCE1F8 1px solid;
+    BORDER-TOP: #BCE1F8 1px solid;
+    BORDER-LEFT: #BCE1F8 1px solid;
+    BORDER-BOTTOM: #BCE1F8 1px solid;
+    BACKGROUND-COLOR: #FFFBF7;
+    font-family:Arial;
+    font-size:16px;    
+    /*color:#144090;*/
+}
+.MonthViewDetailOther
+{
+    BORDER-RIGHT: #BCE1F8 1px solid;
+    BORDER-TOP: #BCE1F8 1px solid;
+    BORDER-LEFT: #BCE1F8 1px solid;
+    BORDER-BOTTOM: #BCE1F8 1px solid;
+    BACKGROUND-COLOR: #f2f7f2;
+    font-family:Arial;
+    font-size:11px;
+    /*color:#144090;*/
+}
+.MonthViewToday
+{
+    BORDER-RIGHT: #c0c0c0 1px solid;
+    BORDER-TOP: #c0c0c0 1px solid;
+    BORDER-LEFT: #c0c0c0 1px solid;
+    BORDER-BOTTOM: #c0c0c0 1px solid;
+    BACKGROUND-COLOR: #fffae0;
+}
+.CalendarYearRed
+{
+	FONT-FAMILY:   Arial, Helvetica, sans-serif;
+	FONT-SIZE: 18pt;
+	FONT-WEIGHT: bold;
+	COLOR: #FFFFFF;
+	BACKGROUND-COLOR: #CC0000;
+	
+}
+.ComboDownButton
+{
+	BACKGROUND-COLOR: #666666;
+}
+
+.CalenderTable
+{
+	border: 1px solid #ACBDD5;
+}
+
+.CalenderTableHeadingRow
+{
+	border: 1px solid #E1E1E1;
+	BACKGROUND-COLOR: #E1E1E1;
+}
+.winter
+{
+	border: 1px solid #E1E1E1;
+	BACKGROUND-COLOR: #CBB3FF;
+	FONT-SIZE: 8pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	COLOR: #000000;
+	FONT-WEIGHT: bold;
+}
+
+.spring
+{
+	border: 1px solid #E1E1E1;
+	BACKGROUND-COLOR: #FFCC00;
+	FONT-SIZE: 8pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	COLOR: #000000;
+	FONT-WEIGHT: bold;
+}
+.summer
+{
+	border: 1px solid #E1E1E1;
+	BACKGROUND-COLOR: #AAE699;
+	FONT-SIZE: 8pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	COLOR: #000000;
+	FONT-WEIGHT: bold;
+}
+.fall
+{
+	border: 1px solid #E1E1E1;
+	BACKGROUND-COLOR: #B8EBF5;
+	FONT-SIZE: 8pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	COLOR: #000000;
+	FONT-WEIGHT: bold;
+}
+.holiday
+{
+	border: 1px solid #E1E1E1;
+	BACKGROUND-COLOR: #FFFF99;
+	FONT-SIZE: 8pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	COLOR: #000000;
+	FONT-WEIGHT: bold;
+}
+
+.CalenderTableWhiteHeading
+{
+	border: 1px solid #FFFFFF;
+	BACKGROUND-COLOR: #FFFFFF;
+	FONT-SIZE: 8pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	COLOR: #000000;
+	FONT-WEIGHT: bold;
+}
+.CalenderTableMonthHeading
+{
+	border: 1px solid #CCD7E6;
+	BACKGROUND-COLOR: #CCD7E6;
+	FONT-SIZE: 8pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	COLOR: #000000;
+	FONT-WEIGHT: bold;
+}
+.CalenderTableTotalHeading
+{
+	border: 1px solid #E2E2E2;
+	BACKGROUND-COLOR: #E2E2E2;
+	FONT-SIZE: 8pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	COLOR: #000000;
+	FONT-WEIGHT: bold;
+}
+.CalenderCellTotalHeading
+{
+	border: 1px solid #EAEEF4;
+	BACKGROUND-COLOR: #FFFFFF;
+	FONT-SIZE: 10pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	COLOR: #000000;
+	FONT-WEIGHT: bold;
+}
+.CalenderCellWhite
+{
+	border: 1px solid #E1E1E1;
+	BACKGROUND-COLOR: #FFFFFF;
+	FONT-SIZE: 8pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	COLOR: #000000;
+	FONT-WEIGHT: bold;
+}
+.CalendarTablePublicationName
+{
+	border: 1px solid #EAEEF4;
+	BACKGROUND-COLOR: #FFFFFF;
+	FONT-SIZE: 7pt;
+  FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	COLOR: #000000;
+	CURSOR: hand;
+}
+.CalendarTablePublicationMonthCount
+{
+	border: 1px solid #EBEBEB;
+	BACKGROUND-COLOR: #F2F2F2;
+	FONT-SIZE: 16pt;
+  FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	COLOR: #000000;
+	CURSOR: hand;
+}
+.CalendarTablePublicationDetails
+{
+	border: 1px solid #FFEE77;
+	BACKGROUND-COLOR: #FFFFCC;
+	FONT-SIZE: 7pt;
+  FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	COLOR: #000000;
+	CURSOR: hand;
+}
+.CalenderDivHeading
+{
+	  FONT-SIZE: 12pt;
+	  FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+
+.CalenderDivYearHeading
+{
+	  FONT-SIZE: 12pt;
+	  FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		BACKGROUND-COLOR: #FFFF99;
+		COLOR: #003399;
+}
+
+.CalenderDivCloseButton
+{
+	  FONT-SIZE: 12pt;
+	  FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+		BACKGROUND-COLOR: #CC0000;
+		COLOR: #FFFFFF;
+		cursor:hand;
+}
+.GrayLine
+{
+	BACKGROUND-COLOR: #CCCCCC;
+}
+.CalendarDivDisableCell
+{
+	border: 1px solid #EBEBEB;
+	BACKGROUND-COLOR: #D1D1D1;
+}
+.CalendarDivDisableCellText
+{
+	FONT-SIZE: 12pt;
+	FONT-WEIGHT: bold;
+  FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	COLOR: #666666;
+}
+.CalendarDivNormalCell
+{
+	border: 1px solid #EBEBEB;
+	BACKGROUND-COLOR: #F2F2F2;
+}
+.CalendarDivNormalCellText
+{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 12pt;
+  FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	COLOR: #000000;
+}
+
+.CalendarDivSelectedCell
+{
+	border: 1px solid #EBEBEB;
+	BACKGROUND-COLOR: #AAE699;
+}
+.CalendarDivSundayCell
+{
+	border: 1px solid #EBEBEB;
+	BACKGROUND-COLOR: #FFE8E8;
+}
+.CalendarDiv
+{
+	border: 2px solid #000000;
+	BACKGROUND-COLOR: #EDEFF8;
+}
+
+/* the following two styles are used in notices_view.asp page */
+.div_body {
+	overflow: auto;
+	visibility: visible;
+	height: 435px;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+.div_overlap {
+	width: 90%;
+	overflow: hidden;
+	position: absolute;
+	visibility: visible;
+	z-index: 10;
+	height: 101px;
+	top: 25px;
+	left: 5%;
+}
+
+.MediaLink
+{
+	BACKGROUND-COLOR: #FFFFCC;
+}
+
+.MediaLink A
+{
+	FONT-SIZE: 11pt;
+	FONT-WEIGHT: bold;
+	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+.SpecialFont
+	{
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:11px;
+	}
+.SpecialName
+	{
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:10px;
+	}
+.SpecialName.NoItem
+	{
+		color:#999999;
+		font-style:italic;
+		cursor:pointer;
+	}
+.SpecialName.HighlightedBox
+	{
+		background-color:#FFFFFF;
+		cursor:pointer;
+	}
+.YearCell
+	{
+		background-color:#7391B9;
+		FONT-FAMILY:   Arial, Helvetica, sans-serif;
+		FONT-SIZE: 18pt;
+		FONT-WEIGHT: bold;
+		COLOR: #FFFFFF;
+	}
+.PageSubTitle
+{
+	  FONT-SIZE: 12pt;
+	  FONT-WEIGHT: bold;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+.ToolBarBlue
+{
+		border: 1px solid #FFEEA8;
+		BACKGROUND-COLOR: #C8D0E6;
+}
+.btnFlat
+{
+	border:1px solid #7391B9;
+	height:20px;
+}
+
+.SmallFormTable
+{
+	border: 1px solid #79A0D3;
+	border-collapse: collapse
+}
+
+.SmallFormTable TH
+{
+	BACKGROUND-COLOR: #BADBFC;
+	FONT-SIZE: 8pt;
+ 	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	FONT-WEIGHT: bold;
+	COLOR: #000000;
+  	vertical-align : Top; 
+	border: 1px solid #79A0D3;
+}
+
+.SmallFormTable TD
+{
+	background-color:#DAF5D6;
+	FONT-SIZE: 8pt;
+  	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	border: 1px solid #79A0D3;
+}
+
+.SmallFormTableBorderNone
+{
+}
+
+.SmallFormTableBorderNone TH
+{
+	BACKGROUND-COLOR: #9bbad6;
+	FONT-SIZE: 8pt;
+  FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	FONT-WEIGHT: bold;
+	COLOR: #000000;
+  vertical-align : Top; 
+}
+
+.SmallFormTableBorderNone TD
+{
+	FONT-SIZE: 8pt;
+  FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+
+.SmallFormSectionBoldHeading
+{
+	FONT-SIZE: 8pt;
+  FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	FONT-WEIGHT: bold;
+}
+.SmallFormSectionHeading
+{
+	FONT-SIZE: 8pt;
+  FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+
+.SmallMoneyEditBox
+{
+	FONT-SIZE: 8pt;
+  FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	text-align : right;
+}
+
+.MoneyEditBox
+{
+	FONT-SIZE: 10pt;
+  FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+	text-align : right;
+}
+
+.ButtonWhiteMouseOver {
+background-color: #F4FAFF;
+font-family: verdana;
+border: #A0A0A0 1px solid;
+font-size: 12px;
+color: #000000
+} 
+
+.ButtonWhiteMouseOut {
+background-color: #FFFFFF;
+font-family: verdana;
+border: #FFFFFF 1px solid;
+font-size: 12px;
+color: #000000
+} 
+
+.ButtonGrayMouseOver {
+background-color: #FFFFFF;
+font-family: verdana;
+border: #999999 1px solid;
+font-size: 12px;
+color: #000000;
+cursor:hand;
+} 
+
+.ButtonGrayMouseOut {
+background-color:#E0E0E0;
+font-family: verdana;
+border: #999999 1px solid;
+font-size: 12px;
+color: #000000
+} 
+
+.ButtonLightBlueMouseOver {
+background-color: #FFFFFF;
+font-family: verdana;
+border: #769CCB 1px solid;
+font-size: 12px;
+color: #000000;
+cursor:hand;
+} 
+
+.ButtonLightBlueMouseOut {
+background-color:#EDEFF8;
+font-family: verdana;
+border: #769CCB 1px solid;
+font-size: 12px;
+color: #000000
+} 
+
+.ButtonMouseOverSRWhite {
+background-color: #F4FAFF;
+font-family: verdana;
+border: #A0A0A0 1px solid;
+font-size: 12px;
+color: #000000
+} 
+
+.ButtonMouseOutSRWhite {
+background-color: #FFFFFF;
+font-family: verdana;
+border: #FFFFFF 1px solid;
+font-size: 12px;
+color: #000000
+} 
+
+
+.ButtonMouseOverSRBlue {
+background-color: #EDEFF8;
+font-family: verdana;
+border: #A0A0A0 1px solid;
+font-size: 12px;
+color: #000000
+} 
+
+.ButtonMouseOutSRBlue {
+background-color: #CCD7E6;
+font-family: verdana;
+border: #CCD7E6 1px solid;
+font-size: 12px;
+color: #000000
+} 
+
+.InnerFormTable
+{
+	Border: 1px solid #609BD3;
+}
+
+.InnerFormTable TR
+{
+	Border: 1px solid #609BD3;
+	background: #C5E7C0;
+	vertical-align : Top; 
+}
+
+.InnerFormTable TD
+{
+	FONT-SIZE: 10pt;
+  FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+
+.ScrollBarSR
+{
+	scrollbar-arrow-color: #000000;
+	scrollbar-face-color: #9BBAD6;
+	scrollbar-track-color: #DDE4EE;
+	scrollbar-shadow-color: #DDE4EE;
+	scrollbar-highlight-color: #DDE4EE;
+	scrollbar-base-color: #000000;
+	scrollbar-3dlight-color: #9BBAD6;
+	scrollbar-darkshadow-color: #000000;
+}
+.div_Transparent {
+	filter: Alpha(Opacity=90);
+	-moz-opacity:0.9;
+}
+.LeadLeftMenu
+{
+    Cursor: Hand;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+    BORDER-BOTTOM: #FFFFFF 1px solid;
+}
+
+.DayViewTime
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    CURSOR: hand;
+    BORDER-BOTTOM: #ffffff 1px solid;
+    BACKGROUND-COLOR: #bbddff
+}
+.DayViewDetail
+{
+    border-left: #D8EAFC 1px solid;
+    BORDER-BOTTOM: #C2E4F8 1px solid;
+    BACKGROUND-COLOR: #ffffff
+}
+.DayViewEventOut
+{
+    BORDER-RIGHT: #ffffff 2px solid;
+    BORDER-TOP: #ffffff 2px solid;
+    MARGIN-TOP: 2px;
+    FLOAT: left;
+    OVERFLOW: hidden;
+    BORDER-LEFT: #ffffff 2px solid;
+    WIDTH: 150px;
+    CURSOR: hand;
+    BORDER-BOTTOM: #ffffff 2px solid;
+    HEIGHT: 19px
+}
+.DayViewEventOver
+{
+    BORDER-RIGHT: #c0c0c0 2px solid;
+    BORDER-TOP: #c0c0c0 2px solid;
+    MARGIN-TOP: 2px;
+    FLOAT: left;
+    OVERFLOW: hidden;
+    BORDER-LEFT: #c0c0c0 2px solid;
+    WIDTH: 150px;
+    CURSOR: hand;
+    BORDER-BOTTOM: #c0c0c0 2px solid;
+    HEIGHT: 19px
+}
+.ScheduleTypeImportant
+{
+    BACKGROUND-COLOR: #ffcccc
+}
+.ScheduleTypeBusiness
+{
+    BACKGROUND-COLOR: #99ccff
+}
+.ScheduleTypePersonal
+{
+    BACKGROUND-COLOR: #99ff00
+}
+.ScheduleTypeVacation
+{
+    BACKGROUND-COLOR: #cccccc
+}
+.ScheduleTypeMeeting
+{
+    BACKGROUND-COLOR: #ffd700
+}
+.ScheduleTypeTraining
+{
+    BACKGROUND-COLOR: #9acd32
+}
+.ScheduleTypeOther
+{
+    BACKGROUND-COLOR: #faebd7
+}
+.ScheduleType
+{
+    BACKGROUND-COLOR: #ebebeb
+}
+.ScheduleTypeGeneral
+{
+    BACKGROUND-COLOR: #ffffff;
+}
+.MonthViewEventOver
+{
+    BORDER-RIGHT: #c0c0c0 2px solid;
+    BORDER-TOP: #c0c0c0 2px solid;
+    MARGIN-TOP: 2px;
+    OVERFLOW: hidden;
+    BORDER-LEFT: #c0c0c0 2px solid;
+    WIDTH: 100%;
+    CURSOR: hand;
+    BORDER-BOTTOM: #c0c0c0 2px solid;
+    HEIGHT: 19px
+}
+.WeekViewEventOut
+{
+    BORDER-RIGHT: #ffffff 2px solid;
+    BORDER-TOP: #ffffff 2px solid;
+    MARGIN-TOP: 2px;
+    OVERFLOW: hidden;
+    BORDER-LEFT: #ffffff 2px solid;
+    WIDTH: 150px;
+    CURSOR: hand;
+    BORDER-BOTTOM: #ffffff 2px solid;
+    HEIGHT: 19px
+}
+.WeekViewEventOver
+{
+    BORDER-RIGHT: #c0c0c0 2px solid;
+    BORDER-TOP: #c0c0c0 2px solid;
+    MARGIN-TOP: 2px;
+    OVERFLOW: hidden;
+    BORDER-LEFT: #c0c0c0 2px solid;
+    WIDTH: 150px;
+    CURSOR: hand;
+    BORDER-BOTTOM: #c0c0c0 2px solid;
+    HEIGHT: 19px
+}
+.WeekViewHeader
+{
+    FONT-WEIGHT: bold;
+    BACKGROUND-COLOR: #bbddff
+}
+.WeekViewTime
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    BORDER-BOTTOM: #ffffff 1px solid;
+    BACKGROUND-COLOR: #bbddff
+}
+.WeekViewDetail
+{
+    BORDER-RIGHT: #C2E4F8 1px solid;
+    BORDER-BOTTOM: #C2E4F8 1px solid;
+    BACKGROUND-COLOR: #ffffff
+}
+.ReportBody
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Arial
+}
+.ReportName
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14pt;
+    FONT-FAMILY: Arial
+}
+.CompanyName
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    FONT-FAMILY: Arial
+}
+.Date
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial
+}
+.TableHeading
+{
+    BORDER-TOP: #000000 1px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Arial
+}
+.TableRow
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial
+}
+.ReportingPeriod
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt
+}
+.DetailTitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial
+}
+.DetailText
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: Arial
+}
+.DetailSubject
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt;
+    FONT-FAMILY: Arial
+}
+.SummaryValidationDiv
+{
+    left: 40%;
+    top: 20%;
+    width: 320px;
+    Z-INDEX: 10; 
+	OVERFLOW: hidden;
+	position: absolute;
+	border:1px solid #000099;
+}
+
+.SummaryValidationDiv IFRAME {
+	DISPLAY: block; 
+	Z-INDEX: -1; 
+	FILTER: mask(); 
+	LEFT: 0px; 
+	WIDTH: 100%; 
+	POSITION: absolute; 
+	TOP: 0px; 
+	HEIGHT: 100%;
+	border:0;
+}
+
+
+.blueborder
+{
+    border: border:1px solid #7391B9;
+}
+.menubar
+{
+    Cursor: Hand;
+ 	FONT-SIZE: 10pt;         	
+ 	height:15px;
+ 	color:#000000;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+    BORDER: #000000 1px solid;   
+    background-image:url(D:/Projects/PF_LMS/images/bg_image.jpg); 
+    background-color:#D8DFE9;
+      
+}
+
+.MenuItemNormal
+{
+background-color:#CDCDCD;
+padding:1px;
+cursor:hand;
+color: #4a494a;
+font-weight:normal;
+vertical-align:middle;
+border:1px solid #4e4e4e;
+height:10px;
+}
+
+.MenuItemNormal TD
+{
+font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+font-size: 7pt;
+padding:1px;
+vertical-align:middle;
+color: #4a494a;
+border-style:none;
+}
+
+.MenuItemHover
+{
+background: #FFFFFF;
+padding:1px;
+cursor: hand;
+color: #4a494a;
+}
+
+.MenuItemHover TD
+{
+padding:1px;
+font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+font-size: 7pt;
+vertical-align:middle;
+font-weight:normal;
+color: #4a494a;
+border-style:none;
+
+}
+.labelStatus
+{
+padding:3px;
+color:Black;
+font-family: 'Verdana', 'Arial', 'Helvetica', 'sans-serif';
+font-size: 10pt;
+font-weight:bold;
+background-color:Orange;
+border-style:none;
+
+}
+
+
+
+
+.BlackText
+{
+    color:Black;
+    font-size:7pt;
+}
+.BlackTextBigger A:link, .BlackTextBigger A:active, .BlackTextBigger A:visited
+{
+    color:black;
+}
+
+.BlackTextBigger A:hover
+{
+    color:#437494;
+}
+
+.SkyBlueText
+{
+    color:#B3DEF0;
+    font-size:7pt;
+}
+.WhiteSmall
+{
+    color:White;
+    font-size:9px;
+}
+.GreyText
+{
+    color:#7C8798;
+}
+.GreyTextSmall
+{
+    color:#7C8798;
+    font-size:10px;
+}
+.DarkBlueTextSmall
+{
+    color:#3F7193;
+    font-size:10px;
+}
+.Clickable
+{
+    cursor:pointer;
+}
+.NonBold
+{
+    font-weight:normal;    
+}
+.LeadDetailButton
+{
+    border:1px solid #86B1D3;
+    font-family:Verdana;
+    letter-spacing:-1px;
+    word-spacing:1px;
+    text-transform:uppercase;
+    font-size:10px;
+    font-weight:bold;
+    color:#437494;
+    background-color:#D1E6F9;
+    text-align:center;
+    cursor:pointer;
+    padding:4px;
+    display:inline;
+}
+
+
+.PrintButton
+{
+    border:1px solid #86B1D3;
+    font-family:Verdana;
+    letter-spacing:-1px;
+    word-spacing:1px;
+    text-transform:uppercase;
+    font-size:10px;
+    font-weight:bold;
+    color:#437494;
+    background-color:#D1E6F9;
+    text-align:center;
+    cursor:pointer;
+    padding:4px;
+    display:inline;
+    padding-left:32px; 
+    background-repeat:no-repeat;
+    background-position:12px center ; 
+    background-image:url('../../Images/icn_printableV.gif');
+}
+
+
+.LeadDetailGreenButton
+{
+    border:1px solid #86B1D3;
+    font-family:Verdana;
+    letter-spacing:-1px;
+    word-spacing:1px;
+    text-transform:uppercase;
+    font-size:10px;
+    font-weight:bold;
+    color:#418F37;
+    background-color:#BDE4B8;
+    text-align:center;
+    cursor:pointer;
+    padding:4px;
+    display:inline;
+}
+.HoverBorder
+{
+    border:1px solid #609BD3;
+    font-size:12px;
+    font-weight:bold;
+    color:#437494;
+    cursor:pointer;
+}
+.ResetButtonBorder
+{
+    border:1px solid #A0CDEE;
+}
+.GreyTextBox
+{
+    border:1px solid #7C8798;
+    height:18px;
+    color:Gray;
+}
+.HomeButton
+{
+    font-size:12px;
+    font-weight:bold;
+    color:#437494;
+    text-decoration:none;
+    cursor:pointer;
+}
+.TopBarBGSpace
+{
+    width:15px;
+    height:53px;
+    background:url('../images/hdr_bg.jpg');
+}
+.TopBar3DTable
+{
+    background-color:#E4F1F7;
+}
+.TopBar3DTable TD
+{
+    color:#467FA6;
+    font-size:9px;
+    background:url('../images/hdr_bg.jpg');
+    height:53px;
+    text-align:center;
+}
+.TopBar3DTable .MainIcons
+{
+    width:65px;
+    cursor:pointer;
+}
+.TopBarSimple
+{
+    background-color:inherit;
+    border:0;
+    width:65px;
+}
+.TopBarSimple TD{background-image:none;color:#BBDFED;vertical-align:bottom;}
+.TopBarHover
+{
+    background-image:none;
+    border:1px solid #4680A6;
+    background-color:#B7D4E5;
+    color:Black;
+    font-size:7pt;
+    width:65px;
+    filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#ffffff,endColorStr=lightblue);
+}
+.TopBarHover TD{background-image:none;color:Black;vertical-align:bottom;}
+.HighlightedRow TD
+{
+    background-color:#FFFFCD;
+}
+.HighlightedGrayRow TD
+{
+    color:#4D728F;
+    cursor:pointer;
+}
+.HighlightedLeftPanelRow TD
+{
+    background-color:#E1F3DF;
+    cursor:pointer;
+}
+.HighlightedHomeRow TD
+{
+    background-color:#E1F3DF;
+    cursor:pointer;
+    height:22px;
+}
+.SimpleHomeRow TD
+{
+    cursor:pointer;
+    height:22px;
+}
+.UnderlinedRow TD
+{
+    border-bottom:1px solid #609BD3;
+}
+.MenuDynamicHoverStyle
+{
+    /*background-color:#A0CDEE;
+    border:1px solid #609BD3;
+    color:#467FA6;
+    height:25px;*/
+}
+.MenuDynamicHoverStyle A:hover
+{
+    color:#305872;
+}
+.TextBoxBlueBorder
+{
+    border:1px solid #B4CFDD;
+}
+.TextBoxBlueBorderPin
+{
+    border:1px solid #B4CFDD;
+    background-color:Yellow;
+    font-weight:bold;
+    text-align:center;
+    font-size:12px;
+    color:Black;
+}
+.InactiveLeadDIV
+{
+    filter: Alpha(Opacity=90);
+	-moz-opacity:0.9;
+	top:90px;
+	left:60px;
+	width:150px;
+	border:1px solid #F3AD09;
+	border-bottom-width:3px;
+	border-top-width:3px;
+	background-color:#FAD67F;
+	position:absolute;
+	text-align:center;
+}
+.InactiveText
+{
+    font-size:18px;
+    font-weight:bold;
+    color:red;
+}
+.ProgressIndicatorDIV
+{
+    filter: Alpha(Opacity=90);
+	-moz-opacity:0.9;
+	/*top:82%;*/
+	bottom:5px;
+	/*left:83%;*/
+	right:10px;
+	width:23%;
+	height:60px;
+	border:3px solid #4C86AC;
+	border-left:0;
+	border-right:0; 
+	background-color:#DEEFFE;
+	position:absolute;
+	text-align:center;
+}
+.SmallGreenTextBox{
+	border:1px solid #50AF43;
+	height:18;
+	font:8pt Arial;
+	vertical-align:text-bottom;
+	padding-top: 1px;
+	padding-left: 3px;	
+}
+.Btn3D
+{
+    background:url('../images/btn_bg.jpg');
+    background-repeat:repeat-x;
+    border:1px solid #404040;
+    height:24px;
+    font-size:12px;
+    font-family:Arial;
+    background-color:#CED1D8;
+    width:80px;
+}
+
+.SmallBtn3D
+{
+    background:url('../images/btn_bg.jpg');
+    background-repeat:repeat-x;
+    border:1px solid #404040;
+    font-size:11px;
+    font-family:Arial;
+    background-color:#CED1D8;
+	cursor:pointer;
+}
+
+/* ACTION BAR CSS */
+.txt_blue {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #386B8D;
+}
+.div_cellData {
+	border-bottom-width: 1px;
+	border-left-width: 2px;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #6DC464;
+	border-left-color: #6DC464;
+}
+.div_cellDataSelected {
+	border-bottom-width: 1px;
+	border-left-width: 2px;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #6DC464;
+	border-left-color: #BCE4B8;
+	background-color: #BCE4B8;
+}
+.div_bg_white {
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #6DC464;
+	border-right-color: #6DC464;
+	border-bottom-color: #6DC464;
+	background-color: #FFFFFF;
+}
+.ActionBarPagesBody
+{
+    height:100%;
+    width:96%;
+    padding:4px;
+    margin:0;
+    background-color:#CFF2CA;
+}
+
+
+/* ------------------------- */ 
+
+.Calendar_Normal TD
+{
+    height:31px;
+    background-image:url('../images/bg_cellNormal.jpg');
+    border-bottom:solid 1px #609BD3;
+    font-size:12px;
+    font-weight:bold;
+	cursor:pointer;
+}
+.Calendar_Selected TD
+{
+    height:31px;
+    background-image:url('../images/bg_cellSelected.jpg');
+    border-bottom:solid 1px #609BD3;
+    font-size:12px;
+    font-weight:bold;
+	cursor:default;
+}
+.Calendar_Selected DIV
+{ 
+	background-image:url('../images/blt_selected.jpg');	
+	background-repeat:no-repeat;
+	height:31px;
+	width:17px;
+	cursor:default;
+}
+
+.Calendar_Normal DIV
+{
+	background-image:url('../images/blt_normal.jpg');	
+	background-repeat:no-repeat;
+	height:31px;
+	width:17px;
+	cursor:pointer;
+}
+
+.Calendar_Selected A:link, .Calendar_Selected A:hover, .Calendar_Selected A:visited, .Calendar_Selected A:active
+{
+    color:Black;
+}
+.Calendar_Normal   A:link , .Calendar_Normal A:visited, .Calendar_Normal A:active
+{
+     color: #144090;
+}
+.Calendar_Normal   A:hover
+{
+     color: #52789C;
+}
+
+.DarkBluelabel 
+{
+    color:#144090;
+}
+
+/* Classes used for Report Starts Here*/
+
+.rptGView td
+{
+    padding-left:5px;
+    font-size:11px;
+}
+.rptSimpleExSmall
+{
+    FONT-SIZE: 9px;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+
+.rptFloatingHeader
+{
+   height:18px;
+   text-align:left;
+   position: relative;
+   top:expression(eval(this.parentElement.parentElement.parentElement.parentElement.parentElement.scrollTop));
+}
+
+.rptFloatingHeader th
+{ 
+  color:Black;	   
+   font-size:11px;
+   font-weight:bold;
+   padding-left:0.5em;
+   background-color:#EFEFEF;
+}
+.rptFloatingHeader A, .rptFloatingHeader A:active, .rptFloatingHeader A:visited
+{ 
+  color:Black;	   
+}
+.rptFloatingHeader A:hover
+{
+    color:Gray;
+}
+.rptGridRowClickable
+{
+    font-size:10px;
+    height:22px;
+}
+
+.FloatingPager
+{ 
+   height:20px;
+   background-color: #BADCFC;
+}
+.rptFloatingPager a
+{
+	font-size: 10px;
+	font-weight: bold;
+	/*color: black;*/
+	text-decoration:none;
+}
+.rptFloatingPager a:hover
+{
+    text-decoration:underline;
+}
+.rptFloatingPager span
+{
+	font-size: 12px;
+	font-weight: bold;
+	
+}
+/* Classes used for Report Ends Here*/
+/*Modal Popup*/
+.modalBackground {
+	background-color:Gray;	
+	position:absolute;	
+	filter:alpha(opacity=70);
+	opacity:0.7;	
+}
+.modalLessBackground {	
+	position:absolute;	
+	
+}
+
+.modalPopup {
+	background-color:#ffffdd;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:250px;
+}
+
+.sampleStyleA {
+	background-color:#FFF;
+}
+
+.sampleStyleB {
+	background-color:#FFF;
+	font-family:monospace;
+	font-size:10pt;
+	font-weight:bold;
+}
+
+.sampleStyleC {
+	background-color:#ddffdd;
+	font-family:sans-serif;
+	font-size:10pt;
+	font-style:italic;
+}
+
+.sampleStyleD {
+	background-color:Blue;
+	color:White;
+	font-family:Arial;
+	font-size:10pt;
+}
+/* Content Page Layout             */
+.demoarea {
+	padding:0px;
+	background:#FFF url(../../images/demotop.png) no-repeat left top;
+}
+
+.demoarea p 
+{
+	padding:5px;
+}
+
+.demoheading {
+	padding-bottom:5px;
+	color:#5377A9;
+	font-family:Arial, Sans-Serif;
+	font-weight:bold;
+	font-size:1.5em;
+}
+
+.demobottom {
+	height:8px;
+	background:#FFF url(../../images/demobottom.png) no-repeat left bottom;
+}
+.OptionBackground {
+	background-image:url(../../images/wndw_bg.gif);		
+	position:absolute;	
+	filter:alpha(opacity=80);
+	opacity:0.8;	
+}
+.Actionbar_Simple
+{
+    border:1px solid #418F37;
+    height:30px;
+    padding:7px;
+    background:url('../../images/blt_blkReverse.gif') no-repeat 0px 9px;
+    width:100%;
+    font-size:12px;
+    text-align:right;
+    border-bottom:1px solid #99D693;
+    vertical-align:top;
+}
+.Actionbar_Simple_NoArrow
+{
+    border:1px solid #418F37;
+    height:30px;
+    padding:7px;
+    width:100%;
+    font-size:12px;
+    text-align:right;
+    border-bottom:1px solid #99D693;
+    vertical-align:top;
+}
+.Actionbar_Selected
+{
+    background:url('../../images/blt_blkReverse.gif') no-repeat 0px 9px; 
+    font-weight:bold; 
+    background-color:#CFF2CA;
+    height:30px;
+    padding:7px;
+    width:100%;
+    border:1px solid #B0DCAB;
+    text-align:right;
+    vertical-align:top;
+    font-size:12px;
+    border-bottom-color:#99D693; 
+    border-left-color:#CFF2CA;
+}
+
+.HighlightedRepeatorRow TD
+{
+    background-color:#E1F3DF;
+    cursor:pointer;
+    
+}
+.SimpleRepeatorRow TD
+{
+    cursor:pointer;    
+}
+.PadRight
+{
+    padding-right:1em;
+}
+.PadLeft
+{
+    padding-left:1em;
+}
+
+.EmptyreportgridDIV
+{
+	top:90px;
+	left:60px;
+	width:175px;
+	border:1px solid #DEDEDE;
+	border-bottom-width:4px;
+	border-top-width:4px;
+	background-color:#FFFFFF;
+	position:absolute;
+	text-align:center;
+}
+.EmptyText
+{
+    font-size:13px;
+    font-weight:bold;
+    color:#787878;
+}
+
+.MainTable
+{
+	background-color:#BADCFC;
+	height:100%;
+	border:1px solid #609BD3;
+}
+
+.PopUpDiv
+{
+	background-color:#D8EAFC;
+	height:100%;
+	border:1px solid #609BD3;
+}
+
+.PopUpDivSimle
+{
+	background-color:#D8EAFC;
+	border:1px solid #609BD3;
+}
+
+.PopUpDivSimle TD
+{
+	background-color:#D8EAFC;
+	height:25px;
+	border-bottom:1px solid #609BD3;
+}
+
+.PopUpDivSimle TH
+{
+	background-color:#D8EAFC;
+	height:25px;
+	border-bottom:1px solid #609BD3;
+}
+
+.MainAlertDiv
+{
+	height:100%;
+	border:1px solid #609BD3;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.MainAlertDiv TH
+{
+	background-color:#A0CDEE;
+	font-weight:bold;
+	border-bottom:1px solid #609BD3;
+}
+
+.MainAlertDiv TD
+{
+	background-color:#D8EAFC;
+}
+
+.DivTableAsArg
+{
+	background-color:#F0F5F9;
+}
+
+
+.Calendar_Normal_Small TD
+{
+    height:20px;
+    background-image:url('../images/bg_cellNormal.jpg');
+    border-bottom:solid 1px #609BD3;
+    font-size:10px;
+    font-weight:bold;
+	cursor:pointer;
+}
+.Calendar_Selected_Small TD
+{
+    height:20px;
+    background-image:url('../images/bg_cellSelected.jpg');
+    border-bottom:solid 1px #609BD3;
+    font-size:10px;
+    font-weight:bold;
+	cursor:default;
+}
+.Calendar_Selected_Small DIV
+{ 
+	background-image:url('../images/blt_selected.jpg');	
+	background-repeat:no-repeat;
+	height:20px;
+	width:17px;
+	cursor:default;
+}
+
+.Calendar_Normal_Small DIV
+{
+	background-image:url('../images/blt_normal.jpg');	
+	background-repeat:no-repeat;
+	height:20px;
+	width:17px;
+	cursor:pointer;
+}
+
+.btnSimple
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:10px;
+    font-weight:bold;
+    word-spacing:1px;
+    text-transform:uppercase;
+    color:#437494;
+    background-color:#D1E6F9;
+    border:1px solid #86B1D3;
+    padding:2px;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.btnExtraSimple
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:10px;
+    word-spacing:1px;
+    text-transform:uppercase;
+    color:#437494;
+    background-color:#D1E6F9;
+    border:1px solid #86B1D3;
+    padding:0px;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.btnExtraSimpleGreen
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:10px;
+    word-spacing:1px;
+    text-transform:uppercase;
+    color:#437494;
+    background-color:#DAF5D6;
+    border:1px solid #609BD3;
+    padding:0px;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.btnSimpleWhite
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:10px;
+	font-weight:bold;
+    word-spacing:1px;
+    text-transform:uppercase;
+    background-color:#FFFFFF;
+    border:none;	
+    padding:0px;
+    color:#609BD3;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.btnSimpleWhiteOver
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:10px;
+	font-weight:bold;
+    word-spacing:1px;
+    text-transform:uppercase;
+    background-color:#FFFFFF;
+    border:none;	
+    padding:0px;
+    color:#A0CDEE;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.btnSimpleBlue
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:10px;
+	font-weight:bold;
+    word-spacing:1px;
+    text-transform:uppercase;
+    background-color:#DCEDFD;
+    border:none;	
+    padding:0px;
+    color:#609BD3;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.btnSimpleBlueOver
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:10px;
+	font-weight:bold;
+    word-spacing:1px;
+    text-transform:uppercase;
+    background-color:#DCEDFD;
+    border:none;	
+    padding:0px;
+    color:#A0CDEE;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.blueSubTable 
+{
+	border:1px solid #609BD3;
+}
+
+.blueSubTable TH
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:bold;
+	background-color:#BDE4B8;
+}
+
+.blueSubTable TD
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	background-color:#EFF7FA;
+	border-bottom:1px solid #C9D3E4;
+}
+
+.GreenTextBox{
+	border:1px solid #50AF43;
+	font:Arial, Helvetica, sans-serif;
+	height:18px;
+}
+
+.BlueTextBox{
+	border:1px solid #609BD3;
+	font:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.blueSubTableTD
+{
+	border:none;
+}
+
+.blueSubTableTD TD
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	background-color:#FFFFFF;
+	border-bottom:1px solid #D0E1E9;
+}
+
+.blueSubTableTD TH
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background-color:#B9DCFC;
+	border-bottom:1px solid #7DA4CD;
+}
+
+.MouseOverRow TD
+{
+    background-color:#E1F3DF;
+    cursor:pointer;
+}
+.MouseOutRow TD
+{
+    cursor:pointer;
+}
+
+
+.FormTableSmallGreen
+{
+	Border: 1px solid #609BD3;
+}
+
+.FormTableSmallGreen TR
+{
+	Border: 1px solid #DAF5D6;
+	background: #DAF5D6;
+}
+
+.FormTableSmallGreen TD
+{
+	FONT-SIZE: 11px;
+  	FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+}
+
+.FranSubTable
+{
+	border:1px solid #79A0D3;
+	background-color:#DCEDFD;
+	font:Arial, Helvetica, sans-serif;
+}
+
+.FranSubTable TH
+{
+	border-bottom:1px solid #79A0D3;
+	font-size:12px;
+	font-weight:bold;
+	padding-left:5px;
+	background-color:#BADBFC;
+}
+
+.FranSubTable TD
+{
+	font-size:12px;
+}
+
+.FranPageMainHeading
+{
+	height:30px;
+	background-color:#A0CDEE;
+	font-size:16px;
+	font-weight:bold;
+	padding:5px;
+}
+
+.FranSmallSubTable
+{
+	background-color:#DCEDFD;
+	font:Arial, Helvetica, sans-serif;
+}
+
+.FranSmallSubTable TH
+{
+	border-bottom:2px solid #82BDE9;
+	font-size:11px;
+	font-weight:bold;
+	height:25px;
+	background-color:transparent;
+}
+
+.FranSmallSubTable TD
+{
+	font-size:11px;
+	border-bottom:1px solid #D0E1E9;
+	height:20px;
+}
+
+.FranSmallSubTableNoBorder
+{
+	background-color:#DCEDFD;
+	font:Arial, Helvetica, sans-serif;
+}
+
+.FranSmallSubTableNoBorder TH
+{
+	font-size:11px;
+	font-weight:bold;
+	background-color:transparent;
+}
+
+.FranSmallSubTableNoBorder TD
+{
+	font-size:11px;
+}
+
+.FranSmallWhileSubTable
+{
+	background-color:#FFFFFF;
+	font:Arial, Helvetica, sans-serif;
+}
+
+.FranSmallWhileSubTable TH
+{
+	border-bottom:2px solid #82BDE9;
+	font-size:11px;
+	font-weight:bold;
+	height:25px;
+}
+
+.FranSmallWhileSubTable TD
+{
+	font-size:11px;
+	border-bottom:1px solid #D0E1E9;
+	height:20px;
+}
+
+.ScrollBarPF
+{
+	scrollbar-arrow-color: #000000;
+	scrollbar-face-color: #BADBFC;
+	scrollbar-track-color: #DCEDFD;
+	scrollbar-shadow-color: #BADBFC;
+	scrollbar-highlight-color: #BADBFC;
+	scrollbar-base-color: #79A0D3;
+	scrollbar-3dlight-color: #A0CDEE;
+	scrollbar-darkshadow-color: #000000;
+}
+
+.MenuOver
+{	
+	border:1px solid #609BD3;
+	background-color:#A0CDEE;
+	font:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding:2px;
+	cursor:pointer;
+}
+
+.MenuOut
+{	
+	font:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding:2px;
+	cursor:default;	
+}
+
+.MessageLayer {
+	Z-INDEX: 10; OVERFLOW: hidden;
+}
+.MessageLayer IFRAME {
+	DISPLAY: block; Z-INDEX: -1; FILTER: mask(); LEFT: 0px; WIDTH: 100%; POSITION: absolute; TOP: 0px; HEIGHT: 100%;
+}
+
+.ScrollBarTA
+{
+	border:1px solid #50AF43;
+	height:18;
+	font:8pt Arial;
+	vertical-align:text-bottom;
+	padding-top: 1px;
+	padding-left: 3px;	
+	
+
+	scrollbar-arrow-color:#000000;
+	scrollbar-face-color: #FFFFFF;
+	scrollbar-track-color: #FFFFFF;
+	scrollbar-shadow-color: #FFFFFF;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-base-color: #FFFFFF;
+	scrollbar-3dlight-color: #FFFFFF;
+	scrollbar-darkshadow-color: #FFFFFF;
+}

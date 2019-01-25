@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="urn:webmail" xmlns:si="http://soapinterop.org/xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:webmail" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:webmail">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+      <xsd:complexType name="ContactSimple">
+        <xsd:all>
+          <xsd:element name="id" type="xsd:int" />
+          <xsd:element name="firstname" type="xsd:string" />
+          <xsd:element name="lastname" type="xsd:string" />
+          <xsd:element name="nickname" type="xsd:string" />
+          <xsd:element name="email" type="xsd:string" />
+          <xsd:element name="favorite" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ContactFull">
+        <xsd:all>
+          <xsd:element name="id" type="xsd:int" />
+          <xsd:element name="firstname" type="xsd:string" />
+          <xsd:element name="lastname" type="xsd:string" />
+          <xsd:element name="nickname" type="xsd:string" />
+          <xsd:element name="email" type="xsd:string" />
+          <xsd:element name="favorite" type="xsd:string" />
+          <xsd:element name="email2" type="xsd:string" />
+          <xsd:element name="email3" type="xsd:string" />
+          <xsd:element name="h_phone" type="xsd:string" />
+          <xsd:element name="b_phone" type="xsd:string" />
+          <xsd:element name="mobile_phone" type="xsd:string" />
+          <xsd:element name="fax" type="xsd:string" />
+          <xsd:element name="h_street1" type="xsd:string" />
+          <xsd:element name="h_street2" type="xsd:string" />
+          <xsd:element name="h_city" type="xsd:string" />
+          <xsd:element name="h_state" type="xsd:string" />
+          <xsd:element name="h_zip" type="xsd:string" />
+          <xsd:element name="h_country" type="xsd:string" />
+          <xsd:element name="b_street1" type="xsd:string" />
+          <xsd:element name="b_street2" type="xsd:string" />
+          <xsd:element name="b_city" type="xsd:string" />
+          <xsd:element name="b_state" type="xsd:string" />
+          <xsd:element name="b_zip" type="xsd:string" />
+          <xsd:element name="b_country" type="xsd:string" />
+          <xsd:element name="label" type="xsd:string" />
+          <xsd:element name="job_title" type="xsd:string" />
+          <xsd:element name="company" type="xsd:string" />
+          <xsd:element name="other_phone" type="xsd:string" />
+          <xsd:element name="other_street1" type="xsd:string" />
+          <xsd:element name="other_street2" type="xsd:string" />
+          <xsd:element name="other_city" type="xsd:string" />
+          <xsd:element name="other_state" type="xsd:string" />
+          <xsd:element name="other_zip" type="xsd:string" />
+          <xsd:element name="other_country" type="xsd:string" />
+          <xsd:element name="website" type="xsd:string" />
+          <xsd:element name="blog" type="xsd:string" />
+          <xsd:element name="other_website" type="xsd:string" />
+          <xsd:element name="aol_account" type="xsd:string" />
+          <xsd:element name="yahoo_account" type="xsd:string" />
+          <xsd:element name="google_account" type="xsd:string" />
+          <xsd:element name="icq_account" type="xsd:string" />
+          <xsd:element name="other_account" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="identity">
+        <xsd:all>
+          <xsd:element name="full_name" type="xsd:string" />
+          <xsd:element name="email_address" type="xsd:string" />
+          <xsd:element name="reply_to" type="xsd:string" />
+          <xsd:element name="signature" type="xsd:string" />
+          <xsd:element name="use_sig" type="xsd:string" />
+          <xsd:element name="sig_reply" type="xsd:string" />
+          <xsd:element name="sig_forward" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="ContactSimpleList">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ContactSimple[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="ContactFullList">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:ContactFull[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="identities">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:identity[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="contactIds">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="xsd:int[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="groupContactIds">
+        <xsd:all>
+          <xsd:element name="groupName" type="xsd:string" />
+          <xsd:element name="contactIds" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="groupIdsArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:groupContactIds[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="group">
+        <xsd:all>
+          <xsd:element name="groupName" type="xsd:string" />
+          <xsd:element name="firstname" type="xsd:string" />
+          <xsd:element name="lastname" type="xsd:string" />
+          <xsd:element name="email" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="groupsArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="SOAP-ENC:Array">
+            <xsd:attribute wsdl:arrayType="tns:group[]" ref="SOAP-ENC:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="displayPrefs">
+        <xsd:all>
+          <xsd:element name="compose_new_win" type="xsd:string" />
+          <xsd:element name="autocomplete_enabled" type="xsd:string" />
+          <xsd:element name="compose_window_type" type="xsd:string" />
+          <xsd:element name="use_emoticons" type="xsd:string" />
+          <xsd:element name="show_html_default" type="xsd:string" />
+          <xsd:element name="attachment_show_images" type="xsd:string" />
+          <xsd:element name="use_previewPane" type="xsd:string" />
+          <xsd:element name="show_num_msgs" type="xsd:string" />
+          <xsd:element name="wrap_at" type="xsd:string" />
+          <xsd:element name="hour_format" type="xsd:string" />
+          <xsd:element name="timezone" type="xsd:string" />
+          <xsd:element name="reply_citation_style" type="xsd:string" />
+          <xsd:element name="reply_citation_start" type="xsd:string" />
+          <xsd:element name="reply_citation_end" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="pingRequest">
+    <wsdl:part name="str" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="pingResponse">
+    <wsdl:part name="Result" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginUserWebmailRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginUserWebmailResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="SessionID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserNumMessagesRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserNumMessagesResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="TotalMessages" type="xsd:int" />
+    <wsdl:part name="NewMessages" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="IsValidSessionIDRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+    <wsdl:part name="SessionID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="IsValidSessionIDResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+  </wsdl:message>
+  <wsdl:message name="GetHelpStatusRequest">
+    <wsdl:part name="username" type="xsd:string" />
+    <wsdl:part name="password" type="xsd:string" />
+    <wsdl:part name="domain" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetHelpStatusResponse">
+    <wsdl:part name="status" type="xsd:string" />
+    <wsdl:part name="error" type="xsd:short" />
+  </wsdl:message>
+  <wsdl:message name="SetHelpStatusRequest">
+    <wsdl:part name="username" type="xsd:string" />
+    <wsdl:part name="password" type="xsd:string" />
+    <wsdl:part name="domain" type="xsd:string" />
+    <wsdl:part name="value" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="SetHelpStatusResponse">
+    <wsdl:part name="status" type="xsd:string" />
+    <wsdl:part name="error" type="xsd:short" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeZoneValsRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeZoneValsResponse">
+    <wsdl:part name="Result" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="SetUserTimezoneRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+    <wsdl:part name="timezone" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="SetUserTimezoneResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="ErrorTxt" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserIdentitiesRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserIdentitiesResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="Identities" type="tns:identities" />
+  </wsdl:message>
+  <wsdl:message name="GetUserIdentitiesStrRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserIdentitiesStrResponse">
+    <wsdl:part name="Identities" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDisplayPreferencesRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDisplayPreferencesResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="DisplayPrefs" type="tns:displayPrefs" />
+  </wsdl:message>
+  <wsdl:message name="GetDisplayPreferencesStrRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDisplayPreferencesStrResponse">
+    <wsdl:part name="DisplayPrefs" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDomainLanguageRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDomainLanguageResponse">
+    <wsdl:part name="Language" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="SetDomainLanguageRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="Language" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="SetDomainLanguageResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="Status" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDomainHourFormatRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDomainHourFormatResponse">
+    <wsdl:part name="HourFormat" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="SetDomainHourFormatRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="HourFormat" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="SetDomainHourFormatResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="Status" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDomainDateFormatRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDomainDateFormatResponse">
+    <wsdl:part name="DateFormat" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="SetDomainDateFormatRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="DateFormat" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:message name="SetDomainDateFormatResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="Status" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDomainTimezoneRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDomainTimezoneResponse">
+    <wsdl:part name="Timezone" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="SetDomainTimezoneRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="Timezone" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="SetDomainTimezoneResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="Status" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDomainCalendarSharingTypeRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDomainCalendarSharingTypeResponse">
+    <wsdl:part name="sharing_type" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="SetDomainCalendarSharingTypeRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="SharingType" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="SetDomainCalendarSharingTypeResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="Status" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserContactsSimpleRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserContactsSimpleResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="contactList" type="tns:ContactSimpleList" />
+  </wsdl:message>
+  <wsdl:message name="GetUserContactsSimpleStrRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserContactsSimpleStrResponse">
+    <wsdl:part name="contactList" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserContactsFullRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserContactsFullResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="contactList" type="tns:ContactFullList" />
+  </wsdl:message>
+  <wsdl:message name="GetUserContactsFullStrRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserContactsFullStrResponse">
+    <wsdl:part name="contactList" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetContactsHelpPageRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+    <wsdl:part name="siteName" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetContactsHelpPageResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="helpURL" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetContactsHelpPageStrRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+    <wsdl:part name="siteName" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetContactsHelpPageStrResponse">
+    <wsdl:part name="Result" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="AddUserContactsRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+    <wsdl:part name="contactsArray" type="tns:ContactFullList" />
+  </wsdl:message>
+  <wsdl:message name="AddUserContactsResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="ErrorTxt" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="AddUserContactsStrRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+    <wsdl:part name="contactsStr" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="AddUserContactsStrResponse">
+    <wsdl:part name="Result" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserContactsRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+    <wsdl:part name="contactIds" type="tns:contactIds" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserContactsResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="ErrorTxt" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserContactsStrRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+    <wsdl:part name="contactIdStr" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserContactsStrResponse">
+    <wsdl:part name="Result" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAllUserContactsRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAllUserContactsResponse">
+    <wsdl:part name="Result" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="ModifyUserContactsRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+    <wsdl:part name="contactsArray" type="tns:ContactFullList" />
+  </wsdl:message>
+  <wsdl:message name="ModifyUserContactsResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="ErrorTxt" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="ModifyUserContactsStrRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+    <wsdl:part name="contactsStr" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="ModifyUserContactsStrResponse">
+    <wsdl:part name="Result" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="AddUserGroupsRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+    <wsdl:part name="groupIdsArray" type="tns:groupIdsArray" />
+  </wsdl:message>
+  <wsdl:message name="AddUserGroupsResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="ErrorTxt" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="AddUserGroupsStrRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+    <wsdl:part name="groupsStr" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="AddUserGroupsStrResponse">
+    <wsdl:part name="Result" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserGroupsRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserGroupsResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="groupsArray" type="tns:groupsArray" />
+  </wsdl:message>
+  <wsdl:message name="GetUserGroupsStrRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUserGroupsStrResponse">
+    <wsdl:part name="groupList" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserGroupsRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+    <wsdl:part name="groupNames" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserGroupsResponse">
+    <wsdl:part name="Result" type="xsd:short" />
+    <wsdl:part name="ErrorTxt" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserGroupsStrRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+    <wsdl:part name="contactIdStr" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteUserGroupsStrResponse">
+    <wsdl:part name="Result" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAllUserGroupsRequest">
+    <wsdl:part name="ResellerUsername" type="xsd:string" />
+    <wsdl:part name="ResellerPassword" type="xsd:string" />
+    <wsdl:part name="HostName" type="xsd:string" />
+    <wsdl:part name="UserID" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAllUserGroupsResponse">
+    <wsdl:part name="Result" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="WebmailPortType">
+    <wsdl:operation name="ping">
+      <wsdl:input message="tns:pingRequest" />
+      <wsdl:output message="tns:pingResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginUserWebmail">
+      <wsdl:input message="tns:LoginUserWebmailRequest" />
+      <wsdl:output message="tns:LoginUserWebmailResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserNumMessages">
+      <wsdl:input message="tns:GetUserNumMessagesRequest" />
+      <wsdl:output message="tns:GetUserNumMessagesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="IsValidSessionID">
+      <wsdl:input message="tns:IsValidSessionIDRequest" />
+      <wsdl:output message="tns:IsValidSessionIDResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHelpStatus">
+      <wsdl:input message="tns:GetHelpStatusRequest" />
+      <wsdl:output message="tns:GetHelpStatusResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="SetHelpStatus">
+      <wsdl:input message="tns:SetHelpStatusRequest" />
+      <wsdl:output message="tns:SetHelpStatusResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZoneVals">
+      <wsdl:input message="tns:GetTimeZoneValsRequest" />
+      <wsdl:output message="tns:GetTimeZoneValsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUserTimezone">
+      <wsdl:input message="tns:SetUserTimezoneRequest" />
+      <wsdl:output message="tns:SetUserTimezoneResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserIdentities">
+      <wsdl:input message="tns:GetUserIdentitiesRequest" />
+      <wsdl:output message="tns:GetUserIdentitiesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserIdentitiesStr">
+      <wsdl:input message="tns:GetUserIdentitiesStrRequest" />
+      <wsdl:output message="tns:GetUserIdentitiesStrResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplayPreferences">
+      <wsdl:input message="tns:GetDisplayPreferencesRequest" />
+      <wsdl:output message="tns:GetDisplayPreferencesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplayPreferencesStr">
+      <wsdl:input message="tns:GetDisplayPreferencesStrRequest" />
+      <wsdl:output message="tns:GetDisplayPreferencesStrResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDomainLanguage">
+      <wsdl:input message="tns:GetDomainLanguageRequest" />
+      <wsdl:output message="tns:GetDomainLanguageResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDomainLanguage">
+      <wsdl:input message="tns:SetDomainLanguageRequest" />
+      <wsdl:output message="tns:SetDomainLanguageResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDomainHourFormat">
+      <wsdl:input message="tns:GetDomainHourFormatRequest" />
+      <wsdl:output message="tns:GetDomainHourFormatResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDomainHourFormat">
+      <wsdl:input message="tns:SetDomainHourFormatRequest" />
+      <wsdl:output message="tns:SetDomainHourFormatResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDomainDateFormat">
+      <wsdl:input message="tns:GetDomainDateFormatRequest" />
+      <wsdl:output message="tns:GetDomainDateFormatResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDomainDateFormat">
+      <wsdl:input message="tns:SetDomainDateFormatRequest" />
+      <wsdl:output message="tns:SetDomainDateFormatResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDomainTimezone">
+      <wsdl:input message="tns:GetDomainTimezoneRequest" />
+      <wsdl:output message="tns:GetDomainTimezoneResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDomainTimezone">
+      <wsdl:input message="tns:SetDomainTimezoneRequest" />
+      <wsdl:output message="tns:SetDomainTimezoneResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDomainCalendarSharingType">
+      <wsdl:input message="tns:GetDomainCalendarSharingTypeRequest" />
+      <wsdl:output message="tns:GetDomainCalendarSharingTypeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDomainCalendarSharingType">
+      <wsdl:input message="tns:SetDomainCalendarSharingTypeRequest" />
+      <wsdl:output message="tns:SetDomainCalendarSharingTypeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserContactsSimple">
+      <wsdl:input message="tns:GetUserContactsSimpleRequest" />
+      <wsdl:output message="tns:GetUserContactsSimpleResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserContactsSimpleStr">
+      <wsdl:input message="tns:GetUserContactsSimpleStrRequest" />
+      <wsdl:output message="tns:GetUserContactsSimpleStrResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserContactsFull">
+      <wsdl:input message="tns:GetUserContactsFullRequest" />
+      <wsdl:output message="tns:GetUserContactsFullResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserContactsFullStr">
+      <wsdl:input message="tns:GetUserContactsFullStrRequest" />
+      <wsdl:output message="tns:GetUserContactsFullStrResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactsHelpPage">
+      <wsdl:input message="tns:GetContactsHelpPageRequest" />
+      <wsdl:output message="tns:GetContactsHelpPageResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactsHelpPageStr">
+      <wsdl:input message="tns:GetContactsHelpPageStrRequest" />
+      <wsdl:output message="tns:GetContactsHelpPageStrResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUserContacts">
+      <wsdl:input message="tns:AddUserContactsRequest" />
+      <wsdl:output message="tns:AddUserContactsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUserContactsStr">
+      <wsdl:input message="tns:AddUserContactsStrRequest" />
+      <wsdl:output message="tns:AddUserContactsStrResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserContacts">
+      <wsdl:input message="tns:DeleteUserContactsRequest" />
+      <wsdl:output message="tns:DeleteUserContactsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserContactsStr">
+      <wsdl:input message="tns:DeleteUserContactsStrRequest" />
+      <wsdl:output message="tns:DeleteUserContactsStrResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllUserContacts">
+      <wsdl:input message="tns:DeleteAllUserContactsRequest" />
+      <wsdl:output message="tns:DeleteAllUserContactsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyUserContacts">
+      <wsdl:input message="tns:ModifyUserContactsRequest" />
+      <wsdl:output message="tns:ModifyUserContactsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyUserContactsStr">
+      <wsdl:input message="tns:ModifyUserContactsStrRequest" />
+      <wsdl:output message="tns:ModifyUserContactsStrResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUserGroups">
+      <wsdl:input message="tns:AddUserGroupsRequest" />
+      <wsdl:output message="tns:AddUserGroupsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUserGroupsStr">
+      <wsdl:input message="tns:AddUserGroupsStrRequest" />
+      <wsdl:output message="tns:AddUserGroupsStrResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserGroups">
+      <wsdl:input message="tns:GetUserGroupsRequest" />
+      <wsdl:output message="tns:GetUserGroupsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserGroupsStr">
+      <wsdl:input message="tns:GetUserGroupsStrRequest" />
+      <wsdl:output message="tns:GetUserGroupsStrResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserGroups">
+      <wsdl:input message="tns:DeleteUserGroupsRequest" />
+      <wsdl:output message="tns:DeleteUserGroupsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserGroupsStr">
+      <wsdl:input message="tns:DeleteUserGroupsStrRequest" />
+      <wsdl:output message="tns:DeleteUserGroupsStrResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllUserGroups">
+      <wsdl:input message="tns:DeleteAllUserGroupsRequest" />
+      <wsdl:output message="tns:DeleteAllUserGroupsResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebmailBinding" type="tns:WebmailPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="ping">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/ping" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginUserWebmail">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/LoginUserWebmail" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserNumMessages">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetUserNumMessages" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsValidSessionID">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/IsValidSessionID" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHelpStatus">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetHelpStatus" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetHelpStatus">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/SetHelpStatus" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZoneVals">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetTimeZoneVals" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserTimezone">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/SetUserTimezone" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserIdentities">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetUserIdentities" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserIdentitiesStr">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetUserIdentitiesStr" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplayPreferences">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetDisplayPreferences" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDisplayPreferencesStr">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetDisplayPreferencesStr" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDomainLanguage">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetDomainLanguage" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDomainLanguage">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/SetDomainLanguage" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDomainHourFormat">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetDomainHourFormat" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDomainHourFormat">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/SetDomainHourFormat" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDomainDateFormat">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetDomainDateFormat" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDomainDateFormat">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/SetDomainDateFormat" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDomainTimezone">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetDomainTimezone" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDomainTimezone">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/SetDomainTimezone" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDomainCalendarSharingType">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetDomainCalendarSharingType" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDomainCalendarSharingType">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/SetDomainCalendarSharingType" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserContactsSimple">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetUserContactsSimple" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserContactsSimpleStr">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetUserContactsSimpleStr" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserContactsFull">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetUserContactsFull" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserContactsFullStr">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetUserContactsFullStr" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactsHelpPage">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetContactsHelpPage" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContactsHelpPageStr">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetContactsHelpPageStr" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserContacts">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/AddUserContacts" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserContactsStr">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/AddUserContactsStr" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserContacts">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/DeleteUserContacts" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserContactsStr">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/DeleteUserContactsStr" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllUserContacts">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/DeleteAllUserContacts" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyUserContacts">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/ModifyUserContacts" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyUserContactsStr">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/ModifyUserContactsStr" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserGroups">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/AddUserGroups" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUserGroupsStr">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/AddUserGroupsStr" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserGroups">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetUserGroups" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserGroupsStr">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/GetUserGroupsStr" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserGroups">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/DeleteUserGroups" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUserGroupsStr">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/DeleteUserGroupsStr" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllUserGroups">
+      <soap:operation soapAction="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php/DeleteAllUserGroups" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:webmail" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Webmail">
+    <wsdl:port name="WebmailPort" binding="tns:WebmailBinding">
+      <soap:address location="http://qa.secure.webmail.us/mail6/ext/soap/soap_server.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

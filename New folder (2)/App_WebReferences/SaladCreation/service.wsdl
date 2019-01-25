@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="https://qa.fransupport.com/saladcreation/sales" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="https://qa.fransupport.com/saladcreation/sales" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://qa.fransupport.com/saladcreation/sales">
+      <s:element name="ReportDailySales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DailySalesData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReportDailySalesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReportDailySalesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReportWeeklySales">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WeeklySalesData" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReportWeeklySalesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReportWeeklySalesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCCTypes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strStoreInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCCTypesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCCTypesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStoreInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strStoreInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStoreInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStoreInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStoreInfo_New">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strStoreInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStoreInfo_NewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStoreInfo_NewResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReportQSInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strStoreInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReportQSInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReportQSInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddStoreOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StoreNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XmlAnalysisReport" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddStoreOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddStoreOrderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VoidedOrders">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="StoreNumber" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XmlRefundedOrders" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VoidedOrdersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VoidedOrdersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefundedOrders">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StoreNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XmlRefundedOrders" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefundedOrdersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RefundedOrdersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmergencyMessages">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strStoreInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmergencyMessagesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmergencyMessagesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckNewVersion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StoreNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TargetVersion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckNewVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckNewVersionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contacts_GetLoginCredentials">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FranFranchiseID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Contacts_GetLoginCredentialsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Contacts_GetLoginCredentialsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFranchiseTerminals">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="StoreNumber" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="NoOfTerminals" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateFranchiseTerminalsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateFranchiseTerminalsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ReportDailySalesSoapIn">
+    <wsdl:part name="parameters" element="tns:ReportDailySales" />
+  </wsdl:message>
+  <wsdl:message name="ReportDailySalesSoapOut">
+    <wsdl:part name="parameters" element="tns:ReportDailySalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReportWeeklySalesSoapIn">
+    <wsdl:part name="parameters" element="tns:ReportWeeklySales" />
+  </wsdl:message>
+  <wsdl:message name="ReportWeeklySalesSoapOut">
+    <wsdl:part name="parameters" element="tns:ReportWeeklySalesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCCTypesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCCTypes" />
+  </wsdl:message>
+  <wsdl:message name="GetCCTypesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCCTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStoreInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStoreInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreInfo_NewSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStoreInfo_New" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreInfo_NewSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStoreInfo_NewResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReportQSInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:ReportQSInfo" />
+  </wsdl:message>
+  <wsdl:message name="ReportQSInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:ReportQSInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddStoreOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:AddStoreOrder" />
+  </wsdl:message>
+  <wsdl:message name="AddStoreOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:AddStoreOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="VoidedOrdersSoapIn">
+    <wsdl:part name="parameters" element="tns:VoidedOrders" />
+  </wsdl:message>
+  <wsdl:message name="VoidedOrdersSoapOut">
+    <wsdl:part name="parameters" element="tns:VoidedOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="RefundedOrdersSoapIn">
+    <wsdl:part name="parameters" element="tns:RefundedOrders" />
+  </wsdl:message>
+  <wsdl:message name="RefundedOrdersSoapOut">
+    <wsdl:part name="parameters" element="tns:RefundedOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmergencyMessagesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmergencyMessages" />
+  </wsdl:message>
+  <wsdl:message name="GetEmergencyMessagesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmergencyMessagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckNewVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckNewVersion" />
+  </wsdl:message>
+  <wsdl:message name="CheckNewVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckNewVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Contacts_GetLoginCredentialsSoapIn">
+    <wsdl:part name="parameters" element="tns:Contacts_GetLoginCredentials" />
+  </wsdl:message>
+  <wsdl:message name="Contacts_GetLoginCredentialsSoapOut">
+    <wsdl:part name="parameters" element="tns:Contacts_GetLoginCredentialsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFranchiseTerminalsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateFranchiseTerminals" />
+  </wsdl:message>
+  <wsdl:message name="UpdateFranchiseTerminalsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateFranchiseTerminalsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="ReportDailySales">
+      <wsdl:input message="tns:ReportDailySalesSoapIn" />
+      <wsdl:output message="tns:ReportDailySalesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReportWeeklySales">
+      <wsdl:input message="tns:ReportWeeklySalesSoapIn" />
+      <wsdl:output message="tns:ReportWeeklySalesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCCTypes">
+      <wsdl:input message="tns:GetCCTypesSoapIn" />
+      <wsdl:output message="tns:GetCCTypesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreInfo">
+      <wsdl:input message="tns:GetStoreInfoSoapIn" />
+      <wsdl:output message="tns:GetStoreInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreInfo_New">
+      <wsdl:input message="tns:GetStoreInfo_NewSoapIn" />
+      <wsdl:output message="tns:GetStoreInfo_NewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReportQSInfo">
+      <wsdl:input message="tns:ReportQSInfoSoapIn" />
+      <wsdl:output message="tns:ReportQSInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddStoreOrder">
+      <wsdl:input message="tns:AddStoreOrderSoapIn" />
+      <wsdl:output message="tns:AddStoreOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VoidedOrders">
+      <wsdl:input message="tns:VoidedOrdersSoapIn" />
+      <wsdl:output message="tns:VoidedOrdersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RefundedOrders">
+      <wsdl:input message="tns:RefundedOrdersSoapIn" />
+      <wsdl:output message="tns:RefundedOrdersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmergencyMessages">
+      <wsdl:input message="tns:GetEmergencyMessagesSoapIn" />
+      <wsdl:output message="tns:GetEmergencyMessagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckNewVersion">
+      <wsdl:input message="tns:CheckNewVersionSoapIn" />
+      <wsdl:output message="tns:CheckNewVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Contacts_GetLoginCredentials">
+      <wsdl:input message="tns:Contacts_GetLoginCredentialsSoapIn" />
+      <wsdl:output message="tns:Contacts_GetLoginCredentialsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFranchiseTerminals">
+      <wsdl:input message="tns:UpdateFranchiseTerminalsSoapIn" />
+      <wsdl:output message="tns:UpdateFranchiseTerminalsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReportDailySales">
+      <soap:operation soapAction="https://qa.fransupport.com/saladcreation/sales/ReportDailySales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportWeeklySales">
+      <soap:operation soapAction="https://qa.fransupport.com/saladcreation/sales/ReportWeeklySales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCCTypes">
+      <soap:operation soapAction="https://qa.fransupport.com/saladcreation/sales/GetCCTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreInfo">
+      <soap:operation soapAction="https://qa.fransupport.com/saladcreation/sales/GetStoreInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreInfo_New">
+      <soap:operation soapAction="https://qa.fransupport.com/saladcreation/sales/GetStoreInfo_New" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportQSInfo">
+      <soap:operation soapAction="https://qa.fransupport.com/saladcreation/sales/ReportQSInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddStoreOrder">
+      <soap:operation soapAction="https://qa.fransupport.com/saladcreation/sales/AddStoreOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VoidedOrders">
+      <soap:operation soapAction="https://qa.fransupport.com/saladcreation/sales/VoidedOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefundedOrders">
+      <soap:operation soapAction="https://qa.fransupport.com/saladcreation/sales/RefundedOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmergencyMessages">
+      <soap:operation soapAction="https://qa.fransupport.com/saladcreation/sales/GetEmergencyMessages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckNewVersion">
+      <soap:operation soapAction="https://qa.fransupport.com/saladcreation/sales/CheckNewVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Contacts_GetLoginCredentials">
+      <soap:operation soapAction="https://qa.fransupport.com/saladcreation/sales/Contacts_GetLoginCredentials" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFranchiseTerminals">
+      <soap:operation soapAction="https://qa.fransupport.com/saladcreation/sales/UpdateFranchiseTerminals" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReportDailySales">
+      <soap12:operation soapAction="https://qa.fransupport.com/saladcreation/sales/ReportDailySales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportWeeklySales">
+      <soap12:operation soapAction="https://qa.fransupport.com/saladcreation/sales/ReportWeeklySales" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCCTypes">
+      <soap12:operation soapAction="https://qa.fransupport.com/saladcreation/sales/GetCCTypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreInfo">
+      <soap12:operation soapAction="https://qa.fransupport.com/saladcreation/sales/GetStoreInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreInfo_New">
+      <soap12:operation soapAction="https://qa.fransupport.com/saladcreation/sales/GetStoreInfo_New" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReportQSInfo">
+      <soap12:operation soapAction="https://qa.fransupport.com/saladcreation/sales/ReportQSInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddStoreOrder">
+      <soap12:operation soapAction="https://qa.fransupport.com/saladcreation/sales/AddStoreOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VoidedOrders">
+      <soap12:operation soapAction="https://qa.fransupport.com/saladcreation/sales/VoidedOrders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefundedOrders">
+      <soap12:operation soapAction="https://qa.fransupport.com/saladcreation/sales/RefundedOrders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmergencyMessages">
+      <soap12:operation soapAction="https://qa.fransupport.com/saladcreation/sales/GetEmergencyMessages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckNewVersion">
+      <soap12:operation soapAction="https://qa.fransupport.com/saladcreation/sales/CheckNewVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Contacts_GetLoginCredentials">
+      <soap12:operation soapAction="https://qa.fransupport.com/saladcreation/sales/Contacts_GetLoginCredentials" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateFranchiseTerminals">
+      <soap12:operation soapAction="https://qa.fransupport.com/saladcreation/sales/UpdateFranchiseTerminals" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://qa.fransupport.com/webservices/SaladCreationSales/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://qa.fransupport.com/webservices/SaladCreationSales/service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

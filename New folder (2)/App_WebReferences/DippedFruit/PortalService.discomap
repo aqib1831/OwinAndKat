@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://qa.dippedfruit.netsolace.com/PortalService.svc?wsdl" filename="PortalService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://qa.dippedfruit.netsolace.com/PortalService.svc?xsd=xsd0" filename="PortalService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://qa.dippedfruit.netsolace.com/PortalService.svc?xsd=xsd1" filename="PortalService0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://qa.dippedfruit.netsolace.com/PortalService.svc?disco" filename="PortalService.disco" />
+  </Results>
+</DiscoveryClientResultsFile>

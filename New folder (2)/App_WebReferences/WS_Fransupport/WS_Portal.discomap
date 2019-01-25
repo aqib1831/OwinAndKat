@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="https://qa.fransupport.com/v2/WebServices/Portal/WS_Portal.asmx?wsdl" filename="WS_Portal.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="https://qa.fransupport.com/v2/WebServices/Portal/WS_Portal.asmx?disco" filename="WS_Portal.disco" />
+  </Results>
+</DiscoveryClientResultsFile>

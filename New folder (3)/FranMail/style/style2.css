@@ -1,0 +1,1034 @@
+﻿/* -------------------
+    GridView Classes
+--------------------*/
+.FloatingHeader
+{
+   height:18px;
+   text-align:left;
+   background-color:#BADCFC;
+   position: relative;
+   border-top:1px solid white;
+   top:expression(eval(this.parentElement.parentElement.parentElement.parentElement.parentElement.scrollTop));
+}
+.FloatingHeader th
+{
+   color:#52789C;
+   font-size:11px;
+   font-weight:bold;
+   padding-left:0.5em;
+   background-image: url('../images/bg_toolbar.jpg');
+   background-repeat:no-repeat;
+   cursor:default;
+}
+.NoBG a
+{
+    background-image: none;
+}
+.FloatingPager
+{ 
+   height:20px;
+   background-color: #BADCFC;
+}
+.FloatingPager a
+{
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration:none;
+}
+.FloatingPager a:hover
+{
+    text-decoration:underline;
+}
+.FloatingPager span
+{
+	font-size: 12px;
+	font-weight: bold;
+	
+}
+.cpyFloatingPager
+{ 
+   height:20px;
+   background-color: #BADCFC;
+}
+.cpyFloatingPager a
+{
+	font-size: 10px;
+	font-weight: bold;
+	color: #3B5A83;
+	text-decoration:none;
+}
+.cpyFloatingPager a:hover
+{
+    text-decoration:underline;
+    color: #3B5A83;
+}
+.cpyFloatingPager span
+{
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.GView td
+{
+    border-bottom:1px solid #C9EAFC;
+    padding-left:5px;
+    font-size:11px;
+}
+.GridRowClickable
+{
+    cursor:pointer;
+    font-size:10px;
+    height:22px;
+}
+
+
+
+
+Table
+{
+    font-size:12px;
+    font-family:Arial,Verdana;
+}
+/*
+A
+{
+    font-family:Arial,Verdana;
+    text-decoration:none;
+    color:#000000;
+}
+A:hover
+{
+    color:#000000;
+    text-decoration:underline;
+}
+*/
+.gradientbody 
+{
+    margin:5px;
+    font-family:Arial, Verdana;
+    font-size:12px;
+    background-color:#BAD8FC;
+    /*filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#BAD8FC,endColorStr=#597AB0);*/
+}
+.Supplierbody 
+{
+    margin:0;
+    font-family:Arial, Verdana;
+    font-size:12px;
+    overflow:hidden;
+}
+.MessageDiv
+{
+    text-align:center;
+	border: 1px solid #6095B5;
+	border-bottom-width:3px;
+	border-top-width:3px;
+	BACKGROUND-COLOR: #F0F5F9;
+}
+.SmallText
+{
+    font-size:10px;
+    font-weight:normal;
+}
+.HomeGridColorOne , .HomeGridColorOne TD
+{
+    background-color:#E1E1E1;
+}
+.HomeGridColorTwo , .HomeGridColorTwo TD
+{
+    background-color:#B8FB89;
+}
+.HomeGridColorThree , .HomeGridColorThree TD
+{
+    background-color:#EDFC9A;
+}
+.TextBoxOnGreen
+{
+    border:1px solid #A0CCBD;
+    font-size:12px;
+    font-family:Arial,Verdana;
+}
+.TextBoxOnBlue
+{
+    border:1px solid #86B1D3;
+    font-size:12px;
+    font-family:Arial,Verdana;
+}
+.TextBoxOnGreenNumber
+{
+    border:1px solid #A0CCBD;
+    font-size:12px;
+    font-family:Arial,Verdana;
+    text-align:right;
+}
+.CaptionBold
+{
+    font-size:12px;
+    font-weight:bold;
+}
+.Btn3D
+{
+    background:url('../images/btn_bg.jpg');
+    background-repeat:repeat-x;
+    border:1px solid #404040;
+    height:24px;
+    font-size:12px;
+    font-family:Arial;
+    background-color:#CED1D8;
+    width:80px;
+}
+.BtnGreen
+{
+    border:1px solid #418F37;
+    font-family:Verdana;
+    letter-spacing:-1px;
+    word-spacing:1px;
+    text-transform:uppercase;
+    font-size:10px;
+    font-weight:bold;
+    color:#418F37;
+	background-color:#DAF5D6;
+    height:20px;
+    /*padding:4px;*/
+}
+.LeftPanelLinksTable
+{
+    border:1px solid #939AA4;
+    background-color:#FEF5D8;
+    border-top-width:3px;
+    border-bottom-width:3px;
+}
+.LeftPanelLinksTable TD
+{
+    border-bottom:1px solid #D6CACA;
+    height:30px;
+    font-size:12px;
+    cursor:pointer;
+}
+.LeftPanelLinksTable .SelectedLink
+{
+    cursor:default;
+    font-weight:bold;
+    filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#FCC000,endColorStr=#FC8301);
+}
+.FlatButton
+{
+    border:1px solid #86B1D3;
+    font-family:Verdana;
+    letter-spacing:-1px;
+    word-spacing:1px;
+    text-transform:uppercase;
+    font-size:10px;
+    font-weight:bold;
+    color:#437494;
+    background-color:#D1E6F9;
+    text-align:center;
+    cursor:pointer;
+    padding:4px;
+    display:inline;
+}
+.FlatButtonGreen
+{
+    border:1px solid #418F37;
+    font-family:Verdana;
+    letter-spacing:-1px;
+    word-spacing:1px;
+    text-transform:uppercase;
+    font-size:10px;
+    font-weight:bold;
+    color:#418F37;
+    background-color:#DAF5D6;
+    text-align:center;
+    cursor:pointer;
+    padding:4px;
+    display:inline;
+}
+.HeaderRow TD
+{
+    background-color:#A0CDEE;
+    padding:3px;
+    font-size:14px;
+    border-bottom:1px solid #609BD3;
+}
+.FooterRow TD
+{
+    background-color:#A0CDEE;
+    padding:3px;
+    font-size:14px;
+    border-top:1px solid #609BD3;
+}
+.HeaderRowGreen TD
+{
+    background-color:#BDE4B8;
+    padding:3px;
+    font-size:14px;
+    border-bottom:1px solid #50AF43;
+}
+.FooterRowGreen TD
+{
+    background-color:#BDE4B8;
+    padding:3px;
+    font-size:14px;
+    border-top:1px solid #50AF43;
+}
+.NoPaddingBorderBGRegularFont, .NoPaddingBorderBGRegularFont TD
+{
+    background-color:Transparent;
+    padding:0;
+    font-size:12px;
+    border:0;
+}
+.FiltersRow
+{
+    background-color:#BADCFC;
+    color:#7C8798;
+    font-size:10px;
+}
+.GreyTextBox
+{
+    border:1px solid #7C8798;
+    height:18px;
+    color:Gray;
+}
+.SmallFontInput
+{
+    font-size:10px;
+}
+.SimpleExSmall
+{
+    font-size:9px;
+    font-family:Arial, Helvetica, Sans-Serif;
+}
+.ProgressIndicatorDIV
+{
+    filter:Alpha(Opacity=90);
+	-moz-opacity:0.9;
+	bottom:30px;
+	right:10px;
+	width:15%;
+	border:3px solid #4C86AC;
+	border-left:0;
+	border-right:0; 
+	background-color:#DEEFFE;
+	position:absolute;
+	text-align:center;
+}
+.HighlightedHomeRow TD
+{
+    background-color:#F4FAFF;
+    cursor:pointer;
+    height:22px;
+}
+.SimpleHomeRow TD
+{
+    cursor:pointer;
+    height:22px;
+}
+.PrintButton
+{
+    border:1px solid #86B1D3;
+    font-family:Verdana;
+    letter-spacing:-1px;
+    word-spacing:1px;
+    text-transform:uppercase;
+    font-size:10px;
+    font-weight:bold;
+    color:#437494;
+    background-color:#D1E6F9;
+    text-align:center;
+    cursor:pointer;
+    padding:4px;
+    display:inline;
+    padding-left:32px; 
+    background-repeat:no-repeat;
+    background-position:12px center ; 
+    background-image:url('../Images/icn_printableV.gif');
+}
+
+/* Rating */
+.ratingStar {
+    font-size: 0pt;
+    width: 13px;
+    height: 12px;
+    margin: 0px;
+    padding: 0px;
+    /*cursor: pointer;*/
+    display: inline;
+    background-repeat: no-repeat;
+}
+
+.filledRatingStar {
+    background-image: url(../Images/FilledStar.jpg);
+}
+
+.emptyRatingStar {
+    background-image: url(../Images/EmptyStar.jpg);
+}
+
+.savedRatingStar {
+    background-image: url(../Images/SavedStar.jpg);
+}
+.WhiteSmall
+{
+    color:White;
+    font-size:9px;
+}
+.TextBoxBlueBorder
+{
+    border:1px solid #B4CFDD;
+}
+.TopBar3DTable
+{
+    background-color:#E4F1F7;
+}
+.TopBar3DTable TD
+{
+    color:#467FA6;
+    font-size:9px;
+    background:url('../images/hdr_bg.jpg');
+    height:53px;
+    text-align:center;
+}
+.TopBar3DTable .MainIcons
+{
+    width:65px;
+    cursor:pointer;
+}
+.TopBarBGSpace
+{
+    width:15px;
+    height:53px;
+    background:url('../images/hdr_bg.jpg');
+}
+.TopBarSimple
+{
+    background-color:inherit;
+    border:0;
+    width:65px;
+}
+.TopBarSimple TD{background-image:none;color:#BBDFED;vertical-align:bottom;}
+.TopBarHover
+{
+    background-image:none;
+    border:1px solid #4680A6;
+    background-color:#B7D4E5;
+    color:Black;
+    font-size:7pt;
+    width:65px;
+    filter:progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#ffffff,endColorStr=lightblue);
+}
+.TopBarHover TD
+{
+    background-image:none;
+    color:Black;
+    vertical-align:bottom;
+}
+
+.SimpleHomeRow TD
+{
+    cursor:pointer;
+    height:22px;
+}
+/*
+.SimpleHomeRow a, a:visited, a:active
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color:#002c7d;
+	text-decoration: none;	
+}
+*/
+/*
+.SimpleHomeRow a:hover
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color:#002c7d;
+	text-decoration:underline;	
+}
+*/
+/*
+.HighlightedHomeRow a, a:visited, a:active
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color:#002c7d;
+	text-decoration: none;	
+}
+*/
+/*
+.HighlightedHomeRow a:hover
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color:#002c7d;
+	text-decoration:underline;	
+}
+*/
+.HomeButton
+{
+    font-size:12px;
+    font-weight:bold;
+    color:#437494;
+    text-decoration:none;
+    cursor:pointer;
+}
+.LeadDetailButton
+{
+    border:1px solid #86B1D3;
+    font-family:Verdana;
+    letter-spacing:-1px;
+    word-spacing:1px;
+    text-transform:uppercase;
+    font-size:10px;
+    font-weight:bold;
+    color:#437494;
+    background-color:#D1E6F9;
+    text-align:center;
+    cursor:pointer;
+    padding:4px;
+    display:inline;
+}
+.UnderlinedRow TD
+{
+    border-bottom:1px solid #609BD3;
+}
+.GreyTextSmall
+{
+    color:#7C8798;
+    font-size:10px;
+}
+.SmallTextCombo
+{
+    
+ Font-Size:10px;
+ font-family:Arial;
+ border:solid 1px #7F9DB9;
+ 
+}
+
+.Calendar_Normal TD
+{
+    height:31px;
+    background-image:url('../admin/research/images/bg_cellNormal.jpg');
+    border-bottom:solid 1px #609BD3;
+    font-size:12px;
+    font-weight:bold;
+}
+.Calendar_Selected TD
+{
+    height:31px;
+    background-image:url('../admin/research/images/bg_cellSelected.jpg');
+    border-bottom:solid 1px #609BD3;
+    font-size:12px;
+    font-weight:bold;
+}
+.Calendar_Selected DIV
+{ 
+	background-image:url('../admin/research/images/blt_selected.jpg');	
+	background-repeat:no-repeat;
+	height:31px;
+	width:17px;
+}
+
+.Calendar_Normal DIV
+{
+	background-image:url('../admin/research/images/blt_normal.jpg');	
+	background-repeat:no-repeat;
+	height:31px;
+	width:17px;
+}
+
+.Calendar_Selected A:link, .Calendar_Selected A:hover, .Calendar_Selected A:visited, .Calendar_Selected A:active
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    color:Black;
+    font-size:11px;
+    font-weight:bold;
+}
+.Calendar_Normal   A:link , .Calendar_Normal A:visited, .Calendar_Normal A:active
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-decoration:none;
+     color: #144090;
+     font-size:11px;
+     font-weight:bold;
+}
+.Calendar_Normal   A:hover
+{
+     color: #52789C;
+}
+
+.DarkBluelabel 
+{
+    color:#144090;
+    font-family: Verdana, Arial, Helvetica, sans-serif;  
+    font-size:14px;
+    font-weight:bold;
+}
+.NonBold
+{
+    font-weight:normal;    
+}
+.tblDetail
+{
+    background-color: #DAF5D6;
+}
+.tblDetail td
+{
+    background-color: #DAF5D6;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+	font-weight: normal;
+	color: #151515;
+}
+.tblDetail th
+{
+   
+    border-bottom:solid 1px #5ABB4D;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+	font-weight: normal;
+	color: #151515;
+}
+.tblReciepe td
+{
+    
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;    
+    text-align:left;
+    padding-left:6px;
+    padding-right:6px;
+	font-weight: normal;
+	color: #151515;
+}
+.tblReciepe th
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-align:left;
+    padding-left:6px; 
+    padding-right:6px;   
+	font-weight: normal;
+	background-color:#B7EBAF;
+	border-bottom:solid 1px #5ABB4D;
+	border-top:solid 1px #5ABB4D;
+	border-right:solid 1px #5ABB4D;
+	border-left:solid 1px #5ABB4D;
+	
+}
+
+.tblActivities td
+{
+    background-color: #B7EBAF;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;    
+    padding-right:6px;
+	font-weight: normal;	
+}
+.tblNotes 
+{
+    border:solid 0px #5ABB4D;
+}
+.tblNotes td
+{
+    background-color: #DAF5D6;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    padding-left:6px;
+	font-weight: normal;
+	color: #151515;
+}
+.tblNotes th
+{
+    background-color: #FFFFFF;
+    border-bottom:solid 1px #5ABB4D;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    padding-left:6px;
+	font-weight: normal;
+	color: #151515;
+}
+.TabButton
+{
+   background-repeat: repeat-x;
+	border: 1px solid #565656;
+	height: 30px;
+	cursor:pointer;
+	background-image: url('../admin/research/images/rNd_tble_tab.jpg');
+	
+}
+
+.TabButtonOver
+{
+   background-repeat: repeat-x;
+	border: 1px solid #565656;
+	height: 30px;
+	cursor:pointer;
+	background-image: url('../admin/research/images/rNd_tble_tab_ovr.jpg');
+	
+}
+.TabButtonSelected
+{
+    background-repeat: repeat-x;
+	border: 1px solid #565656;
+	height: 30px;
+	cursor:pointer;
+	background-image: url('../admin/research/images/rNd_tble_tab_slctd.jpg');
+	
+}
+.btn {
+	background-image: url('../admin/research/images/btn_bg.jpg');
+	background-repeat: repeat-x;
+	border: 1px solid #565656;
+	height: 22px;
+	cursor:pointer;
+}
+.RequiredField
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY:   Arial, Helvetica, Sans-Serif;
+    COLOR:#FF0000;
+}
+.SmallGreenTextBox
+{
+	border:1px solid #7F9DB9;
+	height:18;
+	font:8pt Arial;
+	vertical-align:text-bottom;
+	padding-top: 1px;
+	padding-left: 3px;	
+}
+.parntTble {
+	background-color: #B7EBAF;
+	border: 1px solid #a9a9a9;
+}
+.childTble {
+	background-color:#E4F8E0;
+	border: 1px solid #adadad;
+}
+.txt_italic {
+	font-style: italic;
+}
+.txt_black {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #151515;
+}
+.cell_subTotal {
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #acadaf;
+	border-bottom-color: #acadaf;
+}
+.txtBld_dkBlue {
+	font-size: 11pt;
+	color: #214e92;
+	font-weight:bold;
+}
+.lblDays
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+	font-weight: normal;
+	color: #777671;
+}
+.modalBackground {
+	background-color:Gray;	
+	position:absolute;	
+	filter:alpha(opacity=50);
+	opacity:0.5;
+}
+
+.modalLessBackground {	
+	position:absolute;	
+	
+}
+
+.modalPopup {
+	background-color:#ffffdd;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:250px;
+}
+.Normal 
+{ 
+    
+    border-bottom:solid 1px #5ABB4D;
+    border-top:solid 1px #5ABB4D;
+    border-right:solid 1px #5ABB4D;
+    border-left:solid 1px #5ABB4D;
+    font-size:12px;
+    font-weight:bold;
+    background-color:#DAF5D6;
+    cursor:pointer;
+	
+}
+.SpacerDiv 
+{ 
+    
+    border-bottom:solid 1px #5ABB4D;
+    font-size:12px;
+    font-weight:normal;
+    background-color:#DAF5D6;
+    cursor:default;
+	
+}
+.Selected 
+{ 
+    
+    border-top:solid 1px #5ABB4D;
+    border-right:solid 1px #5ABB4D;
+    border-left:solid 1px #5ABB4D;
+    font-size:12px;
+    font-weight:bold ;
+    color :#FFF9FF;
+    background-color:#84CC7A;
+    cursor:pointer;
+	
+	
+}
+.RbtnView
+{
+    background-color:#B7EBAF;
+    border:0px;
+    font-size:14px;
+    font-weight:bold;
+    
+}
+
+
+.GViewDetail td
+{
+    border-left:0px;
+    border-bottom:1px solid #BDE4B8;
+    background:#FFFFFF;
+    padding-left:5px;    
+    font-size:11px;
+}
+.GViewDetailClickable
+{
+    
+    cursor:pointer;
+    font-size:10px;
+    height:22px;
+}
+
+.DetailHeader
+{
+   height:18px;
+   padding-left:10px;
+   text-align:left;
+   background-color:#B7EBAF;
+   position: relative;
+   border-top:1px solid #BDE4B8;
+   top:expression(eval(this.parentElement.parentElement.parentElement.parentElement.parentElement.scrollTop));
+}
+.MessageDetailDiv
+{
+    text-align:center;
+	border: 1px solid #5ABB4D;
+	border-bottom-width:3px;
+	border-top-width:3px;
+	BACKGROUND-COLOR: #FFFFFF;
+	color:#5ABB4D;
+}
+.borderTable TD
+{
+    border:solid 1px #5ABB4D;
+}
+.ChangedRow TD
+{
+    background-color:#FFCC00;
+}
+.YellowBG
+{
+    background-color:#FEFF99;
+}
+
+.GreenBG
+{
+    background-color:#D2FEB3;
+}
+.Fullheight
+{
+    height:100%;
+}
+.GridArrowColumn
+{
+	background-image: url('../admin/opm/images/arrows.gif');
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.ScrollBarTA
+{
+	border:1px solid #50AF43;
+	height:18;
+	font:8pt Arial;
+	vertical-align:text-bottom;
+	padding-top: 1px;
+	padding-left: 3px;	
+	scrollbar-arrow-color:#000000;
+	scrollbar-face-color: #FFFFFF;
+	scrollbar-track-color: #FFFFFF;
+	scrollbar-shadow-color: #FFFFFF;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-base-color: #FFFFFF;
+	scrollbar-3dlight-color: #FFFFFF;
+	scrollbar-darkshadow-color: #FFFFFF;
+}
+
+.BorderTable  TD 
+{
+    border:solid 1px #609BD3;
+}
+
+.DivScroll
+{
+	
+	scrollbar-arrow-color:#5ABB4D;
+	scrollbar-face-color: #B7EBAF;
+	scrollbar-track-color: #DAF5D6;
+	scrollbar-shadow-color: #FFFFFF;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-base-color: #FFFFFF;
+	scrollbar-3dlight-color: #DAF5D6;
+	scrollbar-darkshadow-color:#FFFFFF;
+	scrollbar-border-color:#FFFFFF;
+}
+
+.btnExtraSimple
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:10px;
+    word-spacing:1px;
+    text-transform:uppercase;
+    color:#437494;
+    background-color:#D1E6F9;
+    border:1px solid #86B1D3;
+    padding:0px;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.MainAlertDiv
+{
+	height:100%;
+	border:1px solid #609BD3;
+	
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.MainAlertDiv TH
+{
+	background-color:#A0CDEE;
+	font-weight:bold;
+	border-bottom:1px solid #609BD3;
+}
+
+.MainAlertDiv TD
+{
+	background-color:#D8EAFC;
+}
+.NavigationLastLink
+{
+ font-weight:bold;
+ cursor:default;	
+}
+
+
+.OptionBackground {
+	background-image:url(../admin/images/wndw_bg.gif);		
+	position:absolute;	
+	filter:alpha(opacity=80);
+	opacity:0.8;	
+}
+
+.PrintButtonGreen
+{
+    border:1px solid #418F37;
+    font-family:Verdana;
+    letter-spacing:-1px;
+    word-spacing:1px;
+    text-transform:uppercase;
+    font-size:10px;
+    font-weight:bold;
+    /*color:#437494;
+    background-color:#D1E6F9;*/
+    color:#418F37;
+    background-color:#DAF5D6;
+    text-align:center;
+    cursor:pointer;
+    padding:4px;
+    display:inline;
+    padding-left:32px; 
+    background-repeat:no-repeat;
+    background-position:12px center ; 
+    background-image:url('../Images/icn_printableV.gif');
+}
+.DivScrollBlue
+{
+	
+	scrollbar-arrow-color:#a0cdee;
+	scrollbar-face-color: #BADCFC;
+	scrollbar-track-color: #D8EAFC;
+	scrollbar-shadow-color: #FFFFFF;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-base-color: #FFFFFF;
+	scrollbar-3dlight-color: #B0D3FD;
+	scrollbar-darkshadow-color:#FFFFFF;
+	scrollbar-border-color:#FFFFFF;
+}
+
+.UpdateProgressIndicatorDIV
+{
+    filter:Alpha(Opacity=90);
+	-moz-opacity:0.9;
+	top:86%;
+	left:37%;
+	right:10px;
+	width:26%;
+	border:3px solid #4C86AC;
+	border-left:0;
+	border-right:0; 
+	background-color:#DEEFFE;
+	position:absolute;
+	text-align:center;
+}
+.ExtraSmall
+{
+    FONT-SIZE: 7pt;
+    FONT-FAMILY: Verdana, Arial, Helvetica, Sans-Serif;
+		
+}
+.SimpleSmall
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+.hLink_attach a:link, .hLink_attach a:active, .hLink_attach a:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.hLink_attach a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: underline;
+}
